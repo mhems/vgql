@@ -39,13 +39,33 @@ def json_formatter(stream, database):
     json.dump(database.dicn, stream, indent=2)
 
 def html_formatter(stream, database):
-    # TODO
-    raise NotImplementedError()
+    stream.write('<!DOCTYPE html>\n')
+    stream.write('<html><body>\n')
+    stream.write('<table>\n')
+    stream.write('  <tr>\n')
+    stream.write('    <td>Number</td>\n')
+    stream.write('    <td>Name</td>\n')
+    stream.write('    <td>Kind</td>\n')
+    stream.write('    <td>Room</td>\n')
+    stream.write('    <td>World</td>\n')    
+    stream.write('    <td>Description</td>\n')
+    stream.write('  </tr>\n')
+    for index, item in enumerate(database):
+        stream.write('  <tr>\n')
+        stream.write('    <td>%d</td>\n' % (index + 1))
+        for element in ['name', 'kind', 'room', 'world', 'description']:
+            if element in item:
+                stream.write('    <td>%s</td>\n' % item[element])
+            else:
+                stream.write('    <td></td>\n')
+        stream.write('  </tr>\n')        
+    stream.write('</table>\n')
+    stream.write('</html></body>\n')
 
 def query(database, string):
     """Query database for all items satisfying constraints"""
     func = query_parser.parse(string)
-    return Database([str(e) for e in database.items if func(e)])
+    return Database([e for e in database.items if func(e)])
 
 def make_choices(choices):
     first = [s[0].lower() for s in choices]
@@ -91,10 +111,15 @@ if __name__ == '__main__':
         stream = sys.stdout
     if args.c:
         count = len(results)
-        if args.form[0] == 'n' or args.form[0] == 'h':
+        if args.form[0] == 'n':
             stream.write(count)
         elif args.form[0] == 'j':
             stream.write('{ count : %d }' % count)
+        elif args.form[0] == 'h':
+            stream.write('<!DOCTYPE html>\n')
+            stream.write('<html><body>\n')
+            stream.write('   Query %s returned %d items\n' % (args.query_string, count))
+            stream.write('</html></body>\n')
         else:
             print('error: unknown format', args.form)
     else:
@@ -103,7 +128,7 @@ if __name__ == '__main__':
         elif args.form[0] == 'j':
             output(results, stream, json_formatter)
         elif args.form[0] == 'h':
-            output(results, stream, html_formatter)
+            output(results.items, stream, html_formatter)
         else:
             print('error: unknown format', args.form)
     stream.close()
