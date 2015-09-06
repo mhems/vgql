@@ -41,11 +41,9 @@ class Database():
         return '\n'.join(repr(i) for i in self.items)
     
 if __name__ == '__main__':
-    # usage ./metroid.py [-c] [-q [-AAAA NNNN]+] [-o FILE] DATABASE
     parser = argparse.ArgumentParser(description="Metriod Prime Collectible Query")
     parser.add_argument('-o', '--output-file',
-                        dest    = 'output',
-                        default = sys.stdout,
+                        dest    = 'output_file',
                         metavar = 'OUTPUT_FILE',
                         help    = 'the location of the output file')
     parser.add_argument('-c', '--count',
@@ -56,15 +54,24 @@ if __name__ == '__main__':
                         dest = 'query_string',
                         metavar = 'QUERY_STRING',
                         help    = 'the SQL-like query string to execute '
-                                  'of the form \'select items where\'')
+                                  'of the form \'select items where\'...')
     parser.add_argument('database',
                         metavar = 'DATABASE',
                         help    = 'the database to query')
     args = parser.parse_args()
+    if args.output_file == args.database:
+        print('error: database and output file cannot be the same')
+        sys.exit(1)
     d = Database()
     d.parse_items(args.database)
     results = d.query(args.query_string)
     if args.count:
-        print(len(results))
+        output = str(len(results))
     else:
-        print('\n'.join(results))
+        output = '\n'.join(results)
+    if args.output_file is not None:
+        with open(args.output_file, 'w') as f:
+            f.write(output)
+            f.write('\n')
+    else:
+        print(output)

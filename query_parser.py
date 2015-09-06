@@ -69,7 +69,6 @@ def initialize(string):
         'Name': 0
     }
     stream = lex(string)
-    print(stream)
     stream.append('')
     advance()
 
