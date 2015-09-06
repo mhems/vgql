@@ -256,8 +256,8 @@ def error(msg):
     sys.exit(1)
 
 if __name__ == '__main__':
+    # Some crude testing
     tests = [
-        #        'a==b==c',
         'kind == foo',
         'room != foo',
         'world == X and name != bar',
@@ -267,8 +267,8 @@ if __name__ == '__main__':
         'world != Tallon Overworld North',
         'world!=Tallon Overworld|room==North Pole&kind == Space Ship and name!=foo'
     ]
-
-    # query = sys.argv[1]
+    if sys.argv[1] is not None:
+        tests.append(sys.argv[1])
     l = [
         {
             'kind':'foo',
