@@ -1332,6 +1332,13 @@
       "description": "Set off a Power Bomb to shatter hull; located beneath bridgeway", 
       "name": "Ice Spreader", 
       "room": "Shore Tunnel"
+    },
+    {
+      "world": "Phazon Mines",
+      "kind": "Upgrade",
+      "description": "Locate bendezium grating on top floor of Mine Security Station, set Power Bomb, and unlock force field",
+      "name": "Flamethrower",
+      "room": "Security Depot A"
     }
   ]
 }
