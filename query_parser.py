@@ -41,20 +41,19 @@
 # CHOICE : 'kind' | 'room' | 'world' | 'name' ;
 # STRING : [a-zA-z *]+ ;
 
-import sys, re
+import sys, re, itertools
 
 # Synthesized attribute grammar that returns filter function to apply to dictionary
 
-AND_OPTIONS = ['and', '&', '&&']
-OR_OPTIONS  = ['or', '|', '||']
-SYMBOLS = ['==', '!=', '(', ')']
+AND_OPTIONS = ['and', '&']
+OR_OPTIONS  = ['or', '|']
+SYMBOLS = ['==', '!=', '(', ')', '&', '|']
 choices   = {}
 stream    = None
 lookahead = None
 
 def advance():
     global stream, lookahead
-    old = lookahead
     lookahead = stream.pop(0)
 
 def parse(string):
@@ -70,13 +69,52 @@ def initialize(string):
         'Name': 0
     }
     stream = lex(string)
+    print(stream)
     stream.append('')
     advance()
 
 def lex(string):
-    # TODO
-    if string is not None:
-        return string.split()
+    # Yes, this is very poor code
+    if string is not None and len(string) > 0:
+        changing = True
+        divs = set(itertools.chain(AND_OPTIONS, OR_OPTIONS, SYMBOLS))
+        words = string.split()
+        while changing:
+            tokens = []
+            changing = False
+            for w in words:
+                added = False
+                for s in SYMBOLS:
+                    if added:
+                        break
+                    if s in w and s != w:
+                        (h, s, t) = w.partition(s)
+                        if len(h) > 0:
+                            tokens.append(h)
+                        tokens.append(s)
+                        if len(t) > 0:
+                            tokens.append(t)
+                        added = True
+                        changing = True
+                if not added:
+                    tokens.append(w)
+            words = tokens
+        tokens = words
+        # merge any adjacent words
+        r = []
+        i = 0
+        end = len(tokens)
+        while i < end:
+            acc = tokens[i]
+            while ( i < end - 1 and
+                    tokens[i]   not in divs and
+                    tokens[i+1] not in divs ) :
+                acc += ' ' + tokens[i+1]
+                tokens.pop(i+1)
+                end -= 1
+            r.append(acc)
+            i += 1
+        return r
     else:
         return []
     
@@ -220,12 +258,15 @@ def error(msg):
 
 if __name__ == '__main__':
     tests = [
+        #        'a==b==c',
         'Kind == foo',
         'Room != foo',
         'World == X and Name != bar',
         'Name != home or Room == Y',
         '( Room == X )',
-        '( World == X and Room != Y )' #  or kind != Z'
+        '( World == X and Room != Y )',
+        'World != Tallon Overworld North',
+        'World!=Tallon Overworld|Room==North Pole&Kind == Space Ship and Name!=foo'
     ]
 
     # query = sys.argv[1]
