@@ -98,421 +98,421 @@
     }, 
     {
       "World": "Space Pirate Frigate Orpheon", 
-      "Kind": "Bosses", 
+      "Kind": "Boss", 
       "Name": "Parasite Queen", 
       "Room": ""
     }, 
     {
       "World": "Space Pirate Frigate Orpheon", 
-      "Kind": "Bosses", 
+      "Kind": "Boss", 
       "Name": "Parasite", 
       "Room": "Subventilation Shaft Section A"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Bosses", 
+      "Kind": "Boss", 
       "Name": "Hive Mecha", 
       "Room": "Hive Totem"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Bosses", 
+      "Kind": "Boss", 
       "Name": "Ram War Wasp", 
       "Room": "Hive Totem"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Bosses", 
+      "Kind": "Boss", 
       "Name": "Incinerator Drone", 
       "Room": "Burn Dome"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Bosses", 
+      "Kind": "Boss", 
       "Name": "Barbed War Wasp", 
       "Room": "Burn Dome"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Bosses", 
+      "Kind": "Boss", 
       "Name": "Flaahgra", 
       "Room": "Sunchamber"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Bosses", 
+      "Kind": "Boss", 
       "Name": "Flaahgra Tentacle", 
       "Room": "Sunchamber"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Bosses", 
+      "Kind": "Boss", 
       "Name": "Thardus", 
       "Room": "Quarantine Cave"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Bosses", 
+      "Kind": "Boss", 
       "Name": "Phazon Elite", 
       "Room": "Elite Research"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Bosses", 
+      "Kind": "Boss", 
       "Name": "Meta Ridley", 
       "Room": "Artifact Site"
     }, 
     {
       "World": "Impact Crater", 
-      "Kind": "Bosses", 
+      "Kind": "Boss", 
       "Name": "Metroid Prime (Shell)", 
       "Room": ""
     }, 
     {
       "World": "Impact Crater", 
-      "Kind": "Bosses", 
+      "Kind": "Boss", 
       "Name": "Metroid Prime (Core)", 
       "Room": ""
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Beetle", 
       "Room": "Canyon Cavern"
     }, 
     {
       "World": "Space Pirate Frigate Orpheon", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Auto Turrets", 
       "Room": ""
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Sap Sac", 
       "Room": "Tallon Canyon"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Zoomer", 
       "Room": "Tallon Canyon"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Geemer", 
       "Room": "Tallon Canyon"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Bloodflower", 
       "Room": "Root Tunnel"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Hive", 
       "Room": "Main Plaza"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Scarabs", 
       "Room": "Nursery Access"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Eyon", 
       "Room": "Eyon Tunnel"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "War Wasp", 
       "Room": "Ruined Nursery"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Blastcap", 
       "Room": "Ruined Gallery"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Tangle Weed", 
       "Room": "Ruined Gallery"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Plazmite", 
       "Room": "Totem Access"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Plated Beetle", 
       "Room": "Ruined Shrine"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Shriekbats", 
       "Room": "Arebortum Acess"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Oculus", 
       "Room": "Sun Tower"
     }, 
     {
       "World": "Magmoor Caverns", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Grizby", 
       "Room": "Burning Trail"
     }, 
     {
       "World": "Magmoor Caverns", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Burrower", 
       "Room": "Lake Tunnel"
     }, 
     {
       "World": "Magmoor Caverns", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Magmoor", 
       "Room": "Lava Lake"
     }, 
     {
       "World": "Magmoor Caverns", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Puffer", 
       "Room": "Lava Lake"
     }, 
     {
       "World": "Magmoor Caverns", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Triclops", 
       "Room": "Pit Tunnel"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Flickerbat", 
       "Room": "Phendrana Shorelines"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Crystallite", 
       "Room": "Phendrana Shorelines"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Scatter Bombu", 
       "Room": "Ice Ruins Access"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Baby Sheegoth", 
       "Room": "Ice Ruins East"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Ice Burrower", 
       "Room": "Plaza Walkway"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Pulse Bombu", 
       "Room": "Ruins Entryway"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Seedling", 
       "Room": "Temple Hall"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Ice Parasite", 
       "Room": "Chozo Ice Temple"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Sheegoth", 
       "Room": "hapel of Elders (boss) or Ice Ruins West"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Ice Shriekbats", 
       "Room": "Ice Ruins West"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Shadow Pirate", 
       "Room": "Research Entrance/Core"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Space Pirate", 
       "Room": "Research Entrance"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Flying Pirate", 
       "Room": "Control Tower"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Metroid", 
       "Room": "Research Lab Aether"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Ice Beetle", 
       "Room": "Frost Cave Access"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Sentry Drone", 
       "Room": "Research Core Access"
     }, 
     {
       "World": "Magmoor Caverns", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Puddle Spore", 
       "Room": "South Core Tunnel"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Plated Parasite", 
       "Room": "Furnace"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Chozo Ghost", 
       "Room": "Hall of the Elders"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Hunter Metroid", 
       "Room": "Hunter Cave"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Glider", 
       "Room": "Frost Cave"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Jelzap", 
       "Room": "Phendrana's Edge"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Aqua Reaper", 
       "Room": "Gravity Chamber"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Tallon Crab", 
       "Room": "Main Ventilation Shaft Section A"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Aqua Pirate", 
       "Room": "Reactor Core"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Aqua Drone", 
       "Room": "Biohazard Containment"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Aqua Sac", 
       "Room": "Connection Elevator to Deck Beta"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Mega Turret", 
       "Room": "Security Access A"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Wave Trooper", 
       "Room": "Mine Security Station"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Power Trooper", 
       "Room": "Elite Research"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Elite Pirate", 
       "Room": "Elite Control"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Ice Trooper", 
       "Room": "Elite Control"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Plated Puffer", 
       "Room": "Tower of Light"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Plasma Trooper", 
       "Room": "Phazon Processing Center"
     }, 
     {
       "World": "Impact Crater", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Lumigek", 
       "Room": "Crater Tunnel A"
     }, 
     {
       "World": "mpact Crater", 
-      "Kind": "Creatures", 
+      "Kind": "Creature", 
       "Name": "Fission Metroid", 
       "Room": "Phazon Core"
     }, 
@@ -746,457 +746,457 @@
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Artifacts", 
+      "Kind": "Artifact", 
       "Name": "Truth", 
       "Room": "rtifact Temple"
     }, 
     {
       "World": "Magmoor Caverns", 
-      "Kind": "Artifacts", 
+      "Kind": "Artifact", 
       "Name": "Strength", 
       "Room": "Warrior Shrine (Monitor Station)"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Artifacts", 
+      "Kind": "Artifact", 
       "Name": "Elder", 
       "Room": "Control Tower"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Artifacts", 
+      "Kind": "Artifact", 
       "Name": "Wild", 
       "Room": "Sunchamber"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Artifacts", 
+      "Kind": "Artifact", 
       "Name": "Lifegiver", 
       "Room": "Tower Chamber (Sun Tower)"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Artifacts", 
+      "Kind": "Artifact", 
       "Name": "Warrior", 
       "Room": "Elite Research"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Artifacts", 
+      "Kind": "Artifact", 
       "Name": "Chozo", 
       "Room": "Life Grove"
     }, 
     {
       "World": "Magmoor Caverns", 
-      "Kind": "Artifacts", 
+      "Kind": "Artifact", 
       "Name": "Nature", 
       "Room": "Lava Lake"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Artifacts", 
+      "Kind": "Artifact", 
       "Name": "Sun", 
       "Room": "Chozo Ice Temple"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Artifacts", 
+      "Kind": "Artifact", 
       "Name": "World", 
       "Room": "Hall of the Elders"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Artifacts", 
+      "Kind": "Artifact", 
       "Name": "Spirit", 
       "Room": "Phendrana's Edge"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Artifacts", 
+      "Kind": "Artifact", 
       "Name": "Newborn", 
       "Room": "Phazon Mining Tunnel"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Energy Tanks", 
+      "Kind": "Energy Tank", 
       "Room": "Transport Access North", 
       "Description": ""
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Energy Tanks", 
+      "Kind": "Energy Tank", 
       "Room": "Furnace", 
       "Description": "Use the West Furnace Access"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Energy Tanks", 
+      "Kind": "Energy Tank", 
       "Room": "Main Plaza", 
       "Description": "High on ledge. Use Plaza Access from Vault"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Energy Tanks", 
+      "Kind": "Energy Tank", 
       "Room": "Ruined Courtyard", 
       "Description": "Use spinners to activate Morph Ball slot. Bomb slot to fill room with water. Located direclty across floating platforms down angled tunnel"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Energy Tanks", 
+      "Kind": "Energy Tank", 
       "Room": "Research Lab Aether", 
       "Description": "Hidden in same stasis containment as Metroids. Use missile to blast glass open"
     }, 
     {
       "World": "Magmoor Caverns", 
-      "Kind": "Energy Tanks", 
+      "Kind": "Energy Tank", 
       "Room": "Magmoor Workstation", 
       "Description": "Use Thermal Visor to send power to cooling machine. Located behind purple passage (North)"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Energy Tanks", 
+      "Kind": "Energy Tank", 
       "Room": "Hall of Elders", 
       "Description": "Activate Ice Beam Morph Ball slot behind Chozo elder. Path leads underground"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Energy Tanks", 
+      "Kind": "Energy Tank", 
       "Room": "Hydro Access Tunnel", 
       "Description": "Use bombs to propel yourself high in vertical shaft"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Energy Tanks", 
+      "Kind": "Energy Tank", 
       "Room": "Ventilation Shaft", 
       "Description": "Super Bomb bendezium vent, roll through tunnel, scan to activate fans"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Energy Tanks", 
+      "Kind": "Energy Tank", 
       "Room": "Training Chamber", 
       "Description": "Use half-pipe to reach Morph Ball slots, send power to elevator, and follow Spider Ball track"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Energy Tanks", 
+      "Kind": "Energy Tank", 
       "Room": "Processing Center Access", 
       "Description": "Defeat Omega Pirate, exit second level"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Energy Tanks", 
+      "Kind": "Energy Tank", 
       "Room": "Transport Access", 
       "Description": "Blast wall of ice with Plasma Beam to melt"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Landing Site", 
       "Description": "Behind ship in small tunnel filled with Tangle Weed"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Transport Tunnel B", 
       "Description": "Located under stone walkway; dust and steam pour out from beneath"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Overgrown Cavern", 
       "Description": "Located in Morph Ball size tunnel amidst Venom Weed"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Frigate Crash Site", 
       "Description": "With Gravity Suit, double-jump into submerged cave"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Biohazard Containment", 
       "Description": "Use Super Missile to blast weakened cordite containment door in submerged lower level"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Great Tree Chamber", 
       "Description": "Use X-Ray visor in Great Tree Hall; door located behind tree"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Life Grove", 
       "Description": "Use half-pipe in Morph Ball tunnel entrance and set bomb at top"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Root Cave", 
       "Description": "Use X-Ray Visor to jump to very top; look left when facing Plasma Beam door to see it located behind wall of foliage"
     }, 
     {
       "World": "Tallon Overworld", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Arbor Chamber", 
       "Description": "Plasma Door located at top of Root Cave; use X-Ray to reveal platforms"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Main Plaza", 
       "Description": "Use half-pipe. Located under bridge on small shelf"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Main Plaza", 
       "Description": "Exit Training Chamber; use ledge and grapple point to swing over to power-up"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Main Plaza", 
       "Description": "Tree knot can be shattered with Super Missile"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Ruined Nursery", 
       "Description": "Solve Morph Ball puzzle in wall"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Ruined Gallery", 
       "Description": "Behind Brinstone wall"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Ruined Gallery", 
       "Description": "Use Morph Ball tunnel that loops in half-circle"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Watery Hall Access", 
       "Description": "Behind Brinstone wall"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Watery Hall", 
       "Description": "With the Gravity Suit, locate a cave underwater and double jump to get it"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Dynamo", 
       "Description": "Blast weakened metal grating with missiles."
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Dynamo", 
       "Description": "Use Spider Ball track to access inlet above"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Burn Dome", 
       "Description": "Bomb through Sandstone to reveal Morph Ball path"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Vault", 
       "Description": "Solve the puzzle of the cage by using the double bomb jump"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Ruined Fountain", 
       "Description": "Use clean water from fountain to blast upward and connect to Spider Ball track"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Gathering Hall", 
       "Description": "Platform to top of room. Located behind sandstone wall above East Atrium access. Jump on red lights, then double jump"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Crossway", 
       "Description": "Activate network of pipes by shooting through cordite. Use half-pipe to activate Morph Ball slots."
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Ruined Shrine", 
       "Description": "Sandstone weakness in floor; blast with Morph Ball bomb"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Ruined Shrine", 
       "Description": "Boost out of half-pipe structure (Note: both sides have Morph Ball tunnels)"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Furnace", 
       "Description": "Set Power Bomb to reveal half-pipe; boost up to Spider Ball track and follow"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Training Chamber Access", 
       "Description": "Morph Ball tunnel hidden behind red leaves"
     }, 
     {
       "World": "Magmoor Caverns", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Storage Cavern", 
       "Description": "Access from Triclops Pit, roll under grating"
     }, 
     {
       "World": "Magmoor Caverns", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Triclops Pit", 
       "Description": "Locate invisible platforms with X-Ray Visor, follow to column, shatter with Super Missile"
     }, 
     {
       "World": "Magmoor Caverns", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Fiery Shores", 
       "Description": "Bomb crates to reveal path. Located high up on elevated grating"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Phendrana Shorelines", 
       "Description": "Use Super Missile to blast cordite shield on front of temple; Spider Ball track revealed"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Phendrana Shorelines", 
       "Description": "Behind sheet of ice on a boulder near the door to Ice Ruins Access. Melt the ice with the Plasma Beam"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Ice Ruins East", 
       "Description": "There is a Spider Ball track on the wall of a tall building"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Ice Ruins East", 
       "Description": "Behind sheet of ice on the wall near the door to Plaza Walkway. Melt the ice with the Plasma Beam"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Research Lab Hydra", 
       "Description": "Use Super Missile to blast weakened cordite pillar on top floor"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Research Lab Aether", 
       "Description": "Jump on piping, roll in Morph Ball form to access"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Quarantine Monitor", 
       "Description": "Use grapple points in Quarantine Cave"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Frost Cave", 
       "Description": "Located under ice-covered lake; use Glider to swing to elevated ledges and blast stalactite hanging above, sending it crashing down below"
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Gravity Chamber", 
       "Description": "Shatter large grouping of stalactites with Plasma Beam to reveal grapple point; swing to expansion located on elevated ledge"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Main Quarry", 
       "Description": "Activate crane controls with Wave Beam at power conduit, scan controls to change crane's position, and use Spider Ball track"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Security Access A", 
       "Description": "Weakened grating made of bendezium near entrance"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Elite Research", 
       "Description": "Use Industrual Pulse Beam gun to blast through wall with 8% integrity"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Elite Control Access", 
       "Description": "Shoot explosive crate in ventilation shaft, use Thermal Visor to locate better"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Phazon Processing Center", 
       "Description": "Behind wall on the opposite side of the Transport to Magmoor Caverns South. Use X-Ray to see it and Power Bomb to break the wall"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Metroid Quarantine A", 
       "Description": "Stand next to the two diagonally parallel Spider Ball tracks; flip on X-Ray Visor to scan nearby rock wall; Power Bomb two walls successively; follow Spider Ball bridge and use X-Ray visor to locate last platform"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Fungal Hall Access", 
       "Description": "With Phazon Suit, under the giant mushroom at the bottom of the shaft"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Fungal Hall B", 
       "Description": "Located on the ground, beneath door to Quarantine Access B; use Thermal Visor to locate it, visible in a ring of small mushrooms; Power Bomb to uncover"
     }, 
     {
       "World": "Phazon Mines", 
-      "Kind": "Missile Expansions", 
+      "Kind": "Missile Expansion", 
       "Room": "Metroid Quarantine B", 
       "Description": "Weakened cordite shaft; use Super Missiles to shatter"
     }, 
     {
       "World": "Chozo Ruins", 
-      "Kind": "Power Bomb Expansions", 
+      "Kind": "Power Bomb Expansion", 
       "Room": "Magma Pool", 
       "Description": "Behind Bendezium wall. Use X-Ray to reveal; blast with Power Bombs"
     }, 
     {
       "World": "Magmoor Caverns", 
-      "Kind": "Power Bomb Expansions", 
+      "Kind": "Power Bomb Expansion", 
       "Room": "Fiery Shores", 
       "Description": "In Warrior Shrine, there is a Bendezium coveron the floor in front of the statue. Blast it with a Power Bomb and use the tunnel to access a hidden room in Fiery Shores."
     }, 
     {
       "World": "Phendrana Drifts", 
-      "Kind": "Power Bomb Expansions", 
+      "Kind": "Power Bomb Expansion", 
       "Room": "Ice Ruins West", 
       "Description": "Hidden under sheet of ice on rooftop in corner across from Chozo Lore; use Plasma Beam"
     }, 
