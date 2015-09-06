@@ -9,6 +9,6 @@ Offers a variety of features including:
 
 This is a small exercise in writing some code for an idea I had, giving me a chance to write a simple parser and attribute grammar framework where a filter function is synthesized during parsing.
 
-Right now, there are no formal tests for this tool
+Right now, there are no formal tests for this tool.
 With little effort, this tool should be able to be configurable per video game and aspect so
  players can use this tool for multiple games
