@@ -15,6 +15,9 @@ class Database():
     def items(self):
         return self.dicn['itemlist']
 
+    def sort(self, key=None, reverse=False):
+        self.items.sort(key=key, reverse=reverse)
+    
     def __len__(self):
         return len(self.items)
     
@@ -44,6 +47,7 @@ def html_formatter(stream, database):
     stream.write('<table>\n')
     stream.write('  <tr>\n')
     stream.write('    <td>Number</td>\n')
+    stream.write('    <td>Found</td>\n')
     stream.write('    <td>Name</td>\n')
     stream.write('    <td>Kind</td>\n')
     stream.write('    <td>Room</td>\n')
@@ -53,7 +57,7 @@ def html_formatter(stream, database):
     for index, item in enumerate(database):
         stream.write('  <tr>\n')
         stream.write('    <td>%d</td>\n' % (index + 1))
-        for element in ['name', 'kind', 'room', 'world', 'description']:
+        for element in ['found', 'name', 'kind', 'room', 'world', 'description']:
             if element in item:
                 stream.write('    <td>%s</td>\n' % item[element])
             else:
@@ -62,10 +66,14 @@ def html_formatter(stream, database):
     stream.write('</table>\n')
     stream.write('</html></body>\n')
 
-def query(database, string):
+def query(database, string, exclude_found):
     """Query database for all items satisfying constraints"""
     func = query_parser.parse(string)
-    return Database([e for e in database.items if func(e)])
+    if exclude_found:
+        test = lambda x : func(x) and x["found"] == False
+    else:
+        test = func
+    return Database([e for e in database.items if test(e)])
 
 def make_choices(choices):
     first = [s[0].lower() for s in choices]
@@ -81,10 +89,20 @@ if __name__ == '__main__':
                         action = 'store_true',
                         default = False,
                         help    = 'return the number of items satisfying the query')
+    parser.add_argument('-d',
+                        action = 'store_true',
+                        default = False,
+                        help    = 'only return those items yet to be found')    
     parser.add_argument('-o',
                         dest    = 'output_file',
                         metavar = 'OUTPUT_FILE',
                         help    = 'the location of the output file')
+    parser.add_argument('-s',
+                        choices = ['found', 'name', 'kind', 'room', 'world'],
+                        default = 'found',
+                        dest    = 'sort_order',
+                        metavar = 'SORT_ORDER',
+                        help    = 'the column to sort the output on: One of found, name, kind, room, world'),
     parser.add_argument('-f',
                         choices = make_choices(['none', 'json', 'html']),
                         default = 'n',
@@ -104,7 +122,9 @@ if __name__ == '__main__':
         print('error: database and output file cannot be the same')
         sys.exit(1)
     db = parse_json(args.database)
-    results = query(db, args.query_string)
+    results = query(db, args.query_string, args.d)
+    if args.sort_order is not None:
+        results.sort(key=lambda x : x[args.sort_order])
     if args.output_file is not None:
         stream = open(args.output_file, 'w')
     else:
@@ -112,7 +132,7 @@ if __name__ == '__main__':
     if args.c:
         count = len(results)
         if args.form[0] == 'n':
-            stream.write(count)
+            stream.write(str(count) + '\n')
         elif args.form[0] == 'j':
             stream.write('{ count : %d }' % count)
         elif args.form[0] == 'h':
