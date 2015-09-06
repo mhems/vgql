@@ -41,23 +41,25 @@ class Database():
         return '\n'.join(repr(i) for i in self.items)
     
 if __name__ == '__main__':
+    if len(sys.argv) == 1:
+        sys.argv.append('-h')
     parser = argparse.ArgumentParser(description="Metriod Prime Collectible Query")
-    parser.add_argument('-o', '--output-file',
-                        dest    = 'output_file',
-                        metavar = 'OUTPUT_FILE',
-                        help    = 'the location of the output file')
-    parser.add_argument('-c', '--count',
+    parser.add_argument('-c',
                         action = 'store_true',
                         default = False,
                         help    = 'return the number of items satisfying the query')
-    parser.add_argument('-q', '--query',
+    parser.add_argument('-o',
+                        dest    = 'output_file',
+                        metavar = 'OUTPUT_FILE',
+                        help    = 'the location of the output file')
+    parser.add_argument('-q',
                         dest = 'query_string',
                         metavar = 'QUERY_STRING',
                         help    = 'the SQL-like query string to execute '
                                   'of the form \'select items where\'...')
     parser.add_argument('database',
                         metavar = 'DATABASE',
-                        help    = 'the database to query')
+                        help    = 'the JSON database to query')
     args = parser.parse_args()
     if args.output_file == args.database:
         print('error: database and output file cannot be the same')

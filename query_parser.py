@@ -63,10 +63,10 @@ def parse(string):
 def initialize(string):
     global stream, choices
     choices = {
-        'Kind': 0,
-        'Room': 0,
-        'World': 0,
-        'Name': 0
+        'kind': 0,
+        'room': 0,
+        'world': 0,
+        'name': 0
     }
     stream = lex(string)
     stream.append('')
@@ -258,41 +258,41 @@ def error(msg):
 if __name__ == '__main__':
     tests = [
         #        'a==b==c',
-        'Kind == foo',
-        'Room != foo',
-        'World == X and Name != bar',
-        'Name != home or Room == Y',
-        '( Room == X )',
-        '( World == X and Room != Y )',
-        'World != Tallon Overworld North',
-        'World!=Tallon Overworld|Room==North Pole&Kind == Space Ship and Name!=foo'
+        'kind == foo',
+        'room != foo',
+        'world == X and name != bar',
+        'name != home or room == Y',
+        '( room == X )',
+        '( world == X and room != Y )',
+        'world != Tallon Overworld North',
+        'world!=Tallon Overworld|room==North Pole&kind == Space Ship and name!=foo'
     ]
 
     # query = sys.argv[1]
     l = [
         {
-            'Kind':'foo',
-            'Room':'foo',
-            'World':'foo',
-            'Name':'foo'
+            'kind':'foo',
+            'room':'foo',
+            'world':'foo',
+            'name':'foo'
         },
         {
-            'Kind':'bar',
-            'Room':'bar',
-            'World':'bar',
-            'Name':'bar'
+            'kind':'bar',
+            'room':'bar',
+            'world':'bar',
+            'name':'bar'
         },
         {
-            'Kind':'bar',
-            'Room':'foo',
-            'World':'X',
-            'Name':'foo'
+            'kind':'bar',
+            'room':'foo',
+            'world':'X',
+            'name':'foo'
         },
         {
-            'Kind':'bar',
-            'Room':'X',
-            'World':'Z',
-            'Name':'home'
+            'kind':'bar',
+            'room':'X',
+            'world':'Z',
+            'name':'home'
         }        
     ]
     for query in tests:
