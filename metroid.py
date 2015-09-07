@@ -8,8 +8,9 @@ import query_parser
 class Database():
     """Mechanism for storing and querying items"""
 
-    def __init__(self, dictlist):
-        self.dicn = { "itemlist" : dictlist }
+    def __init__(self, dictlist=None):
+        if dictlist is not None:
+            self.dicn = { "itemlist" : dictlist }
 
     @property
     def items(self):
@@ -28,11 +29,28 @@ class Database():
         core = '\n'.join(str(i) for i in self.items)
         return '{\n\"itemlist\":[\n%s\n]\n}' % core
 
-def parse_json(filename):
-    """Parse items in filename into database"""
-    with open(filename, 'r') as f:
-        dicn = json.load(f)
-    return Database(dicn["itemlist"])
+    def parse_json(self, filename):
+        """Parse items in filename into database"""
+        self.source = filename
+        with open(filename, 'r') as f:
+            dicn = json.load(f)
+        self.dicn = dicn
+
+    def query(self, string, exclude_found, update):
+        """Query database for all items satisfying constraints"""
+        func = query_parser.parse(string)
+        if exclude_found:
+            test = lambda x : func(x) and x["found"] == False
+        else:
+            test = func
+        if update:
+            for idx, e in enumerate(self.items):
+                if test(e):
+                    self.dicn['itemlist'][idx]['found'] = True
+            with open(self.source, 'w') as stream:
+                output(self, stream, json_formatter)
+        dictlist = [e for e in self.items if test(e)]
+        return Database(dictlist)
 
 def output(database, stream, formatter):
     """Print database to stream f with formatter"""
@@ -66,15 +84,6 @@ def html_formatter(stream, database):
     stream.write('</table>\n')
     stream.write('</html></body>\n')
 
-def query(database, string, exclude_found):
-    """Query database for all items satisfying constraints"""
-    func = query_parser.parse(string)
-    if exclude_found:
-        test = lambda x : func(x) and x["found"] == False
-    else:
-        test = func
-    return Database([e for e in database.items if test(e)])
-
 def make_choices(choices):
     first = [s[0].lower() for s in choices]
     low   = [s.lower()    for s in choices]
@@ -86,13 +95,16 @@ if __name__ == '__main__':
         sys.argv.append('-h')
     parser = argparse.ArgumentParser(description="Metriod Prime Collectible Query")
     parser.add_argument('-c',
-                        action = 'store_true',
+                        action  = 'store_true',
                         default = False,
                         help    = 'return the number of items satisfying the query')
     parser.add_argument('-d',
-                        action = 'store_true',
+                        action  = 'store_true',
                         default = False,
-                        help    = 'only return those items yet to be found')    
+                        help    = 'only return those items yet to be found')
+    parser.add_argument('-u',
+                        action  = 'store_true',
+                        help    = 'update matching items to found status')
     parser.add_argument('-o',
                         dest    = 'output_file',
                         metavar = 'OUTPUT_FILE',
@@ -121,8 +133,9 @@ if __name__ == '__main__':
     if args.output_file == args.database:
         print('error: database and output file cannot be the same')
         sys.exit(1)
-    db = parse_json(args.database)
-    results = query(db, args.query_string, args.d)
+    db = Database()
+    db.parse_json(args.database)
+    results = db.query(args.query_string, args.d, args.u)
     if args.sort_order is not None:
         results.sort(key=lambda x : x[args.sort_order])
     if args.output_file is not None:
@@ -144,7 +157,7 @@ if __name__ == '__main__':
             print('error: unknown format', args.form)
     else:
         if args.form[0] == 'n':
-            output('\n'.join(results.items), stream, lambda f, s : f.write(s))
+            output('\n'.join(str(e) for e in results.items), stream, lambda f, s : f.write(s))
         elif args.form[0] == 'j':
             output(results, stream, json_formatter)
         elif args.form[0] == 'h':

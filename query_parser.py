@@ -48,6 +48,7 @@ import sys, re, itertools
 AND_OPTIONS = ['and', '&']
 OR_OPTIONS  = ['or', '|']
 SYMBOLS = ['==', '!=', '(', ')', '&', '|']
+
 choices   = {}
 stream    = None
 lookahead = None
@@ -214,7 +215,7 @@ def parse_TEST():
         error('TEST: lookahead is not ! or =, its ' + lookahead)
     advance()
     string = parse_STRING()
-    f = lambda d : True if re.match(string, d[res], re.I) is not None else False
+    f = lambda d : res in d.keys() and re.match(string, d[res], re.I) is not None
     if negate:
         return lambda d : not f(d)
     else:
