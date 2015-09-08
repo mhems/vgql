@@ -19,7 +19,7 @@
 # TEST: CHOICE '!'? '=' STRING ;
 # AND: '&' | 'and' ;
 # OR: '|' | 'or' ;
-# CHOICE: 'kind' | 'room' | 'world' | 'name' ;
+# CHOICE: 'kind' | 'room' | 'world' | 'name' | 'found' ;
 # STRING : [a-zA-z *]+ ;
 
 # Refactored to remove direct left recursion
@@ -38,7 +38,7 @@
 # TEST: CHOICE '!'? '=' STRING ;
 # AND: '&' | 'and' ;
 # OR:  '|' | 'or'  ;
-# CHOICE : 'kind' | 'room' | 'world' | 'name' ;
+# CHOICE : 'kind' | 'room' | 'world' | 'name' | 'found' ;
 # STRING : [a-zA-z *]+ ;
 
 import sys, re, itertools
@@ -67,7 +67,8 @@ def initialize(string):
         'kind': 0,
         'room': 0,
         'world': 0,
-        'name': 0
+        'name': 0,
+        'found': 0
     }
     stream = lex(string)
     stream.append('')
@@ -215,7 +216,7 @@ def parse_TEST():
         error('TEST: lookahead is not ! or =, its ' + lookahead)
     advance()
     string = parse_STRING()
-    f = lambda d : res in d.keys() and re.match(string, d[res], re.I) is not None
+    f = lambda d : res in d.keys() and re.match(string, str(d[res]), re.I) is not None
     if negate:
         return lambda d : not f(d)
     else:
@@ -248,7 +249,7 @@ def parse_CHOICE():
     
 def parse_STRING():
     global lookahead
-    r = re.sub('\*', '.*', lookahead)
+    r = lookahead
     advance()
     return r
 
