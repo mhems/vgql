@@ -205,10 +205,31 @@
     }, 
     {
       "found": false, 
+      "world": "Space Pirate Frigate Orpheon", 
+      "kind": "Creature", 
+      "name": "Parasite Queen", 
+      "room": ""
+    }, 
+    {
+      "found": false, 
+      "world": "Space Pirate Frigate Orpheon", 
+      "kind": "Creature", 
+      "name": "Parasite", 
+      "room": "Subventilation Shaft Section A"
+    }, 
+    {
+      "found": false, 
       "world": "Tallon Overworld", 
       "kind": "Creature", 
       "name": "Beetle", 
       "room": "Canyon Cavern"
+    }, 
+    {
+      "found": false, 
+      "world": "Tallon Overworld", 
+      "kind": "Creature", 
+      "name": "Venom Weed",
+      "room": "Overgrown Cavern"
     }, 
     {
       "found": false, 
@@ -265,7 +286,21 @@
       "kind": "Creature", 
       "name": "Eyon", 
       "room": "Eyon Tunnel"
-    }, 
+    },
+    {
+      "found": false, 
+      "world": "Chozo Ruins", 
+      "kind": "Creature", 
+      "name": "Reaper Vine", 
+      "room": "Arboretum"
+    },
+    {
+      "found": false, 
+      "world": "Chozo Ruins", 
+      "kind": "Creature", 
+      "name": "Stone Toad", 
+      "room": "Reflecting Pool"
+    },
     {
       "found": false, 
       "world": "Chozo Ruins", 
@@ -307,6 +342,20 @@
       "kind": "Creature", 
       "name": "Shriekbats", 
       "room": "Arebortum Acess"
+    }, 
+    {
+      "found": false, 
+      "world": "Chozo Ruins", 
+      "kind": "Creature", 
+      "name": "Flaahgra", 
+      "room": "Sunchamber"
+    }, 
+    {
+      "found": false, 
+      "world": "Chozo Ruins", 
+      "kind": "Creature", 
+      "name": "Flaahgra Tentacle", 
+      "room": "Sunchamber"
     }, 
     {
       "found": false, 
@@ -377,6 +426,13 @@
       "kind": "Creature", 
       "name": "Baby Sheegoth", 
       "room": "Ice Ruins East"
+    }, 
+    {
+      "found": false, 
+      "world": "Phendrana Drifts", 
+      "kind": "Creature", 
+      "name": "Thardus", 
+      "room": "Quarantine Cave"
     }, 
     {
       "found": false, 
@@ -585,8 +641,22 @@
       "found": false, 
       "world": "Phazon Mines", 
       "kind": "Creature", 
+      "name": "Phazon Elite", 
+      "room": "Elite Research"
+    }, 
+    {
+      "found": false, 
+      "world": "Phazon Mines", 
+      "kind": "Creature", 
       "name": "Plasma Trooper", 
       "room": "Phazon Processing Center"
+    }, 
+    {
+      "found": false, 
+      "world": "Phazon Mines", 
+      "kind": "Creature", 
+      "name": "Omega Pirate", 
+      "room": "Omega Research"
     }, 
     {
       "found": false, 
@@ -597,7 +667,7 @@
     }, 
     {
       "found": false, 
-      "world": "mpact Crater", 
+      "world": "Impact Crater", 
       "kind": "Creature", 
       "name": "Fission Metroid", 
       "room": "Phazon Core"
@@ -641,7 +711,7 @@
       "found": false, 
       "world": "Chozo Ruins", 
       "kind": "Chozo Lore", 
-      "name": "Beginning", 
+      "name": "Beginnings", 
       "room": "Vault"
     }, 
     {
@@ -657,6 +727,13 @@
       "kind": "Chozo Lore", 
       "name": "Statuary", 
       "room": "Artifact Temple"
+    }, 
+    {
+      "found": false, 
+      "world": "Chozo Ruins", 
+      "kind": "Chozo Lore", 
+      "name": "Newborn", 
+      "room": "Magma Pool"
     }, 
     {
       "found": false, 
@@ -741,7 +818,21 @@
       "kind": "Pirate Data", 
       "name": "Phazon Analysis", 
       "room": "Research Lab Hydra"
-    }, 
+    },
+    {
+      "found": false, 
+      "world": "Phendrana Drifts", 
+      "kind": "Pirate Data", 
+      "name": "Metroid Forces", 
+      "room": "Research Lab Aether"
+    },
+    {
+      "found": false, 
+      "world": "Phendrana Drifts", 
+      "kind": "Pirate Data", 
+      "name": "Metroid Morphology", 
+      "room": "Research Lab Aether"
+    },
     {
       "found": false, 
       "world": "Phendrana Drifts", 
@@ -873,7 +964,7 @@
       "world": "Tallon Overworld", 
       "kind": "Artifact", 
       "name": "Truth", 
-      "room": "rtifact Temple"
+      "room": "Artifact Temple"
     }, 
     {
       "found": false, 
@@ -996,6 +1087,13 @@
     }, 
     {
       "found": false, 
+      "world": "Magmoor Caverns", 
+      "kind": "Energy Tank", 
+      "room": "Transport Tunnel A", 
+      "description": "Double bomb jump across maze"
+    }, 
+    {
+      "found": false, 
       "world": "Chozo Ruins", 
       "kind": "Energy Tank", 
       "room": "Hall of Elders", 
@@ -1007,6 +1105,13 @@
       "kind": "Energy Tank", 
       "room": "Hydro Access Tunnel", 
       "description": "Use bombs to propel yourself high in vertical shaft"
+    }, 
+    {
+      "found": false, 
+      "world": "Tallon Overworld", 
+      "kind": "Energy Tank", 
+      "room": "Cargo Freight Lift to Deck Gamma", 
+      "description": "Blast door open with missile"
     }, 
     {
       "found": false, 
@@ -1098,6 +1203,13 @@
       "kind": "Missile Expansion", 
       "room": "Arbor Chamber", 
       "description": "Plasma Door located at top of Root Cave; use X-Ray to reveal platforms"
+    }, 
+    {
+      "found": false, 
+      "world": "Chozo Ruins", 
+      "kind": "Missile Expansion", 
+      "room": "Hive Totem", 
+      "description": "Defeat the Hive Mecha"
     }, 
     {
       "found": false, 
@@ -1399,8 +1511,22 @@
       "kind": "Power Bomb Expansion", 
       "room": "Ice Ruins West", 
       "description": "Hidden under sheet of ice on rooftop in corner across from Chozo Lore; use Plasma Beam"
-    }, 
+    },
     {
+      "found": false, 
+      "world": "Phendrana Drifts", 
+      "kind": "Power Bomb Expansion", 
+      "room": "Security Cave", 
+      "description": "Access at top of Phendrana's Edge"
+    },
+    {
+      "found": false, 
+      "world": "Phazon Mines", 
+      "kind": "Power Bomb Expansion", 
+      "room": "Central Dynamo", 
+      "description": "Defeat the cloaked security drone and solve maze"
+    },
+    {      
       "kind": "Upgrade", 
       "room": "Hive Totem", 
       "name": "Missile Launcher", 
