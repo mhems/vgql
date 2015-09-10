@@ -1608,7 +1608,7 @@
     }, 
     {
       "kind": "Upgrade", 
-      "room": "Quarantine Cave&#124;", 
+      "room": "Quarantine Cave", 
       "name": "Spider Ball", 
       "world": "Phendrana Drifts", 
       "found": false, 
@@ -1630,6 +1630,14 @@
       "found": false, 
       "description": "Located in deepest part of chamber"
     }, 
+    {
+      "kind": "Upgrade", 
+      "room": "Life Grove", 
+      "name": "X-Ray Vision", 
+      "world": "Tallon Overworld", 
+      "found": false, 
+      "description": "In center"
+    },
     {
       "kind": "Upgrade", 
       "room": "Central Dynamo", 
