@@ -1,0 +1,756 @@
+*** T A L L O N  O V E R W O R L D ***
+
+> Landing Site
+  * Research: Gunship
+  * Missile Expansion (morph)
+    - under small alcove behind ship
+  | Canyon Cavern, Gully, Alcove, Waterfall Cavern, Temple Hall
+> Alcove
+  * Upgrade: Space Jump Boots
+  | Landing Site
+> Waterfall Cavern
+  | Landing Site, Frigate Crash Site (missile)
+> Temple Hall
+  | Landing Site, Temple Security Station
+> Canyon Cavern
+  | Landing Site, Tallon Canyon
+> Gully
+  | Landing Site, Tallon Canyon
+> Temple Security Station
+  * Pirate Data: Artifact Site
+  | Temple Hall, Temple Lobby (missile)
+> Temple Lobby
+  | Temple Security Station, Artifact Temple
+> Artifact Temple
+  * Artifact: Truth
+  * Boss: Meta Ridley
+  * Chozo Lore: Statuary
+  * Chozo Lore: Binding
+  | Temple Lobby, Transport to Impact Crater
+> Tallon Canyon
+  | Canyon Cavern, Gully, Transport Tunnel A, Root Tunnel
+> Transport Tunnel A
+  | Tallon Canyon, Transport to Chozo Ruins West
+> Transport to Chozo Ruins West
+  | Transport Tunnel A, Chozo Ruins West
+> Root Tunnel
+  | Tallon Canyon, Root Cave (missile)
+> Root Cave
+  * Missile Expansion (grapple, xray)
+    - hidden alcove in wall
+  | Root Tunnel, Arbor Chamber (plasma), Transport Tunnel B
+> Arbor Chamber
+  * Missile Expansion (grapple, xray, plasma)
+  | Root Cave
+> Transport Tunnel B
+  * Missile Expansion
+    - under bridge
+  | Root Cave, Transport to Magmoor Caverns East
+> Transport to Magmoor Caverns East
+  | Transport Tunnel B, Magmoor Caverns East
+> Frigate Crash Site
+  * Missile Expansion (gravity)
+    - up high in underwater cave
+  | Waterfall Cavern, Overgrown Cavern (ice), Frigate Access Tunnel (ice)
+> Overgrown Cavern
+  * Missile Expansion
+    - in weeds
+  | Frigate Crash Site (ice), Transport Tunnel C (ice)
+> Transport Tunnel C
+  | Overgrown Cavern (ice), Transport to Chozo Ruins East (ice)
+> Transport to Chozo Ruins East
+  | Transport Tunnel C (ice), Chozo Ruins East
+> Frigate Access Tunnel
+  | Frigate Crash Site (ice), Main Ventilation Shaft Section C
+> Main Ventilation Shaft Section C
+  | Frigate Access Tunnel, Main Ventilation Shaft Section B
+> Main Ventilation Shaft Section B
+  | Main Ventilation Shaft Section C, Main Ventilation Shaft Section A
+> Main Ventilation Shaft Section A
+  | Main Ventilation Shaft Section B, Reactor Core
+> Reactor Core
+  | Main Ventilation Shaft Section A, Reactor Access
+> Reactor Access
+  | Reactor Core, Save Station, Cargo Freight Lift to Deck Gamma
+> Save Station
+  | Reactor Access
+> Cargo Freight Lift to Deck Gamma
+  * Energy Tank (missile)
+    - blow open door
+  | Reactor Access, Deck Beta Transit Hall
+> Deck Beta Transit Hall
+  | Cargo Freight Lift to Deck Gamma, Biohazard Containment
+> Biohazard Containment
+  * Missile Expansion (super)
+    - scan to find cordite wall
+  | Deck Beta Transit Hall, Deck Beta Security Hall
+> Deck Beta Security Hall
+  | Biohazard Containment, Biotech Research Area 1
+> Biotech Research Area 1
+  | Deck Beta Security Hall, Deck Beta Conduit Hall
+> Deck Beta Conduit Hall
+  | Biotech Research Area 1, Connection Elevator to Deck Beta
+> Connection Elevator to Deck Beta
+  | Deck Beta Conduit Hall, Hydro Access Tunnel
+> Hydro Access Tunnel
+  * Energy Tank (bomb)
+    - double-bomb jump up shaft
+  | Connection Elevator to Deck Beta, Great Tree Hall
+> Great Tree Hall
+  | Hydro Access Tunnel, Transport Tunnel D (ice), Great Tree Chamber, Transport Tunnel E (ice), Life Grove Tunnel (ice)
+> Transport Tunnel D
+  | Great Tree Hall (ice), Transport to Chozo Ruins South (ice)
+> Transport to Chozo Ruins South
+  | Transport Tunnel D (ice), Chozo Ruins South
+> Great Tree Chamber
+  * Missile Expansion (xray)
+    - use invisible platform to reach door
+  | Great Tree Hall
+> Transport Tunnel E
+  | Great Tree Hall (ice), Transport to Phazon Mines East (ice)
+> Transport to Phazon Mines East
+  | Transport Tunnel E (ice), Phazon Mines East
+> Life Grove Tunnel
+  * Missile Expansion (morph, boost, bomb)
+    - boost to top of tunnel and bomb center
+  | Great Tree Hall (ice), Life Grove
+> Life Grove
+  * Artifact: Chozo (bomb)
+    - bomb circle underwater to raise pillar
+  * Upgrade: X-Ray Visor
+  | Life Grove Tunnel
+
+
+*** C H O Z O  R U I N S ***
+
+> Transport to Tallon Overworld North
+  | Tallon Overworld North, Ruins Entrance
+> Ruins Entrance
+  * Chozo Lore: Fountain
+  | Transport to Tallon Overworld North, Main Plaza
+> Main Plaza
+  * Missile Expansion (boost)
+    - boost half-pipe
+  * Missile Expansion (grapple)
+    - grapple from Training Chamber Room
+  * Missile Expansion (super)
+    - super missile tree knot
+  * Energy Tank
+    - accessible coming from vault
+  * Research: Missile Door Lock
+  | Ruins Entrance, Ruined Shrine Access (missile), Nursery Access, Plaza Access, Ruined Fountain Access, Piston Tunnel
+> Ruined Shrine Access
+  | Main Plaza, Ruined Shrine
+> Ruined Shrine
+  * Missile Expansion (morph, bomb)
+    - bomb into small tunnel
+  * Missile Expansion (morph, boost)
+    - boost up on left ledge
+  * Upgrade: Morph Ball
+  | Ruined Shrine Access, Tower of Light Access (wave)
+> Tower of Lower Access
+  | Ruined Shrine, Tower of Light (wave)
+> Tower of Light
+  * Upgrade: Wavebuster
+  | Tower of Light Access (wave), Tower Chamber (wave)
+> Tower Chamber
+  * Artifact: Lifegiver (gravity)
+    - head through tunnel
+  | Tower of Light (wave)
+> Nursery Access
+  | Main Plaza, Eyon Tunnel
+> Eyon Tunnel
+  | Nursery Access, Ruined Nursery
+> Ruined Nursery
+  * Chozo Lore: Exodus
+  * Missile Expansion (ball, bomb)
+    - bomb blocks
+  | Eyon Tunnel, Save Station 1, North Atrium
+> Save Station 1
+  | Ruined Nursery
+> North Atrium
+  | Ruined Nursery, Ruined Gallery
+> Ruined Gallery
+  * Missile Expansion (morph)
+    - roll through tunnel
+  * Missile Expansion (missile)
+    - missile wall
+  | North Atrium, Map Station (missile), Totem Access
+> Map Station
+  | Ruined Gallery
+> Totem Access
+  | Ruined Gallery, Hive Totem
+> Hive Totem
+  * Boss: Hive Mecha
+  * Missile Expansion
+  | Totem Access, Transport Access North (missile)
+> Transport Access North
+  * Energy Tank
+    - door behind hive mecha
+  | Hive Totem, Transport to Magmoor Caverns North
+> Transport to Magmoor Caverns North
+  | Transport Access North, Magmoor Caverns North, Vault Access, Sun Tower
+> Vault Access
+  | Transport to Magmoor Caverns North, Vault
+> Vault
+  * Chozo Lore: Beginnings
+  * Missile Expansion (morph, bomb)
+    - double-bomb jump
+  | Vault Access, Plaza Access
+> Plaza Access
+  | Vault, Main Plaza
+> Ruined Fountain Access
+  | Main Plaza, Ruined Fountain
+> Ruined Fountain
+  * Missile Expansion (morph, spider)
+    - use fountain to spider into cage
+  * Chozo Lore: Hatchling
+  | Ruined Fountain Access, Arboretum Access, Meditation Fountain
+> Meditation Fountain
+  | Ruined Fountain, Magma Pool
+> Magma Pool
+  * Chozo Lore: Newborn
+  * Power Bomb Expansion (grapple, power)
+    - grapple across lava, bomb wall
+  | Meditation Fountain, Training Chamber Access (wave)
+> Training Chamber Access
+  * Missile Expansion (morph)
+    - roll through tree
+  | Magma Pool (wave), Training Chamber (wave)
+> Training Chamber
+  * Energy Tank (boost, spider)
+    - boost up to slot, take elevator up and follow track
+  | Training Chamber Access (wave), Piston Tunnel
+> Piston Tunnel
+  | Training Chamber, Main Plaza
+> Arboretum Access
+  | Ruined Fountain, Arboretum (missile)
+> Arboretum
+  | Arboretum Access, Sunchamber Lobby (missile), Gathering Hall Access (missile)
+> Sunchamber Lobby
+  | Arboretum, Sunchamber Access
+> Sunchamber Access
+  | Sunchamber Lobby, Sunchamber
+> Sunchamber
+  * Boss: Flaahgra
+  * Upgrade: Varia Suit
+  * Artifact: Wild
+    - defeat ghosts
+  | Sunchamber Access, Sun Tower Access
+> Sun Tower Access
+  | Sunchamber, Sun Tower
+> Sun Tower
+  * Chozo Lore: Contain
+  | Sun Tower Access, Transport to Magmoor Caverns North
+> Gathering Hall Access
+  | Arboretum, Gathering Hall
+> Gathering Hall
+  * Missile Expansion (boots, bomb)
+    - jump up to top and bomb wall
+  | Gathering Hall Access, Save Station 2 (missile), East Atrium, Watery Hall Access
+> Save Station 2
+  | Gathering Hall
+> Watery Hall Access
+  * Missile Expansion (missile)
+    - missile foot of stairs
+  | Gathering Hall, Watery Hall (missile)
+> Watery Hall
+  * Chozo Lore: Meteor Strike
+  * Missile Expansion (gravity)
+    - underwater tunnel
+  * Upgrade: Charge Beam
+  | Watery Hall Access, Dynamo Access (missile)
+> Dynamo Access
+  | Watery Hall, Dynamo
+> Dynamo
+  * Missile Expansion
+    - blast grate
+  * Missile Expansion (spider)
+    - spider ball up alcove
+  | Dynamo Access
+> East Atrium
+  | Gathering Hall, Energy Core Access
+> Energy Core Access
+  | East Atrium, Energy Core
+> Energy Core
+  * Research: Morph Ball Slot
+  | Energy Core Access, West Furnace Access, Burn Dome Access
+> Burn Dome Access
+  | Energy Core, Burn Dome
+> Burn Dome
+  * Boss: Incinerator Drone
+  * Missile Expansion (bomb)
+    - bomb wall
+  * Upgrade: Morph Ball Bomb
+  | Burn Dome Access
+> West Furnace Access
+  | Energy Core, Furnace
+> Furnace
+  * Chozo Lore: Cradle
+  * Energy Tank (morph)
+    - tunnel through small opening next to spider ball track
+  * Missile Expansion (power, spider, bomb, boost)
+    - boost up and spider ball up wall
+  | West Furnace Access, Crossway Access West, East Furnace Access (ice)
+> Crossway Access West
+  | Furnace, Crossway (wave)
+> Crossway
+  * Chozo Lore: Infestation
+  * Chozo Lore: Hatchling's Shell
+  * Chozo Lore: Worm
+  * Missile Expansion (boost, spider)
+    -  boost and spider to activate elevator, ride up
+  | Crossway Access West, Crossway Access South (ice), Elder Hall Access (missile)
+> Crossway Access South
+  | Crossway (ice), Hall of the Elders (ice)
+> Elder Hall Access
+  | Crossway, Hall of the Elders
+> Hall of the Elders
+  * Research: Missile Station
+  * Chozo Lore: Hope
+  * Energy Tank (ice)
+    - shoot second slot and let chozo propel you
+  | Elder Hall Access, Missile Station, Crossway Access South (ice), East Furnace Access (ice), Elder Chamber (ice), Reflecting Pool Access
+> Missile Station
+  | Hall of the Elders
+> East Furnace Access
+  | Hall of the Elders (ice), Furnace (ice)
+> Elder Chamber
+  * Artifact: World (plasma)
+    - shoot and activate slot
+  | Hall of the Elders (ice)
+> Reflecting Pool Access
+  | Hall of the Elders, Reflecting Pool
+> Reflecting Pool
+  | Reflecting Pool Access, Antechamber (missile), Save Station 3 (missile), Transport Access South (ice)
+> Antechamber
+  * Upgrade: Ice Beam
+  | Reflecting Pool (ice)
+> Save Station 3
+  | Reflecting Pool, Transport to Tallon Overworld East
+> Transport to Tallon Overworld East
+  | Save Station 3, Tallon Overworld East
+> Transport Access South
+  | Reflecting Pool (ice), Transport to Tallon Overworld South
+> Transport to Tallon Overworld South
+  | Transport Access South, Tallon Overworld South
+
+
+*** M A G M O O R  C A V E R N S ***
+
+> Transport to Chozo Ruins North
+  | Chozo Ruins North, Burning Trail
+> Burning Trail
+  | Transport to Chozo Ruins North, Save Station Magmoor A (missile), Lake Tunnel
+> Save Station Magmoor A
+  | Burning Trail
+> Lake Tunnel
+  | Burning Trail, Lava Lake
+> Lava Lake
+  * Artifact: Nature (super)
+    - shoot pillar
+  | Lake Tunnel, Pit Tunnel
+> Pit Tunnel
+  | Lava Lake, Triclops Pit
+> Triclops Pit
+  * Missile Expansion (boots, xray)
+    - jump up invisible platforms, blast pillar
+  | Pit Tunnel, Storage Cavern, Monitor Tunnel
+> Storage Cavern
+  * Missile Expansion (morph)
+    - roll through opening in pit
+  | Triclops Pit
+> Monitor Tunnel
+  | Triclops Pit, Monitor Station
+> Monitor Station
+  * Research: Spinner
+  | Monitor Tunnel, Transport Tunnel A, Warrior Shrine, Shore Tunnel
+> Transport Tunnel A
+  * Energy Tank (bomb)
+    - double-bomb jump through maze
+  | Monitor Station, Transport to Phendrana Drifts North
+> Transport to Phendrana Drifts North
+  | Transport Tunnel A, Phendrana Drifts North
+> Warrior Shrine
+  * Artifact: Strength (boots)
+    - jump up to spinner to raise bridge
+  * Power Bomb (power)
+    - bomb grate, fall through
+  | Monitor Station, Fiery Shores
+> Shore Tunnel
+  * Upgrade: Ice Spreader
+  | Monitor Station, Fiery Shores
+> Fiery Shores
+  * Missile Expansion (morph, bomb)
+    - roll along catwalk
+  | Warrior Shrine, Shore Tunnel, Transport Tunnel B
+> Transport Tunnel B
+  | Fiery Shores, Transport to Tallon Overworld West
+> Transport to Tallon Overworld West
+  | Transport Tunnel B, Tallon Overworld West, Twin Fires Tunnel
+> Twin Fires Tunnel
+  | Transport to Tallon Overworld West, Twin Fires
+> Twin Fires
+  | Twin Fires Tunnel, North Core Tunnel (wave)
+> North Core Tunnel
+  | Twin Fires (wave), Geothermal Core (wave)
+> Geothermal Core
+  | North Core Tunnel, Plasma Processing (ice), South Core Tunnel
+> Plasma Processing
+  * Upgrade: Plasma Beam
+  | Geothermal Core (plasma)
+> South Core Tunnel
+  | Geothermal Core (wave), Magmoor Workstation (wave)
+> Magmoor Workstation
+  * Energy Tank (thermal, wave, morph)
+    - charge three electrical conduits
+  | South Core Tunnel, Transport Tunnel C (wave), Workstation Tunnel
+> Transport Tunnel C
+  | Magmoor Workstation (wave), Transport to Phendrana Drifts South (wave)
+> Transport to Phendrana Drifts South
+  | Transport Tunnel C (wave), Phendrana Drifts South, Save Station Magmoor B
+> Save Station Magmoor B
+  | Transport to Phendrana Drifts South
+> Workstation Tunnel
+  | Magmoor Workstation, Transport to Phazon Mines East (ice)
+> Transport to Phazon Mines East
+  | Workstation Tunnel (ice), Phazon Mines East
+
+
+*** P H E N D R A N A  D R I F T S ***
+
+> Transport to Magmoor Caverns West
+  | Magmoor Caverns West, Shoreline Entrance
+> Shoreline Entrance
+  | Transport to Magmoor Caverns West, Phendrana Shorelines
+> Phendrana Shorelines
+  * Missile Expansion (plasma)
+    - encased in ice in pillar
+  * Missile Expansion (super, spider)
+    - blow pillar to reveal track
+  | Shoreline Entrance, Temple Entryway, Save Station B, Ruins Entryway, Plaza Walkway, Ice Ruins Access
+> Temple Entryway
+  | Phendrana Shorelines, Chozo Ice Temple
+> Chozo Ice Temple
+  * Artifact: Sun (plasma)
+    - melt ice in chozo statue and activate it
+  | Temple Entryway, Chapel Tunnel
+> Chapel Tunnel
+  | Chozo Ice Temple, Chapel of the Elders
+> Chapel of the Elders
+  * Boss: Sheegoth
+  * Upgrade: Wave Beam
+  | Chapel Tunnel (wave)
+> Save Station B
+  | Phendrana Shorelines
+> Ice Ruins Access
+  | Phendrana Shorelines, Ice Ruins East
+> Ice Ruins East
+  * Missile Expansion (spider)
+    - hidden track in corner
+  * Missile Expansion (plasma)
+    - blast ice wall to enter cave
+  | Ice Ruins Access, Plaza Walkway
+> Plaza Walkway
+  | Ice Ruins East, Phendrana Shorelines
+> Ruins Entryway
+  | Phendrana Shorelines, Ice Ruins West
+> Ice Ruins West
+  * Chozo Lore: Cipher
+  * Power Bomb Expansion (plasma)
+    - plasma ice on rooftop
+  | Ruins Entryway, Canyon Entryway (missile), Courtyard Entryway (wave)
+> Canyon Entryway
+  | Ice Ruins West (missile), Phendrana Canyon
+> Phendrana Canyon
+  * Chozo Lore: The Turned
+  * Upgrade: Boost Ball
+  | Canyon Entryway
+> Courtyard Entryway
+  | Ice Ruins West, Ruined Courtyard
+> Ruined Courtyard
+  * Energy Tank (bomb)
+    - raise water level to reach far ledge
+  | Courtyard Entryway, Save Station A (missile), Quarantine Access A, Specimen Storage (wave)
+> Save Station A
+  | Ruined Courtyard
+> Specimen Storage
+  | Ruined Courtyard (wave), Research Entrance (wave)
+> Research Entrance
+  * Research: Locked Door
+  | Specimen Storage (wave), Map Station, Hydra Lab Entryway (wave)
+> Map Station
+  | Research Entrance
+> Hydra Lab Entryway
+  | Research Entrance (wave), Research Lab Hydra (wave)
+> Research Lab Hydra
+  * Chozo Lore: Mining Status
+  * Chozo Lore: Security Breaches
+  * Chozo Lore: Phazon Analysis
+  * Chozo Lore: Parasite Larva
+  * Chozo Lore: Glacial Wastes
+  * Missile Expansion (super)
+    - super missile cylinder
+  | Hydra Lab Entryway (wave), Observatory Access (wave)
+> Observatory Access
+  | Research Lab Hydra (wave), Observatory (wave)
+> Observatory
+  * Research: Tallon IV
+  * Research: Zebes
+  * Chozo Lore: Phazon Program
+  * Chozo Lore: Contact
+  * Upgrade: Super Missile
+  | Observatory Access (wave), Save Station D (missile), West Tower Entrance (wave)
+> Save Station D
+  | Observatory
+> West Tower Entrance
+  | Observatory (wave), West Tower
+> West Tower
+  | West Tower Entrance, Control Tower (wave)
+> Control Tower
+  * Artifact: Elder (plasma)
+    - shoot through window above East Tower then missile it
+  | West Tower (wave), East Tower (wave)
+> East Tower
+  | Control Tower (wave), Aether Lab Entryway (wave)
+> Aether Lab Entryway
+  | East Tower (wave), Research Lab Aether (wave)
+> Research Lab Aether
+  * Chozo Lore: Metroid Forces
+  * Chozo Lore: Metroid Morphology
+  * Chozo Lore: Meta Ridley
+  * Chozo Lore: Metroid Studies
+  * Chozo Lore: Phazon Infusion
+  * Energy Tank (missile)
+    - missile glass on ground floor
+  * Missile Expansion (morph)
+    - roll along catwalks
+  | Aether Lab Entryway (wave), Research Core Access (wave)
+> Research Core Access
+  | Research Lab Aether (wave), Research Core
+> Research Core
+  * Upgrade: Thermal Visor
+  | Research Core Access (wave), Pike Access (ice)
+> Quarantine Access
+  | Ruined Courtyard, North Quarantine Tunnel (wave)
+> North Quarantine Tunnel
+  | Quarantine Access (wave), Quarantine Cave (wave)
+> Quarantine Cave
+  * Research: Spider Ball Track
+  * Boss: Thardus
+  * Upgrade: Spider Ball
+  | North Quarantine Tunnel (wave), Quarantine Monitor, South Quarantine Tunnel (wave)
+> Quarantine Monitor
+  * Missile Expansion (grapple)
+    - grapple to door
+  | Quarantine Cave
+> South Quarantine Tunnel
+  | Quarantine Cave (wave), Transport to Magmoor Caverns South (wave)
+> Transport to Magmoor Caverns South
+  | South Quarantine Tunnel (wave), Magmoor Caverns South, Transport Access (ice)
+> Transport Access
+  * Energy Tank (plasma)
+    - blast tunnel
+  | Transport to Magmoor Caverns South (ice), Frozen Pike (wave)
+> Frozen Pike
+  | Transport Access (wave), Pike Access (wave), Hunter Cave Access (wave), Frost Cave Access (wave)
+> Pike Access
+  | Frozen Pike (wave), Research Core (ice)
+> Hunter Cave Access
+  | Frozen Pike (wave), Hunter Cave (wave)
+> Hunter Cave
+  | Hunter Cave Access (wave), Chamber Access (wave), Lake Tunnel (wave), Lower Edge Tunnel (wave)
+> Chamber Access
+  | Hunter Cave (wave), Gravity Chamber (wave)
+> Gravity Chamber
+  * Upgrade: Gravity Suit
+  * Missile Expansion (grapple, plasma)
+    - above surface, shoot ice stalactite to grapple to alcove
+  | Chamber Access (wave), Lake Tunnel (wave)
+> Lake Tunnel
+  | Gravity Chamber (wave), Hunter Cave (wave)
+> Lower Edge Tunnel
+  | Hunter Cave (wave), Phendrana's Edge (wave)
+> Phendrana's Edge
+  | Lower Edge Tunnel (wave), Storage Cave (plasma), Security Cave, Upper Edge Tunnel (wave)
+> Storage Cave
+  * Artifact: Spirit (xray, power)
+    - look for door hidden behind wall, bomb it
+  | Phendrana's Edge (plasma)
+> Security Cave
+  * Power Bomb (grapple)
+    - grapple up to top of Phendrana's Edge
+  | Phendrana's Edge
+> Upper Edge Tunnel
+  | Phendrana's Edge (wave), Frost Cave (wave)
+> Frost Cave
+  * Missile Expansion (grapple)
+    - grapple up to top, missile stalactite, go below ice
+  | Upper Edge Tunnel (wave), Save Station C (wave), Frost Cave Access (wave)
+> Save Station C
+  | Frost Cave (wave)
+> Frost Cave Access
+  | Frost Cave (wave), Frozen Pike (wave)
+
+
+*** P H A Z O N  M I N E S ***
+
+> Transport to Tallon Overworld South
+  | Tallon Overworld South, Quarry Access (wave)
+> Quarry Access
+  | Transport to Tallon Overworld South (wave), Main Quarry (wave)
+> Main Quarry
+  * Missile Expansion (thermal, wave, spider)
+    - arm conduit, scan to activate crane, spider up beam
+  | Quarry Access (wave), Save Station Mines A (wave), Security Access A (ice), Waste Disposal (ice)
+> Save Station Mines A
+  | Main Quarry (wave)
+> Security Access A
+  * Missile Expansion (power)
+    - bomb wall
+  | Main Quarry (ice), Mine Security Station (ice)
+> Mine Security Station
+  | Security Access A (ice), Storage Depot A (plasma), Security Access B (wave)
+> Storage Depot A
+  * Upgrade: Flamethrower
+  | Mine Security Station (plasma)
+> Security Access B
+  | Mine Security Station (wave), Elite Research (ice)
+> Elite Research
+  * Boss: Phazon Elite
+  * Artifact: Warrior (power)
+    - defeat Phazon Elite
+  * Chozo Lore: Elite Pirates
+  * Missile Expansion (morph)
+    - laser wall
+  | Security Access B (ice), Research Access (ice)
+> Research Access
+  | Elite Research (ice), Ore Processing (ice)
+> Ore Processing
+  | Research Access (ice), Elevator Access A (ice), Storage Depot B (ice), Waste Disposal (ice)
+> Elevator Access A
+  | Ore Processing (ice), Elevator A (ice)
+> Elevator A
+  | Elevator Access A (ice), Elite Control Access (ice)
+> Storage Depot B
+  * Upgrade: Grapple Beam
+  | Ore Processing (ice)
+> Waste Disposal
+  | Ore Processing (ice), Main Quarry (ice)
+> Elite Control Access
+  * Missile Expansion
+    - behind crate on ledge
+  | Elevator A (ice), Elite Control (wave)
+> Elite Control
+  * Chozo Lore: Metroid Prime
+  * Chozo Lore: The Hunter
+  * Chozo Lore: Hunter Weapons
+  * Chozo Lore: Chozo Studies
+  * Chozo Lore: Chozo Artifacts
+  * Chozo Lore: Prime Mutations
+  * Chozo Lore: Prime Breach
+  * Chozo Lore: Chozo Ghosts
+  | Elite Control Access (wave), Maintenance Tunnel (ice), Ventilation Shaft (ice)
+> Maintenance Tunnel
+  | Elite Control (ice), Elevator B (ice)
+> Elevator B
+  | Maintenance Tunnel (ice), Phazon Processing Center (ice)
+> Ventilation Shaft
+  * Energy Tank (power)
+    - bomb grate fan, activate console
+  | Elite Control (ice), Omega Research (ice)
+> Omega Research
+  * Chozo Lore: Omega Pirate
+  | Ventilation Shaft (ice), Map Station Mines (ice), Dynamo Access (ice)
+> Map Station Mines
+  | Omega Research (ice)
+> Dynamo Access
+  | Omega Research (ice), Central Dynamo (ice)
+> Central Dynamo
+  * Power Bomb Expansion
+  | Dynamo Access (ice), Save Station Mines B (ice), Quarantine Access A (ice)
+> Save Station Mines B
+  | Central Dynamo (ice)
+> Quarantine Acces A
+  | Central Dynamo (ice), Metroid Quarantine A (wave)
+> Metroid Quarantine A
+  * Missile Expansion (power, spider, xray)
+    - bomb wall, track across, ride invisible elevator
+  | Quarantine Access A (wave), Elevator Access B (ice)
+> Elevator Access B
+  | Metroid Quarantine A (ice), Elevator B (plasma)
+> Elevator B
+  | Elevator Access B (plasma), Fungal Hall Access (plasma)
+> Fungal Hall Access
+  * Missile Expansion (phazon)
+    - underneath mushroom
+  | Elevator B (plasma), Fungal Hall A (plasma)
+> Fungal Hall A
+  | Fungal Hall Access (ice), Phazon Mining Tunnel (ice)
+> Phazon Mining Tunnel
+  * Artifact: Newborn (morph, phazon)
+    - roll through tunnel
+  | Fungal Hall A (plasma), Fungal Hall B (plasma)
+> Fungal Hall B
+  * Missile Expansion (thermal, bomb)
+    - bomb floor
+  | Phazon Mining Tunnel (plasma), Missile Station Mines (plasma), Quarantine Access B (plasma)
+> Missile Station Mines
+  | Fungal Hall B (plasma)
+> Quarantine Access B
+  | Fungal Hall B (plasma), Metroid Quarantine B (plasma)
+> Metroid Quarantine B
+  * Missile Expansion (super)
+    - blast cylinder
+  | Quarantine Access B (plasma), Save Station Mines C (plasma), Elite Quarters Access (plasma)
+> Save Station Mines C
+  | Metroid Quarantine B (plasma)
+> Elite Quarters Access
+  | Metroid Quarantine B (plasma), Elite Quarters (plasma)
+> Elite Quarters
+  * Boss: Omega Pirate
+  * Upgrade: Phazon Suit
+  | Elite Quarters Access (plasma), Processing Center Access (plasma)
+> Processing Center Access
+  * Energy Tank (plasma)
+    - head through door on catwalk
+  | Elite Quarters (plasma), Phazon Processing Center (plasma)
+> Phazon Processing Center
+  * Missile Expansion (xray, power)
+    - bomb hidden missile behind right wall
+  | Processing Center Access (plasma), Transport Access (ice)
+> Transport Access
+  | Phazon Processing Center (ice), Transport to Magmoor Caverns South (ice)
+> Transport to Magmoor Caverns South
+  | Transport Access (ice), Magmoor Caverns South
+
+
+*** I M P A C T  C R A T E R ***
+
+> Transport to Tallon Overworld
+  | Tallon Overworld, Save Station, Crater Tunnel A (plasma)
+> Save Station
+  | Transport to Tallon Overworld
+> Crater Tunnel A
+  | Transport to Tallon Overworld (plasma), Phazon Core (plasma)
+> Phazon Core
+  | Crater Tunnel A (plasma), Crater Missile Station (plasma), Crater Tunnel B (plasma)
+> Crater Missile Station
+  | Phazon Core (plasma)
+> Crater Tunnel B
+  | Phazon Core (plasma), Phazon Infusion Chamber
+> Phazon Infusion Chamber
+  * Boss: Metroid Prime Exo
+  | Crater Tunnel B (plasma), Subchamber One
+> Subchamber One
+  | Subchamber Two
+> Subchamber Two
+  | Subchamber Three
+> Subchamber Three
+  | Subchamber Four
+> Subchamber Four
+  | Subchamber Five
+> Subchamber Five
+  | Metroid Prime Lair
+> Metroid Prime Lair
+  * Boss: Metroid Prime Core

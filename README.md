@@ -13,4 +13,4 @@ Right now, there are no formal tests for this tool.
 With little effort, this tool should be able to be configurable per video game and aspect so
  players can use this tool for multiple games
 
-Data for game collectibles was scraped from [ign](http://www.ign.com/wikis/metroid-prime/)
+Data for game collectibles was scraped from [ign](http://www.ign.com/wikis/metroid-prime/) and [here](http://metroid.retropixel.net/games/mprime/)
