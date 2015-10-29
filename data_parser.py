@@ -7,17 +7,18 @@ import sys
 
 # grammar:
 # NON-TERMINALS
-# start: world + ;
-# world: WB ID WB room + ;
-# room:  BG ID pickup * adj ? ;
-# pickup:  BULLET ID
-#       |  BULLET ID COLON ID ;
-# adj:   PIPE connection ( COMMA connection )* ;
+# start:      world + ;
+# world:      WB ID WB room + ;
+# room:       BG ID pickup * adj ? ;
+# pickup:     BULLET ID (COLON ID) ? dep ? how ? ;
+# how:        DASH ID ;
+# adj:        PIPE connection ( COMMA connection ) * ;
 # connection: ID dep ?
-# dep:   LP ID ( COMMA ID ) * RP ;
+# dep:        LP ID ( COMMA ID ) * RP ;
 
 tokenMap = {
-    'ID' : '[-a-zA-Z0-9\'_ ]+',
+    'INFO': '^\W*-\W*.*\W*$',
+    'ID' : '[a-zA-Z0-9][-a-zA-Z0-9\'_ ]*',
     'BULLET': '\\*',
     'BG' : '\\>',
     'WB' : '\\*\\*\\*',
@@ -47,7 +48,7 @@ class Token:
         if msg is not None:
             output += ': ' + msg
         print(output)
-    
+
 class Lexer:
 
     def __init__(self, filename, tokenMap):
@@ -59,7 +60,7 @@ class Lexer:
         # construct alternating named-group re from dict
         self.regex = '|'.join('(?P<%s>%s)' % (k, v) for k, v in self.tokenMap.items())
         self.toks = ''
-        
+
     def lex(self):
         # return dict of token kind to token lexeme
         keys = list(self.tokenMap.keys())
@@ -82,11 +83,11 @@ class Lexer:
 
     def __str__(self):
         return '\n'.join(str(t) for t in self.toks)
-    
+
 class Parser:
 
     EOF = '__EOF__'
-    
+
     def __init__(self, tokenStream):
         self.tokenStream = tokenStream
         self.tokenStream.append( Token(Parser.EOF, '', 0, 0) )
@@ -96,7 +97,7 @@ class Parser:
     @property
     def lookahead(self):
         return self.tokenStream[self.index]
-        
+
     def advance(self):
         if self.lookahead.kind != Parser.EOF:
             self.index += 1
@@ -147,17 +148,28 @@ class Parser:
             return Room(roomname, pickups, adj)
         return None
 
+
     def parse_pickup(self):
         if self.lookahead.kind == 'BULLET':
             self.match('BULLET')
             first = self.match('ID')
+            second = None
             if self.lookahead.kind == 'COLON':
                 self.match('COLON')
                 second = self.match('ID')
-                return Item(second, first)
-            return Expansion(first)
+            dep = self.parse_dependency()
+            how = self.parse_how()
+            if second is not None:
+                return Item(second, first, how, dep)
+            else:
+                return Expansion(first, how, dep)
         return None
-            
+
+    def parse_how(self):
+        if self.lookahead.kind == 'INFO':
+            return re.match('^\W*-\W*(.*)\W*$', self.match('INFO')).group(1)
+        return None
+
     def parse_adjacency(self):
         if self.lookahead.kind == 'PIPE':
             self.match('PIPE')
@@ -190,10 +202,11 @@ class Parser:
             self.match('RP')
             return deps
         return None
-    
-lexer  = Lexer(sys.argv[1], tokenMap)
-tokStream = lexer.lex()
-#print('\n'.join(str(t) for t in tokStream))
-parser = Parser(tokStream)
-worlds = parser.parse()
-print('\n\n'.join(str(w) for w in worlds))
+
+if __name__ == '__main__':
+    lexer  = Lexer(sys.argv[1], tokenMap)
+    tokStream = lexer.lex()
+    #print('\n'.join(str(t) for t in tokStream))
+    parser = Parser(tokStream)
+    worlds = parser.parse()
+    print('\n\n'.join(str(w) for w in worlds))
