@@ -60,7 +60,7 @@ def advance():
 def parse(string):
     initialize(string)
     return parse_START()
-    
+
 def initialize(string):
     global stream, choices
     choices = {
@@ -118,7 +118,7 @@ def lex(string):
         return r
     else:
         return []
-    
+
 def parse_START():
     if lookahead == '':
         return lambda _ : True
@@ -146,7 +146,7 @@ def parse_EXPR_PRIME():
                 return (a, merge_prime(t, e))
             else:
                 return (a, t)
-    
+
 def parse_TERM():
     f = parse_FACTOR()
     t = parse_TERM_PRIME()
@@ -170,13 +170,13 @@ def merge_prime(function, prime):
         return merge_func(function, op, f2)
     else:
         return function
-    
+
 def isAnd(op):
     return op.lower() in AND_OPTIONS
 
 def isOr(op):
     return op.lower() in OR_OPTIONS
-        
+
 def parse_TERM_PRIME():
     global lookahead
     if isAnd(lookahead):
@@ -191,7 +191,7 @@ def parse_TERM_PRIME():
             return (o, f)
     elif lookahead != '' and lookahead != ')':
         error('TERM_PRIME: lookahead is not and or or, its ' + lookahead)
-    
+
 def parse_FACTOR():
     global lookahead
     if lookahead == '(':
@@ -204,7 +204,7 @@ def parse_FACTOR():
             error('FACTOR: lookahead is not ), its ' + lookahead)
     else:
         return parse_TEST()
-    
+
 def parse_TEST():
     global lookahead
     res = parse_CHOICE()
@@ -235,7 +235,7 @@ def parse_OR():
         error('OR: lookahead is not or, its ' + lookahead)
     advance()
     return 'or'
-    
+
 def parse_CHOICE():
     global lookahead, choices
     l = lookahead
@@ -246,7 +246,7 @@ def parse_CHOICE():
         error('CHOICE: cannot have two of ' + l)
     advance()
     return l
-    
+
 def parse_STRING():
     global lookahead
     r = lookahead
@@ -295,7 +295,7 @@ if __name__ == '__main__':
             'room':'X',
             'world':'Z',
             'name':'home'
-        }        
+        }
     ]
     for query in tests:
         initialize(query)

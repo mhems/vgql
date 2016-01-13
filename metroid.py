@@ -18,13 +18,13 @@ class Database():
 
     def sort(self, key=None, reverse=False):
         self.items.sort(key=key, reverse=reverse)
-    
+
     def __len__(self):
         return len(self.items)
-    
+
     def __str__(self):
         return '\n'.join(str(i) for i in self.items)
-    
+
     def __repr__(self):
         core = '\n'.join(str(i) for i in self.items)
         return '{\n\"itemlist\":[\n%s\n]\n}' % core
@@ -69,7 +69,7 @@ def html_formatter(stream, database):
     stream.write('    <td>Name</td>\n')
     stream.write('    <td>Kind</td>\n')
     stream.write('    <td>Room</td>\n')
-    stream.write('    <td>World</td>\n')    
+    stream.write('    <td>World</td>\n')
     stream.write('    <td>Description</td>\n')
     stream.write('  </tr>\n')
     for index, item in enumerate(database):
@@ -80,7 +80,7 @@ def html_formatter(stream, database):
                 stream.write('    <td>%s</td>\n' % item[element])
             else:
                 stream.write('    <td></td>\n')
-        stream.write('  </tr>\n')        
+        stream.write('  </tr>\n')
     stream.write('</table>\n')
     stream.write('</html></body>\n')
 
@@ -88,7 +88,7 @@ def make_choices(choices):
     first = [s[0].lower() for s in choices]
     low   = [s.lower()    for s in choices]
     return first.extend(low)
-    
+
 if __name__ == '__main__':
     # if invoked with nothing, show help
     if len(sys.argv) == 1:
