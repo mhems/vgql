@@ -1,19 +1,61 @@
-class GraphNode:
+door_color_map = {
+    'default' : 'blue',
+    'missile' : 'grey',
+    'wave' : 'purple',
+    'ice' : 'white',
+    'plasma' : 'red'
+}
+world_color_map = {
+    'Tallon Overworld' : 'green',
+    'Chozo Ruins' : 'orange',
+    'Magmoor Caverns' : 'red',
+    'Phendrana Drifts' : 'white',
+    'Phazon Mines' : 'grey',
+    'Impact Crater' : 'purple'
+}
 
-    def __init__(self, value, adjacencies):
+class GraphEdge:
+    '''Simple class for an directed Graph Edge with at most one dependency'''
+
+    def __init__(self, a, b, dep=None):
+        self.a = a
+        self.b = b
+        self.dep = dep
+
+class GraphNode:
+    '''Simple wrapper container for an Object to be a node in a Graph'''
+    def __init__(self, value, adjacencies=None):
         self.value = value
-        self.adjacencies = adjacencies
+        self.adjacencies = [] if adjacencies is None else adjacencies
+
+    @property
+    def key(self):
+        return self.value.name
+
+    @property
+    def degree(self):
+        return len(self.adjacencies)
+
+    @property
+    def isLeaf(self):
+        return self.degree == 1
 
 class Graph:
-
+    '''
+    Directed adjacency-list graph where an edge is traversable if
+    there is no dependency or the single dependency has been satisfied
+    '''
     def __init__(self):
         self.nodes = []
+        self.map = {}
 
     def addNode(self, node):
         self.nodes.append(node)
+        self.map[node.key] = node
 
     def removeNode(self, node):
         self.nodes.remove(node)
+        self.map.pop[node.key]
 
     def __len__(self):
         return len(self.nodes)
@@ -23,7 +65,7 @@ class Collectible:
     def __init__(self, kind, info=None, deps=None):
         self.kind = kind
         self.info = info
-        self.deps = deps if deps is not None else []
+        self.deps = [] if deps is None else deps
 
     @property
     def extra(self):

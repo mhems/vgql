@@ -2,11 +2,12 @@
 
 from collections import OrderedDict
 import re
-from Game import *
 import sys
 
-# grammar:
-# NON-TERMINALS
+from Game import *
+
+# GRAMMAR
+
 # start:      world + ;
 # world:      WB ID WB room + ;
 # room:       BG ID pickup * adj ? ;
@@ -27,7 +28,7 @@ tokenMap = {
     'COLON' : '\\:',
     'LP': '\\(',
     'RP': '\\)'
-    }
+}
 
 class Token:
 
@@ -206,7 +207,36 @@ class Parser:
 if __name__ == '__main__':
     lexer  = Lexer(sys.argv[1], tokenMap)
     tokStream = lexer.lex()
-    #print('\n'.join(str(t) for t in tokStream))
+    # print('\n'.join(str(t) for t in tokStream))
     parser = Parser(tokStream)
     worlds = parser.parse()
-    print('\n\n'.join(str(w) for w in worlds))
+    # print('\n\n'.join(str(w) for w in worlds))
+    import pydotplus as pydot
+    map = {}
+
+    def hash(world, room):
+        roomname = room if isinstance(room, str) else room.name
+        if roomname.startswith('Transport to'):
+            return roomname
+        return (world.name, roomname)
+
+    graph = pydot.Dot(graph_type='digraph')
+    nodes = []
+    for world in worlds:
+        for room in world.rooms:
+            node = pydot.Node(room.name,
+                              style='filled',
+                              fillcolor=world_color_map[world.name])
+            map[hash(world, room)] = node
+            nodes.append(node)
+            graph.add_node(node)
+    for world in worlds:
+        for room in world.rooms:
+            for adj in room.adjacencies:
+                a = map[hash(world, room)]
+                b = map[hash(world, adj[0])]
+                color = 'black'
+                if adj[1] is not None:
+                    color = door_color_map[adj[1][0]]
+                graph.add_edge(pydot.Edge(a, b, color=color))
+    graph.write_png(world.name.replace(' ', '_') + '.png')
