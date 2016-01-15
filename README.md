@@ -1,22 +1,87 @@
-# Metroid Prime Collectible Query Tool
+# Video Game Query Language Tool
 
-Command-line tool for maintaining and filtering list of collectibles
-in the video game Metroid Prime.
+Command-line tool to maximize efficiency when playing
+collectible-driven video games such as Metroid Prime.
 
-Offers a variety of features including:
-* Small DSL SQL-like query strings allow fine-grained filtering
-* Multiple output formats including unaltered, JSON, and html
-* Track your progress by marking collectibles as collected
-* Sort collectibles by aspect
+These games follow the general formula of a character traversing a map
+with interconnected rooms, clustered in interconnected worlds
+searching for collectibles. Some are mandatory for game completion
+while others are purely supplementary. Collectibles can be partitioned
+into two groups: named items and expansions. The character's progress
+is dictated by a constrained map that becomes more accessible with the
+acquisition of items that allow a dependency to be satisfied. The game
+can thus be seen as a course from item to item, picking up expansions
+along the way.
 
-This is a small exercise in writing some code for an idea I had,
-giving me a chance to write a simple parser and attribute grammar
-framework where a filter function is synthesized during parsing.
+The functionality can be split into 2 facets
 
-Right now, there are no formal tests for this tool. With little
-effort, this tool should be able to be configurable per video game and
-aspect so players can use this tool for multiple games
+1. Query tool to track, view, and update database of collectibles you
+have found in the game
 
-Data for game collectibles was scraped from
+    * Small DSL SQL-like query strings allow fine-grained filtering
+    * Multiple output formats including unaltered, JSON, and html
+    * Track your progress by marking collectibles as collected
+    * Sort collectibles by aspect
+1. Planning tool to determine the shortest path to accomplish a task
+   with the collectibles you have so far while avoiding paths that
+   require collectibles you have yet to obtain
+
+   * Goal thresholding for expansion-agnostic paths or 100% completion
+   * Textual or graphical output of step-by-step directions
+   * Single collectible target or plot entire game
+
+Note: This README does not reflect the current progess, rather it is
+both documentation for what I've done and what I'd like to do. See the
+bottom section for the current state of implementation.
+
+# Requirements
+* python3
+* pydotplus (pydot port for python3)
+  [[PyPi]](https://pypi.python.org/pypi/pydotplus)
+
+# Usage
+
+```
+./metroid.py [-h] [-c] [-d] [-u] [-o OUTPUT_FILE] [-s SORT_ORDER]
+             [-f FORMAT] [-q QUERY_STRING]
+             DATABASE
+
+positional arguments:
+  DATABASE         the JSON database to query
+
+optional arguments:
+  -h, --help       show this help message and exit
+  -c               return the number of items satisfying the query
+  -d               only return those items yet to be found
+  -u               update matching items to found status
+  -o OUTPUT_FILE   the location of the output file
+  -s SORT_ORDER    the column to sort the output on: One of found,
+                   name, kind, room, world
+  -f FORMAT        the format of the output: One of (n)one, (j)son,
+                   (h)tml
+  -q QUERY_STRING  the SQL-like query string to execute of the form
+                   'select items where'...
+```
+
+plotting tool coming soon
+
+This tool is configurable per video game, conditional on its
+similarity to the formula outlined above. I'm sure there are some
+Metroid-specific assumptions that need to be refactored out.
+
+# Acknowledgements
+
+Data and graphs for game collectibles from
 [ign](http://www.ign.com/wikis/metroid-prime/) and
 [here](http://metroid.retropixel.net/games/mprime/)
+
+# Progress
+
+* The first portion of functionality is fairly implemented, albeit
+crudely tested. The lexing and parsing should be refactored and made
+consistent with the other (better) portion's.
+* The structure of the plotting is currently being constructed. Once a
+  game/graph framework is up, I will add the graph algorithms to do
+  the plotting.
+* With that backend complete, we'll need a simple command-line tool
+and a graphical view.
