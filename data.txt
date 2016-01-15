@@ -414,7 +414,7 @@
 > Save Station Magmoor B
   | Transport to Phendrana Drifts South
 > Workstation Tunnel
-  | Magmoor Workstation, Transport to Phazon Mines East (ice)
+  | Magmoor Workstation, Transport to Phazon Mines West (ice)
 > Transport to Phazon Mines West
   | Workstation Tunnel (ice), Transport to Magmoor Caverns South
 
