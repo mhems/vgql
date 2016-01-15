@@ -69,16 +69,18 @@ This tool is configurable per video game, conditional on its
 similarity to the formula outlined above. I'm sure there are some
 Metroid-specific assumptions that need to be refactored out.
 
-To include a game you would like to use this tool on:
-* Make a new directory to hold the game-specific data
-* Record the game map and collectibles into a file under this tool's DSL
-* Make a configuration file that holds the game's specifics
-  * Start from the top-level config.py
+Directory structure of a game this tool should analyze:
+* **game_name/**
+  * **config.py**
+    - customize off of the top-level config.py
+  * **data.txt**
+    - holds game map and collectibles with locations in this tool's DSL
 
 # Language Specs
 
-The DSL this tool recognizes is specified by the following grammar, in
-EBNF notation, with Perl-style regexes:
+The DSL this tool uses to internalize the game's data is specified by
+the following grammar, in EBNF notation, with Perl-style regexes:
+
 ```
 start:      world + ;
 world:      WB ID WB room + ;
@@ -101,8 +103,33 @@ LP:     '(' ;
 RP:     ')' ;
 ```
 
+The DSL this tool uses as query strings in specified by the following
+grammar, in EBNF notation, with Perl-style regexes:
+
+```
+start:  expr ? ;
+expr:   expr AND term
+    |   term ;
+term:   term OR factor
+    |   factor ;
+factor: LP expr RP
+      | CHOICE TEST STRING ;
+
+AND:    '&' | 'and' ;
+OR:     '|' | 'or' ;
+TEST:   '!=' | '==' ;
+LP:     '(' ;
+RP:     ')' ;
+STRING: /[a-zA-z *]+/ ;
+CHOICE: <GIVEN BY CONFIGURATION> ;
+```
+
 The punctuation characters should be trivial to modify to your
 liking. Parsing is implemented in a recursive top-down fashion.
+
+The lexer is whitespace-insensitive within a line but is newline
+sensitive. This could be at times annoying so a newline-agnostic
+implementation would be better.
 
 # Acknowledgements
 
