@@ -129,14 +129,14 @@ class Parser:
             worldname = self.match('ID')
             self.match('WB')
             world = World(worldname)
-            room = self.parse_room()
+            room = self.parse_room(worldname)
             while room is not None:
                 world.addRoom(room)
-                room = self.parse_room()
+                room = self.parse_room(worldname)
             return world
         return None
 
-    def parse_room(self):
+    def parse_room(self, worldname):
         if self.lookahead.kind == 'BG':
             self.match('BG')
             roomname = self.match('ID')
@@ -146,7 +146,7 @@ class Parser:
                 pickups.append(pickup)
                 pickup = self.parse_pickup()
             adj = self.parse_adjacency()
-            return Room(roomname, pickups, adj)
+            return Room(roomname, worldname, pickups, adj)
         return None
 
 
@@ -215,18 +215,22 @@ if __name__ == '__main__':
     map = {}
 
     def hash(world, room):
-        roomname = room if isinstance(room, str) else room.name
-        if roomname.startswith('Transport to'):
-            return roomname
-        return (world.name, roomname)
+        return (room  if isinstance(room,  str) else room.name,
+                world if isinstance(world, str) else world.name)
 
-    graph = pydot.Dot(graph_type='digraph')
+    g = Graph()
+    graph = pydot.Dot(graph_type='digraph', bgcolor='black')
     nodes = []
     for world in worlds:
         for room in world.rooms:
-            node = pydot.Node(room.name,
+            g.addNode(GraphNode(room, room.adjacencies))
+            color = world_color_map[room.world]
+            if room.elevator:
+                color = world_color_map['Elevator']
+            node = pydot.Node(str(hash(world, room)),
+                              label=room.name,
                               style='filled',
-                              fillcolor=world_color_map[world.name])
+                              fillcolor=color)
             map[hash(world, room)] = node
             nodes.append(node)
             graph.add_node(node)
@@ -234,9 +238,15 @@ if __name__ == '__main__':
         for room in world.rooms:
             for adj in room.adjacencies:
                 a = map[hash(world, room)]
-                b = map[hash(world, adj[0])]
-                color = 'black'
+                adj_world = world
+                if room.elevator and Room.isElevator(adj[0]):
+                    list = room.name.split()[2:]
+                    if list[-1] in ['North', 'East', 'South', 'West']:
+                        list = list[:-1]
+                    adj_world = ' '.join(list)
+                b = map[hash(adj_world, adj[0])]
+                color = door_color_map['default']
                 if adj[1] is not None:
                     color = door_color_map[adj[1][0]]
                 graph.add_edge(pydot.Edge(a, b, color=color))
-    graph.write_png(world.name.replace(' ', '_') + '.png')
+    graph.write_png('map.png')

@@ -11,7 +11,8 @@ world_color_map = {
     'Magmoor Caverns' : 'red',
     'Phendrana Drifts' : 'white',
     'Phazon Mines' : 'grey',
-    'Impact Crater' : 'purple'
+    'Impact Crater' : 'purple',
+    'Elevator' : 'yellow'
 }
 
 class GraphEdge:
@@ -92,8 +93,9 @@ class Item(Collectible):
 
 class Room:
 
-    def __init__(self, name, collectibles=None, adjacencies=None):
+    def __init__(self, name, world=None, collectibles=None, adjacencies=None):
         self.name = name
+        self.world = world
         self.collectibles = collectibles if collectibles is not None else []
         self.adjacencies  = adjacencies  if adjacencies  is not None else []
 
@@ -105,11 +107,22 @@ class Room:
     def numAdjacencies(self):
         return len(self.adjacencies)
 
+    @property
+    def elevator(self):
+        return Room.isElevator(self.name)
+
+    @staticmethod
+    def isElevator(room_name):
+        return room_name.startswith('Transport to')
+
     def addCollectible(self, collectible):
         self.collectibles.append(collectible)
 
     def addAdjacency(self, adjacency):
         self.adjacencies.append(adjacency)
+
+    def __eq__(self, other):
+        return self.name == other.name and self.world == other.world
 
     def __str__(self):
         c = ''
