@@ -73,7 +73,7 @@ To include a game you would like to use this tool on:
 * Make a new directory to hold the game-specific data
 * Record the game map and collectibles into a file under this tool's DSL
 * Make a configuration file that holds the game's specifics
-  * Start from the default, default.cfg
+  * Start from the top-level config.py
 
 # Language Specs
 
