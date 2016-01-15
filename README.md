@@ -17,7 +17,6 @@ The functionality can be split into 2 facets
 
 1. Query tool to track, view, and update database of collectibles you
 have found in the game
-
     * Small DSL SQL-like query strings allow fine-grained filtering
     * Multiple output formats including unaltered, JSON, and html
     * Track your progress by marking collectibles as collected
@@ -25,7 +24,6 @@ have found in the game
 1. Planning tool to determine the shortest path to accomplish a task
    with the collectibles you have so far while avoiding paths that
    require collectibles you have yet to obtain
-
    * Goal thresholding for expansion-agnostic paths or 100% completion
    * Textual or graphical output of step-by-step directions
    * Single collectible target or plot entire game
@@ -65,9 +63,46 @@ optional arguments:
 
 plotting tool coming soon
 
+# Configuration
+
 This tool is configurable per video game, conditional on its
 similarity to the formula outlined above. I'm sure there are some
 Metroid-specific assumptions that need to be refactored out.
+
+To include a game you would like to use this tool on:
+* Make a new directory to hold the game-specific data
+* Record the game map and collectibles into a file under this tool's DSL
+* Make a configuration file that holds the game's specifics
+  * Start from the default, default.cfg
+
+# Language Specs
+
+The DSL this tool recognizes is specified by the following grammar, in
+EBNF notation, with Perl-style regexes:
+```
+start:      world + ;
+world:      WB ID WB room + ;
+room:       BG ID pickup * adj ? ;
+pickup:     BULLET ID (COLON ID) ? dep ? how ? ;
+how:        DASH INFO ;
+adj:        PIPE connection ( COMMA connection ) * ;
+connection: ID dep ?
+dep:        LP ID ( COMMA ID ) * RP ;
+
+INFO:   /^\W*-\W*.*\W*$/ ;
+ID:     /[a-zA-Z0-9][-a-zA-Z0-9\_ ]*/ ;
+BULLET: '*' ;
+BG:     '>' ;
+WB:     '***' ;
+COMMA:  ',' ;
+PIPE:   '|' ;
+COLON:  ':' ;
+LP:     '(' ;
+RP:     ')' ;
+```
+
+The punctuation characters should be trivial to modify to your
+liking. Parsing is implemented in a recursive top-down fashion.
 
 # Acknowledgements
 
@@ -78,10 +113,10 @@ Data and graphs for game collectibles from
 # Progress
 
 * The first portion of functionality is fairly implemented, albeit
-crudely tested. The lexing and parsing should be refactored and made
-consistent with the other (better) portion's.
+  crudely tested. The lexing and parsing should be refactored and made
+  consistent with the other (better) portion's.
 * The structure of the plotting is currently being constructed. Once a
   game/graph framework is up, I will add the graph algorithms to do
   the plotting.
 * With that backend complete, we'll need a simple command-line tool
-and a graphical view.
+  and a graphical view.
