@@ -270,9 +270,9 @@ class DataParser(Parser):
         ('WB' , '\\*\\*\\*'),
         ('BULLET', '\\*'),
         ('BG' , '\\>'),
-        ('COMMA' , '\\),'),
+        ('COMMA' , '\\,'),
         ('PIPE' , '\\|'),
-        ('COLON' , '\\,'),
+        ('COLON' , '\\:'),
         ('LP', '\\('),
         ('RP', '\\)'),
         ('INFO', '^\W*-\W*.*\W*$'),
@@ -281,9 +281,7 @@ class DataParser(Parser):
 
     def __init__(self, filename):
         '''Lexes filename contents and prepares for parsing'''
-        s=Lexer(filename, True, DataParser.tokenAssocs).lex()
-        super().__init__(s)
-        print('\n'.join(str(c) for c in s))
+        super().__init__(Lexer(filename, True, DataParser.tokenAssocs).lex())
 
     def parse(self):
         worlds = []
