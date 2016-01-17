@@ -10,8 +10,7 @@ from parsing import *
 from Game import *
 
 if __name__ == '__main__':
-    print('Running...')
-    parser = DataParser(choices, argv[1])
+    parser = DataParser(argv[1])
     worlds = parser.parse()
     # print('\n\n'.join(str(w) for w in worlds))
 

@@ -32,9 +32,10 @@ class Lexer:
     stream of Tokens
     '''
 
-    def __init__(self, contents, tokenMap):
+    def __init__(self, contents, asFile, tokenMap):
         '''Internalize parameters and prepare for lexing'''
         self.contents = contents
+        self.asFile = asFile
         self.tokenMap = deepcopy(tokenMap)
         self.keys = list(self.tokenMap.keys())
         string_re = None
@@ -43,19 +44,17 @@ class Lexer:
         self.tokenMap = OrderedDict(sorted(self.tokenMap.items(),
                                            key = lambda item : len(item[1])))
         self.regex = '|'.join('(?P<%s>%s)' % (k, v)
-                              for k, v in self.tokenMap.items())
+                              for k, v in self.tokenMap.items() if v)
         if string_re is not None:
             self.regex += '|(?P<STRING>%s)' % string_re
         self.toks = []
 
     def lex(self):
         '''Return contents as Token stream'''
-        if isinstance(self.contents, TextIOBase):
+        if self.asFile:
             with open(self.contents, 'r') as fil:
                 return self._lex_lines(fil.readlines())
-        elif isinstance(self.contents, str):
-            return self._lex_lines(self.contents.split('\n'))
-        raise TypeError('invalid lexing contents')
+        return self._lex_lines(self.contents.split('\n'))
 
     def _lex_lines(self, lines):
         '''Helper method to lex lines of strings into Token stream'''
@@ -167,9 +166,9 @@ class QueryParser(Parser):
     }
 
     def __init__(self, choices, query):
-        '''Lexes filename contents and prepares for parsing'''
+        '''Lexes query and prepares for parsing'''
         QueryParser.tokenMap['CHOICE'] = '|'.join(choices)
-        super().__init__(Lexer(query, QueryParser.tokenMap).lex())
+        super().__init__(Lexer(query, False, QueryParser.tokenMap).lex())
 
     def parse(self):
         '''Synthesizes filter function from parsing query string'''
@@ -281,8 +280,9 @@ class DataParser(Parser):
         'RP': '\\)'
     }
 
-    def __init__(self, choices):
-        pass
+    def __init__(self, filename):
+        '''Lexes filename contents and prepares for parsing'''
+        super().__init__(Lexer(filename, True, DataParser.tokenMap).lex())
 
     def parse(self):
         worlds = []
