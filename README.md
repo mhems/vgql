@@ -108,9 +108,9 @@ grammar, in EBNF notation, with Perl-style regexes:
 
 ```
 start:  expr ? ;
-expr:   expr AND term
+expr:   expr OR term
     |   term ;
-term:   term OR factor
+term:   term AND factor
     |   factor ;
 factor: LP expr RP
       | CHOICE TEST STRING ;
