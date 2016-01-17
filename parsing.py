@@ -5,6 +5,8 @@ from re import (finditer, match, I)
 from sys import argv
 from itertools import groupby
 
+from Game import (World, Room, Expansion, Item)
+
 class Token:
     '''Simple struct of token data'''
 
@@ -32,21 +34,13 @@ class Lexer:
     stream of Tokens
     '''
 
-    def __init__(self, contents, asFile, tokenMap):
+    def __init__(self, contents, asFile, tokenAssocs):
         '''Internalize parameters and prepare for lexing'''
         self.contents = contents
         self.asFile = asFile
-        self.tokenMap = deepcopy(tokenMap)
-        self.keys = list(self.tokenMap.keys())
-        string_re = None
-        if 'STRING' in self.tokenMap:
-            string_re = self.tokenMap.pop('STRING')
-        self.tokenMap = OrderedDict(sorted(self.tokenMap.items(),
-                                           key = lambda item : len(item[1])))
+        self.keys = [k for k, _ in tokenAssocs]
         self.regex = '|'.join('(?P<%s>%s)' % (k, v)
-                              for k, v in self.tokenMap.items() if v)
-        if string_re is not None:
-            self.regex += '|(?P<STRING>%s)' % string_re
+                              for k, v in tokenAssocs if v)
         self.toks = []
 
     def lex(self):
@@ -93,6 +87,12 @@ class Lexer:
 class Parser:
     '''
     Parser base class with utility methods for subclasses to use
+
+    Subclasses should define a list of pair associations to pass to
+    the Lexer constructor. This is a list of tuples that associate a
+    Token kind to Token lexeme regular expression. A list is used
+    instead of a (ordered) dictionary so that that declaration order
+    may be honored.
     '''
 
     def __init__(self, tokenStream):
@@ -156,19 +156,20 @@ class QueryParser(Parser):
     CHOICE: <GIVEN BY CONFIGURATION> ;
     '''
 
-    tokenMap = {
-        'AND': 'and|\\&' ,
-        'OR': 'or|\\|' ,
-        'TEST': '(\\!|\\=)\\=' ,
-        'LP': '\\(',
-        'RP': '\\)',
-        'STRING': '[a-zA-z*]+'
-    }
+    tokenAssocs = [
+        ('AND', 'and|\\&'),
+        ('OR', 'or|\\|'),
+        ('TEST', '(\\!|\\=)\\='),
+        ('LP', '\\('),
+        ('RP', '\\)'),
+        ('STRING', '[a-zA-z*]+')
+    ]
 
     def __init__(self, choices, query):
         '''Lexes query and prepares for parsing'''
-        QueryParser.tokenMap['CHOICE'] = '|'.join(choices)
-        super().__init__(Lexer(query, False, QueryParser.tokenMap).lex())
+        copy = deepcopy(QueryParser.tokenAssocs)
+        copy.insert(0, ('CHOICE', '|'.join(choices)))
+        super().__init__(Lexer(query, False, copy).lex())
 
     def parse(self):
         '''Synthesizes filter function from parsing query string'''
@@ -238,8 +239,6 @@ class QueryParser(Parser):
             raise TypeError('unknown op: %s' % op)
         return f1
 
-import Game
-
 class DataParser(Parser):
     '''
     Simple parser of custom data format language
@@ -267,22 +266,24 @@ class DataParser(Parser):
     RP:     ')' ;
     '''
 
-    tokenMap = {
-        'INFO': '^\W*-\W*.*\W*$',
-        'ID' : '[a-zA-Z0-9][-a-zA-Z0-9\'_ ]*',
-        'BULLET': '\\*',
-        'BG' : '\\>',
-        'WB' : '\\*\\*\\*',
-        'COMMA' : '\\,',
-        'PIPE' : '\\|',
-        'COLON' : '\\:',
-        'LP': '\\(',
-        'RP': '\\)'
-    }
+    tokenAssocs = [
+        ('WB' , '\\*\\*\\*'),
+        ('BULLET', '\\*'),
+        ('BG' , '\\>'),
+        ('COMMA' , '\\),'),
+        ('PIPE' , '\\|'),
+        ('COLON' , '\\,'),
+        ('LP', '\\('),
+        ('RP', '\\)'),
+        ('INFO', '^\W*-\W*.*\W*$'),
+        ('ID' , '[a-zA-Z0-9][-a-zA-Z0-9\'_ ]*')
+    ]
 
     def __init__(self, filename):
         '''Lexes filename contents and prepares for parsing'''
-        super().__init__(Lexer(filename, True, DataParser.tokenMap).lex())
+        s=Lexer(filename, True, DataParser.tokenAssocs).lex()
+        super().__init__(s)
+        print('\n'.join(str(c) for c in s))
 
     def parse(self):
         worlds = []
