@@ -139,11 +139,12 @@ Data and graphs for game collectibles from
 
 # Progress
 
-* The first portion of functionality is fairly implemented, albeit
-  crudely tested. The lexing and parsing should be refactored and made
-  consistent with the other (better) portion's.
-* The structure of the plotting is currently being constructed. Once a
-  game/graph framework is up, I will add the graph algorithms to do
-  the plotting.
-* With that backend complete, we'll need a simple command-line tool
-  and a graphical view.
+* The query portion of functionality is fairly implemented, albeit
+  crudely tested
+* The game module should be parameterizable by game so some config
+  code will be needed
+* The structure of the game graph is currently being constructed. Once
+  a game <=> graph framework is up, graph algorithms will be added to
+  do the course planning
+* With the backend complete, a simple command-line tool and graphical
+  view will be implemented
