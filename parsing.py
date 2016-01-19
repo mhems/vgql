@@ -176,14 +176,14 @@ class QueryParser(Parser):
         ('STRING', '[a-zA-z*]+')
     ]
 
-    def __init__(self, choices, query):
+    def __init__(self, choices):
         '''Lexes query and prepares for parsing'''
-        copy = deepcopy(QueryParser.tokenAssocs)
-        copy.insert(0, ('CHOICE', '|'.join(choices)))
-        super().__init__(Lexer(query, False, copy).lex())
+        self.copy = deepcopy(QueryParser.tokenAssocs)
+        self.copy.insert(0, ('CHOICE', '|'.join(choices)))
 
-    def parse(self):
+    def parse(self, query):
         '''Synthesizes filter function from parsing query string'''
+        super().__init__(Lexer(query, False, self.copy).lex())
         return self.parse_START()
 
     def parse_START(self):

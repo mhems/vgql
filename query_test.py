@@ -53,7 +53,7 @@ if __name__ == '__main__':
     ]
     for query in tests:
         print('Query:', query)
-        choices = {'kind', 'room', 'world', 'name'}
+        choices = {'kind', 'room', 'world', 'name', 'found'}
         parser = QueryParser(choices, query)
         func = parser.parse()
         print('\n'.join(str(e) for e in l if func(e)))

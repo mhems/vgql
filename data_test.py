@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
 import pydotplus as pydot
+from sys import argv
 
 from parsing import DataParser
-from graph import Graph
+from graph import (Graph, GraphNode)
+from game import (door_color_map, world_color_map)
 
 if __name__ == '__main__':
     parser = DataParser(argv[1])
@@ -38,7 +40,9 @@ if __name__ == '__main__':
                 a = map[hash(world, room)]
                 adj_world = world
                 if room.elevator and Room.isElevator(adj[0]):
-                    list = room.name.split()[2:]
+                    list = room.name.split()
+                    if list[:2] == ['Transport', 'to']:
+                        list = list[2:]
                     if list[-1] in ['North', 'East', 'South', 'West']:
                         list = list[:-1]
                     adj_world = ' '.join(list)

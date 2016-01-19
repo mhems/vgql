@@ -3,12 +3,15 @@
 # Functionality for collectible query database for video game Metroid Prime
 
 import json, argparse, sys
-import query_parser
+from parsing import QueryParser
 
 class Database():
     """Mechanism for storing and querying items"""
 
+    choices = {'kind', 'room', 'world', 'name', 'found'}
+
     def __init__(self, dictlist=None):
+        self.parser = QueryParser(Database.choices)
         if dictlist is not None:
             self.dicn = { "itemlist" : dictlist }
 
@@ -38,7 +41,7 @@ class Database():
 
     def query(self, string, exclude_found, update):
         """Query database for all items satisfying constraints"""
-        func = query_parser.parse(string)
+        func = self.parser.parse(string)
         if exclude_found:
             test = lambda x : func(x) and x["found"] == False
         else:

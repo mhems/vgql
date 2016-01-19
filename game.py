@@ -17,6 +17,7 @@ door_color_map = {
     'plasma' : 'red'
 }
 world_color_map = {
+    'Pirate Frigate': 'blue',
     'Tallon Overworld' : 'green',
     'Chozo Ruins' : 'orange',
     'Magmoor Caverns' : 'red',

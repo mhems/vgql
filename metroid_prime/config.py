@@ -12,6 +12,7 @@ door_color_map = {
 
 # Color associations of worlds
 world_color_map = {
+    'Pirate Frigate': 'blue',
     'Tallon Overworld' : 'green',
     'Chozo Ruins' : 'orange',
     'Magmoor Caverns' : 'red',
@@ -53,4 +54,10 @@ choices = [
     'world',
     'name',
     'found'
+]
+
+# Collectibles needed to finish game
+mandatory = [
+    'Artifact',
+    'Boss'
 ]

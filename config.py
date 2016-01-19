@@ -25,3 +25,8 @@ kinds = [
 choices = [
     'found'
 ]
+
+# Collectibles needed to finish game
+mandatory = [
+    'Boss'
+]
