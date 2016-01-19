@@ -114,14 +114,14 @@
     },
     {
       "found": false,
-      "world": "Space Pirate Frigate Orpheon",
+      "world": "Pirate Frigate",
       "kind": "Boss",
       "name": "Parasite Queen",
       "room": ""
     },
     {
       "found": false,
-      "world": "Space Pirate Frigate Orpheon",
+      "world": "Pirate Frigate",
       "kind": "Boss",
       "name": "Parasite",
       "room": "Subventilation Shaft Section A"
@@ -205,14 +205,14 @@
     },
     {
       "found": false,
-      "world": "Space Pirate Frigate Orpheon",
+      "world": "Pirate Frigate",
       "kind": "Creature",
       "name": "Parasite Queen",
       "room": ""
     },
     {
       "found": false,
-      "world": "Space Pirate Frigate Orpheon",
+      "world": "Pirate Frigate",
       "kind": "Creature",
       "name": "Parasite",
       "room": "Subventilation Shaft Section A"
@@ -233,7 +233,7 @@
     },
     {
       "found": false,
-      "world": "Space Pirate Frigate Orpheon",
+      "world": "Pirate Frigate",
       "kind": "Creature",
       "name": "Auto Turrets",
       "room": ""
@@ -786,7 +786,7 @@
     },
     {
       "found": false,
-      "world": "Space Pirate Frigate Orpheon",
+      "world": "Pirate Frigate",
       "kind": "Pirate Data",
       "name": "Fall of Zebes",
       "room": "Biohazard Containment"

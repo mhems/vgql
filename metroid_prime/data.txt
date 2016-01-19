@@ -1,3 +1,64 @@
+*** Pirate Frigate ***
+
+> Exterior Docking Hangar
+  | Connection Elevator to Deck Alpha, Landing Site
+> Connection Elevator to Deck Alpha
+  | Exterior Docking Hangar, Air Lock
+> Air Lock
+  | Connection Elevator to Deck Alpha, Deck Alpha Access Hall
+> Deck Alpha Access Hall
+  | Air Lock, Emergency Evacuation Area
+> Emergency Evacuation Area
+  | Deck Alpha Access Hall, Deck Alpha Umbilical Hall
+> Deck Alpha Umbilical Hall
+  | Emergency Evacuation Area, Map Facility
+> Map Facility
+  | Deck Alpha Umbilical Hall, Connection Elevator to Deck Beta
+> Connection Elevator to Deck Beta
+  | Map Facility, Deck Beta Conduit Hall
+> Deck Beta Conduit Hall
+  | Connection Elevator to Deck Beta, Biotech Research Area 1
+> Biotech Research Area 1
+  | Deck Beta Conduit Hall, Connection Elevator to Deck Beta, Subventilation Shaft Section A, Deck Beta Security Hall
+> Deck Beta Security Hall
+  | Biotech Research Area 1, Biohazard Containment
+> Biohazard Containment
+  | Deck Beta Security Hall, Deck Beta Transit Hall
+> Deck Beta Transit Hall
+  | Biohazard Containment, Cargo Freight Lift to Deck Gamma
+> Cargo Freight Lift to Deck Gamma
+  | Deck Beta Transit Hall, Reactor Core Entrance
+> Reactor Core Entrance
+  | Cargo Freight Lift to Deck Gamma, Reactor Core, Save Station, Subventilation Shaft Section B
+> Save Station
+  | Reactor Core Entrance
+> Subventilation Shaft Section B
+  | Reactor Core Entrance, Subventilation Shaft Section A, Main Ventilation Shaft Section A
+> Subventilation Shaft Section A
+  | Subventilation Shaft Section B, Biotech Research Area 1
+> Reactor Core
+  * Boss: Parasite Queen
+  | Reactor Core Entrance, Deck Gamma Monitor Hall
+> Deck Gamma Monitor Hall
+  | Reactor Core, Connection Elevator to Deck Beta
+> Connection Elevator to Deck Beta
+  | Deck Gamma Monitor Hall, Biotech Research Area 1
+> Main Ventilation Shaft Section A
+  | Subventilation Shaft Section B, Main Ventilation Shaft Section B
+> Main Ventilation Shaft Section B
+  | Main Ventilation Shaft Section A, Main Ventilation Shaft Section C
+> Main Ventilation Shaft Section D
+  | Main Ventilation Shaft Section C, Main Ventilation Shaft Section E
+> Main Ventilation Shaft Section E
+  | Main Ventilation Shaft Section D, Main Ventilation Shaft Section F
+> Main Ventilation Shaft Section F
+  | Main Ventilation Shaft Section E, Biotech Research Area 2
+> Biotech Research Area 2
+  | Main Ventilation Shaft Section F, Deck Alpha Mech Shaft
+> Deck Alpha Mech Shaft
+  | Biotech Research Area 2, Air Lock
+
+
 *** Tallon Overworld ***
 
 > Landing Site
