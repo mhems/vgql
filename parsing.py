@@ -249,7 +249,7 @@ class DataParser(Parser):
     world:      WB ID WB room + ;
     room:       BG ID pickup * adj ? ;
     pickup:     BULLET ID (COLON ID) ? dep ? how ? ;
-    how:        DASH INFO ;
+    how:        INFO ;
     adj:        PIPE connection ( COMMA connection ) * ;
     connection: ID dep ?
     dep:        LP ID ( COMMA ID ) * RP ;
@@ -285,88 +285,72 @@ class DataParser(Parser):
 
     def parse(self):
         worlds = []
-        world = self.parse_world()
-        while world is not None:
-            worlds.append(world)
-            world = self.parse_world()
+        while self.lookahead.kind == 'WB':
+            worlds.append(self.parse_world())
         return worlds
 
     def parse_world(self):
-        if self.lookahead.kind == 'WB':
-            self.match('WB')
-            worldname = self.match('ID')
-            self.match('WB')
-            world = World(worldname)
-            room = self.parse_room(worldname)
-            while room is not None:
-                world.addRoom(room)
-                room = self.parse_room(worldname)
-            return world
-        return None
+        self.match('WB')
+        worldname = self.match('ID')
+        self.match('WB')
+        world = World(worldname)
+        while self.lookahead.kind == 'BG':
+            world.addRoom(self.parse_room(worldname))
+        return world
 
     def parse_room(self, worldname):
-        if self.lookahead.kind == 'BG':
-            self.match('BG')
-            roomname = self.match('ID')
-            pickups = []
-            pickup = self.parse_pickup()
-            while pickup is not None:
-                pickups.append(pickup)
-                pickup = self.parse_pickup()
+        self.match('BG')
+        roomname = self.match('ID')
+        pickups = []
+        adj = None
+        while self.lookahead.kind == 'BULLET':
+                pickups.append(self.parse_pickup())
+        if self.lookahead.kind == 'PIPE':
             adj = self.parse_adjacency()
-            return Room(roomname, worldname, pickups, adj)
-        return None
+        return Room(roomname, worldname, pickups, adj)
 
     def parse_pickup(self):
-        if self.lookahead.kind == 'BULLET':
-            self.match('BULLET')
-            first = self.match('ID')
-            second = None
-            if self.lookahead.kind == 'COLON':
-                self.match('COLON')
-                second = self.match('ID')
+        self.match('BULLET')
+        first = self.match('ID')
+        second = None
+        dep = None
+        how = None
+        if self.lookahead.kind == 'COLON':
+            self.match('COLON')
+            second = self.match('ID')
+        if self.lookahead.kind == 'LP':
             dep = self.parse_dependency()
+        if self.lookahead.kind == 'INFO':
             how = self.parse_how()
-            if second is not None:
-                return Item(second, first, how, dep)
-            else:
-                return Expansion(first, how, dep)
-        return None
+        if second is not None:
+            return Item(second, first, how, dep)
+        else:
+            return Expansion(first, how, dep)
 
     def parse_how(self):
-        if self.lookahead.kind == 'INFO':
-            return match('^\W*-\W*(.*)\W*$', self.match('INFO')).group(1)
-        return None
+        return match('^\W*-\W*(.*)\W*$', self.match('INFO')).group(1)
 
     def parse_adjacency(self):
-        if self.lookahead.kind == 'PIPE':
-            self.match('PIPE')
-            connections = []
-            connection = self.parse_connection()
-            while connection is not None:
-                connections.append(connection)
-                if self.lookahead.kind == 'COMMA':
-                    self.match('COMMA')
-                connection = self.parse_connection()
-            return connections
-        return None
+        self.match('PIPE')
+        connections = []
+        while self.lookahead.kind == 'ID':
+            connections.append(self.parse_connection())
+            if self.lookahead.kind == 'COMMA':
+                self.match('COMMA')
+        return connections
 
     def parse_connection(self):
-        if self.lookahead.kind == 'ID':
-            room = self.match('ID')
-            dep = None
-            if self.lookahead.kind == 'LP':
-                dep = self.parse_dependency()
-            return (room, dep)
-        return None
+        room = self.match('ID')
+        dep = None
+        if self.lookahead.kind == 'LP':
+            dep = self.parse_dependency()
+        return (room, dep)
 
     def parse_dependency(self):
-        if self.lookahead.kind == 'LP':
-            self.match('LP')
-            deps = [self.match('ID')]
-            while self.lookahead.kind == 'COMMA':
-                self.match('COMMA')
-                deps.append(self.match('ID'))
-            self.match('RP')
-            return deps
-        return None
+        self.match('LP')
+        deps = [self.match('ID')]
+        while self.lookahead.kind == 'COMMA':
+            self.match('COMMA')
+            deps.append(self.match('ID'))
+        self.match('RP')
+        return deps

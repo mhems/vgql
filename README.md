@@ -86,7 +86,7 @@ start:      world + ;
 world:      WB ID WB room + ;
 room:       BG ID pickup * adj ? ;
 pickup:     BULLET ID (COLON ID) ? dep ? how ? ;
-how:        DASH INFO ;
+how:        INFO ;
 adj:        PIPE connection ( COMMA connection ) * ;
 connection: ID dep ?
 dep:        LP ID ( COMMA ID ) * RP ;
