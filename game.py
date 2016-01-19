@@ -104,13 +104,8 @@ class Room:
         '''
         Return True if self is a room with an adjacent room in another world
         '''
-        return Room.isElevator(self.name)
-
-    @staticmethod
-    def isElevator(room_name):
-        '''Return True if room_name follows elevator convention'''
-        # TODO: this assumes mprime setup, implement actual definition
-        return room_name.startswith('Transport to')
+        return any(r[2] != self.world
+                   for r in self.adjacencies if r[2] is not None)
 
     def addCollectible(self, collectible):
         '''Adds collectible to self'''

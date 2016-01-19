@@ -39,13 +39,8 @@ if __name__ == '__main__':
             for adj in room.adjacencies:
                 a = map[hash(world, room)]
                 adj_world = world
-                if room.elevator and Room.isElevator(adj[0]):
-                    list = room.name.split()
-                    if list[:2] == ['Transport', 'to']:
-                        list = list[2:]
-                    if list[-1] in ['North', 'East', 'South', 'West']:
-                        list = list[:-1]
-                    adj_world = ' '.join(list)
+                if adj[2] is not None:
+                    adj_world = adj[2]
                 b = map[hash(adj_world, adj[0])]
                 color = door_color_map['default']
                 if adj[1] is not None:

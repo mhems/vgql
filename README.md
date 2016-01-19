@@ -88,8 +88,9 @@ room:       BG ID pickup * adj ? ;
 pickup:     BULLET ID (COLON ID) ? dep ? how ? ;
 how:        INFO ;
 adj:        PIPE connection ( COMMA connection ) * ;
-connection: ID dep ?
+connection: ID dep ? loc ? ;
 dep:        LP ID ( COMMA ID ) * RP ;
+loc:        LB ID RB ;
 
 INFO:   /^\W*-\W*.*\W*$/ ;
 ID:     /[a-zA-Z0-9][-a-zA-Z0-9\_ ]*/ ;
@@ -101,6 +102,8 @@ PIPE:   '|' ;
 COLON:  ':' ;
 LP:     '(' ;
 RP:     ')' ;
+LB:     '[' ;
+RB:     ']' ;
 ```
 
 The DSL this tool uses as query strings in specified by the following

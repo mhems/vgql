@@ -1,7 +1,7 @@
 *** Pirate Frigate ***
 
 > Exterior Docking Hangar
-  | Connection Elevator to Deck Alpha, Landing Site
+  | Connection Elevator to Deck Alpha, Landing Site [Tallon Overworld]
 > Connection Elevator to Deck Alpha
   | Exterior Docking Hangar, Air Lock
 > Air Lock
@@ -47,6 +47,8 @@
   | Subventilation Shaft Section B, Main Ventilation Shaft Section B
 > Main Ventilation Shaft Section B
   | Main Ventilation Shaft Section A, Main Ventilation Shaft Section C
+> Main Ventilation Shaft Section C
+  | Main Ventilation Shaft Section B, Main Ventilation Shaft Section D
 > Main Ventilation Shaft Section D
   | Main Ventilation Shaft Section C, Main Ventilation Shaft Section E
 > Main Ventilation Shaft Section E
@@ -89,13 +91,13 @@
   * Chozo Lore: Binding
   | Temple Lobby, Transport to Impact Crater
 > Transport to Impact Crater
-  | Artifact Temple, Transport to Tallon Overworld
+  | Artifact Temple, Transport to Tallon Overworld [Impact Crater]
 > Tallon Canyon
   | Canyon Cavern, Gully, Transport Tunnel A, Root Tunnel
 > Transport Tunnel A
   | Tallon Canyon, Transport to Chozo Ruins West
 > Transport to Chozo Ruins West
-  | Transport Tunnel A, Transport to Tallon Overworld North
+  | Transport Tunnel A, Transport to Tallon Overworld North [Chozo Ruins]
 > Root Tunnel
   | Tallon Canyon, Root Cave (missile)
 > Root Cave
@@ -110,7 +112,7 @@
     - under bridge
   | Root Cave, Transport to Magmoor Caverns East
 > Transport to Magmoor Caverns East
-  | Transport Tunnel B, Transport to Tallon Overworld West
+  | Transport Tunnel B, Transport to Tallon Overworld West [Magmoor Caverns]
 > Frigate Crash Site
   * Missile Expansion (gravity)
     - up high in underwater cave
@@ -122,7 +124,7 @@
 > Transport Tunnel C
   | Overgrown Cavern (ice), Transport to Chozo Ruins East (ice)
 > Transport to Chozo Ruins East
-  | Transport Tunnel C (ice), Transport to Tallon Overworld East
+  | Transport Tunnel C (ice), Transport to Tallon Overworld East [Chozo Ruins]
 > Frigate Access Tunnel
   | Frigate Crash Site (ice), Main Ventilation Shaft Section C
 > Main Ventilation Shaft Section C
@@ -164,7 +166,7 @@
 > Transport Tunnel D
   | Great Tree Hall (ice), Transport to Chozo Ruins South (ice)
 > Transport to Chozo Ruins South
-  | Transport Tunnel D (ice), Transport to Tallon Overworld South
+  | Transport Tunnel D (ice), Transport to Tallon Overworld South [Chozo Ruins]
 > Great Tree Chamber
   * Missile Expansion (xray)
     - use invisible platform to reach door
@@ -172,7 +174,7 @@
 > Transport Tunnel E
   | Great Tree Hall (ice), Transport to Phazon Mines East (ice)
 > Transport to Phazon Mines East
-  | Transport Tunnel E (ice), Transport to Tallon Overworld South
+  | Transport Tunnel E (ice), Transport to Tallon Overworld South [Phazon Mines]
 > Life Grove Tunnel
   * Missile Expansion (morph, boost, bomb)
     - boost to top of tunnel and bomb center
@@ -187,7 +189,7 @@
 *** Chozo Ruins ***
 
 > Transport to Tallon Overworld North
-  | Transport to Chozo Ruins West, Ruins Entrance
+  | Transport to Chozo Ruins West [Tallon Overworld], Ruins Entrance
 > Ruins Entrance
   * Chozo Lore: Fountain
   | Transport to Tallon Overworld North, Main Plaza
@@ -252,7 +254,7 @@
     - door behind hive mecha
   | Hive Totem, Transport to Magmoor Caverns North
 > Transport to Magmoor Caverns North
-  | Transport Access North, Transport to Chozo Ruins North, Vault Access, Sun Tower
+  | Transport Access North, Transport to Chozo Ruins North [Magmoor Caverns], Vault Access, Sun Tower
 > Vault Access
   | Transport to Magmoor Caverns North, Vault
 > Vault
@@ -392,17 +394,17 @@
 > Save Station 3
   | Reflecting Pool, Transport to Tallon Overworld East
 > Transport to Tallon Overworld East
-  | Save Station 3, Transport to Chozo Ruins East
+  | Save Station 3, Transport to Chozo Ruins East [Tallon Overworld]
 > Transport Access South
   | Reflecting Pool (ice), Transport to Tallon Overworld South
 > Transport to Tallon Overworld South
-  | Transport Access South, Transport to Chozo Ruins South
+  | Transport Access South, Transport to Chozo Ruins South [Tallon Overworld]
 
 
 *** Magmoor Caverns ***
 
 > Transport to Chozo Ruins North
-  | Transport to Magmoor Caverns North, Burning Trail
+  | Transport to Magmoor Caverns North [Chozo Ruins], Burning Trail
 > Burning Trail
   | Transport to Chozo Ruins North, Save Station Magmoor A (missile), Lake Tunnel
 > Save Station Magmoor A
@@ -433,7 +435,7 @@
     - double-bomb jump through maze
   | Monitor Station, Transport to Phendrana Drifts North
 > Transport to Phendrana Drifts North
-  | Transport Tunnel A, Transport to Magmoor Caverns West
+  | Transport Tunnel A, Transport to Magmoor Caverns West [Phendrana Drifts]
 > Warrior Shrine
   * Artifact: Strength (boots)
     - jump up to spinner to raise bridge
@@ -450,7 +452,7 @@
 > Transport Tunnel B
   | Fiery Shores, Transport to Tallon Overworld West
 > Transport to Tallon Overworld West
-  | Transport Tunnel B, Transport to Magmoor Caverns East, Twin Fires Tunnel
+  | Transport Tunnel B, Transport to Magmoor Caverns East [Tallon Overworld], Twin Fires Tunnel
 > Twin Fires Tunnel
   | Transport to Tallon Overworld West, Twin Fires
 > Twin Fires
@@ -471,19 +473,19 @@
 > Transport Tunnel C
   | Magmoor Workstation (wave), Transport to Phendrana Drifts South (wave)
 > Transport to Phendrana Drifts South
-  | Transport Tunnel C (wave), Transport to Magmoor Caverns South, Save Station Magmoor B
+  | Transport Tunnel C (wave), Transport to Magmoor Caverns South [Phendrana Drifts], Save Station Magmoor B
 > Save Station Magmoor B
   | Transport to Phendrana Drifts South
 > Workstation Tunnel
   | Magmoor Workstation, Transport to Phazon Mines West (ice)
 > Transport to Phazon Mines West
-  | Workstation Tunnel (ice), Transport to Magmoor Caverns South
+  | Workstation Tunnel (ice), Transport to Magmoor Caverns South [Phazon Mines]
 
 
 *** Phendrana Drifts ***
 
 > Transport to Magmoor Caverns West
-  | Transport to Phendrana Drifts North, Shoreline Entrance
+  | Transport to Phendrana Drifts North [Magmoor Caverns], Shoreline Entrance
 > Shoreline Entrance
   | Transport to Magmoor Caverns West, Phendrana Shorelines
 > Phendrana Shorelines
@@ -610,7 +612,7 @@
 > South Quarantine Tunnel
   | Quarantine Cave (wave), Transport to Magmoor Caverns South (wave)
 > Transport to Magmoor Caverns South
-  | South Quarantine Tunnel (wave), Transport to Phendrana Drifts South, Transport Access (ice)
+  | South Quarantine Tunnel (wave), Transport to Phendrana Drifts South [Magmoor Caverns], Transport Access (ice)
 > Transport Access
   * Energy Tank (plasma)
     - blast tunnel
@@ -659,7 +661,7 @@
 *** Phazon Mines ***
 
 > Transport to Tallon Overworld South
-  | Transport to Phazon Mines East, Quarry Access (wave)
+  | Transport to Phazon Mines East [Tallon Overworld], Quarry Access (wave)
 > Quarry Access
   | Transport to Tallon Overworld South (wave), Main Quarry (wave)
 > Main Quarry
@@ -783,13 +785,13 @@
 > Transport Access
   | Phazon Processing Center (ice), Transport to Magmoor Caverns South (ice)
 > Transport to Magmoor Caverns South
-  | Transport Access (ice), Transport to Phazon Mines West
+  | Transport Access (ice), Transport to Phazon Mines West [Magmoor Caverns]
 
 
 *** Impact Crater ***
 
 > Transport to Tallon Overworld
-  | Transport to Impact Crater, Crater Entry Point
+  | Transport to Impact Crater [Tallon Overworld], Crater Entry Point
 > Crater Entry Point
   | Transport to Tallon Overworld, Save Station, Crater Tunnel A (plasma)
 > Save Station

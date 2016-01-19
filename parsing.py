@@ -262,8 +262,9 @@ class DataParser(Parser):
     pickup:     BULLET ID (COLON ID) ? dep ? how ? ;
     how:        INFO ;
     adj:        PIPE connection ( COMMA connection ) * ;
-    connection: ID dep ?
+    connection: ID dep ? loc ? ;
     dep:        LP ID ( COMMA ID ) * RP ;
+    loc:        LB ID RB ;
 
     INFO:   /^\W*-\W*.*\W*$/ ;
     ID:     /[a-zA-Z0-9][-a-zA-Z0-9\_ ]*/ ;
@@ -275,6 +276,8 @@ class DataParser(Parser):
     COLON:  ':' ;
     LP:     '(' ;
     RP:     ')' ;
+    LB:     '[' ;
+    RB:     ']' ;
     '''
 
     tokenAssocs = [
@@ -286,6 +289,8 @@ class DataParser(Parser):
         ('COLON' , '\\:'),
         ('LP', '\\('),
         ('RP', '\\)'),
+        ('LB', '\\['),
+        ('RB', '\\]'),
         ('INFO', '^\W*-\W*.*\W*$'),
         ('ID' , '[a-zA-Z0-9][-a-zA-Z0-9\'_ ]*')
     ]
@@ -354,9 +359,12 @@ class DataParser(Parser):
     def parse_connection(self):
         room = self.match('ID')
         dep = None
+        loc = None
         if self.lookahead.kind == 'LP':
             dep = self.parse_dependency()
-        return (room, dep)
+        if self.lookahead.kind == 'LB':
+            loc = self.parse_loc()
+        return (room, dep, loc)
 
     def parse_dependency(self):
         self.match('LP')
@@ -366,3 +374,9 @@ class DataParser(Parser):
             deps.append(self.match('ID'))
         self.match('RP')
         return deps
+
+    def parse_loc(self):
+        self.match('LB')
+        loc = self.match('ID')
+        self.match('RB')
+        return loc
