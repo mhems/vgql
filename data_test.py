@@ -1,13 +1,9 @@
 #!/usr/bin/python3
 
-from collections import OrderedDict
-import re
-import sys
-
 import pydotplus as pydot
 
-from parsing import *
-from Game import *
+from parsing import DataParser
+from graph import Graph
 
 if __name__ == '__main__':
     parser = DataParser(argv[1])

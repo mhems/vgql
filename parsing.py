@@ -1,3 +1,14 @@
+'''
+Module for generic lexing and parsing, as well as for the
+mini-languages in this project.
+
+* Token
+* Lexer
+* Parser
+  |- QueryParser
+  |- DataParser
+'''
+
 from collections import OrderedDict
 from copy import deepcopy
 from io import TextIOBase
@@ -5,7 +16,7 @@ from re import (finditer, match, I)
 from sys import argv
 from itertools import groupby
 
-from Game import (World, Room, Expansion, Item)
+from game import (World, Room, Expansion, Item)
 
 class Token:
     '''Simple struct of token data'''
@@ -284,6 +295,7 @@ class DataParser(Parser):
         super().__init__(Lexer(filename, True, DataParser.tokenAssocs).lex())
 
     def parse(self):
+        '''Returns constructed list of worlds held in file contents'''
         worlds = []
         while self.lookahead.kind == 'WB':
             worlds.append(self.parse_world())
