@@ -14,6 +14,7 @@ import json
 
 import configuration as config
 import parsing
+import graph
 
 class Collectible:
     '''
@@ -204,5 +205,5 @@ class Game:
     def __init__(self, config_file):
         config.loadConfiguration(config_file)
         self.db = Database(config.get('DATABASE'))
-        worlds = DataParser(config.get('GAME_DATA')).parse()
-        self.graph = Graph.fromWorlds(worlds)
+        worlds = parsing.DataParser(config.get('GAME_DATA')).parse()
+        self.graph = graph.Graph.fromWorlds(worlds)

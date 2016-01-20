@@ -5,6 +5,10 @@ Module containing graph-related objects
 * Graph
 '''
 
+import pydotplus as pydot
+
+import configuration as config
+
 class GraphNode:
     '''
     Simple wrapper container for an Object to be a node in a Graph.
@@ -15,6 +19,13 @@ class GraphNode:
         '''Internalizes parameters'''
         self.value = value
         self.adjacencies = [] if adjacencies is None else adjacencies
+        color = config.get('WORLD_COLORS')[self.value.world]
+        if self.value.elevator:
+            color = config.get('WORLD_COLORS')['Elevator']
+        self.node = pydot.Node(str((self.value.world, self.value.name)),
+                               label=self.value.name,
+                               style='filled',
+                               fillcolor=color)
 
     @property
     def key(self):
@@ -60,7 +71,10 @@ class Graph:
                     if adj[2] is not None:
                         worldname = adj[2]
                     to = g.map[(worldname, adj[0])]
-                    node.addAdjacency((to, adj[1]))
+                    dep = None
+                    if adj[1] is not None:
+                        dep = adj[1][0]
+                    node.addAdjacency((to, dep))
         return g
 
     def addNode(self, node):
@@ -72,6 +86,19 @@ class Graph:
         '''Removes and returns node from internal structure'''
         self.nodes.remove(node)
         return self.map.pop[node.key]
+
+    def write_png(self, filename):
+        graph = pydot.Dot(graph_type='digraph',
+                          bgcolor=config.get('BACKGROUND'))
+        for node in self.nodes:
+            graph.add_node(node.node)
+        for node in self.nodes:
+            for adj in node.adjacencies:
+                color = config.get('DOOR_COLORS')['default']
+                if adj[1] is not None:
+                    color = config.get('DOOR_COLORS')[adj[1]]
+                graph.add_edge(pydot.Edge(node.node, adj[0].node, color=color))
+        graph.write_png(filename)
 
     def __len__(self):
         '''Return number of nodes in self'''
