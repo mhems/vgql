@@ -16,7 +16,7 @@ from re import (finditer, match, I)
 from sys import argv
 from itertools import groupby
 
-from game import (World, Room, Expansion, Item)
+import game
 
 class Token:
     '''Simple struct of token data'''
@@ -310,7 +310,7 @@ class DataParser(Parser):
         self.match('WB')
         worldname = self.match('ID')
         self.match('WB')
-        world = World(worldname)
+        world = game.World(worldname)
         while self.lookahead.kind == 'BG':
             world.addRoom(self.parse_room(worldname))
         return world
@@ -324,7 +324,7 @@ class DataParser(Parser):
                 pickups.append(self.parse_pickup())
         if self.lookahead.kind == 'PIPE':
             adj = self.parse_adjacency()
-        return Room(roomname, worldname, pickups, adj)
+        return game.Room(roomname, worldname, pickups, adj)
 
     def parse_pickup(self):
         self.match('BULLET')
@@ -340,9 +340,9 @@ class DataParser(Parser):
         if self.lookahead.kind == 'INFO':
             how = self.parse_how()
         if second is not None:
-            return Item(second, first, how, dep)
+            return game.Item(second, first, how, dep)
         else:
-            return Expansion(first, how, dep)
+            return game.Expansion(first, how, dep)
 
     def parse_how(self):
         return match('^\W*-\W*(.*)\W*$', self.match('INFO')).group(1)

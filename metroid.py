@@ -2,59 +2,9 @@
 
 # Functionality for collectible query database for video game Metroid Prime
 
-import json, argparse, sys
-from parsing import QueryParser
-import configuration as config
+import argparse, sys
 
-class Database():
-    """Mechanism for storing and querying items"""
-
-    config.loadConfiguration('metroid_prime/config.json')
-
-    def __init__(self, dictlist=None):
-        self.parser = QueryParser(config.get('CHOICES'))
-        if dictlist is not None:
-            self.dicn = { "itemlist" : dictlist }
-
-    @property
-    def items(self):
-        return self.dicn['itemlist']
-
-    def sort(self, key=None, reverse=False):
-        self.items.sort(key=key, reverse=reverse)
-
-    def __len__(self):
-        return len(self.items)
-
-    def __str__(self):
-        return '\n'.join(str(i) for i in self.items)
-
-    def __repr__(self):
-        core = '\n'.join(str(i) for i in self.items)
-        return '{\n\"itemlist\":[\n%s\n]\n}' % core
-
-    def parse_json(self, filename):
-        """Parse items in filename into database"""
-        self.source = filename
-        with open(filename, 'r') as f:
-            dicn = json.load(f)
-        self.dicn = dicn
-
-    def query(self, string, exclude_found, update):
-        """Query database for all items satisfying constraints"""
-        func = self.parser.parse(string)
-        if exclude_found:
-            test = lambda x : func(x) and x["found"] == False
-        else:
-            test = func
-        if update:
-            for idx, e in enumerate(self.items):
-                if test(e):
-                    self.dicn['itemlist'][idx]['found'] = True
-            with open(self.source, 'w') as stream:
-                output(self, stream, json_formatter)
-        dictlist = [e for e in self.items if test(e)]
-        return Database(dictlist)
+import game
 
 def output(database, stream, formatter):
     """Print database to stream f with formatter"""
@@ -138,7 +88,7 @@ if __name__ == '__main__':
     if args.output_file == args.database:
         print('error: database and output file cannot be the same')
         sys.exit(1)
-    db = Database()
+    db = game.Database()
     db.parse_json(args.database)
     results = db.query(args.query_string, args.d, args.u)
     if args.sort_order is not None:

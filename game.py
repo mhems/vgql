@@ -6,7 +6,14 @@ Module representing in-game objects
   |- Item
 * Room
 * World
+* Database
+* Game
 '''
+
+import json
+
+import configuration as config
+import parsing
 
 class Collectible:
     '''
@@ -138,3 +145,53 @@ class World:
     def __iter__(self):
         '''Maintains iteration over self'''
         self.rooms.__iter__()
+
+class Database:
+    """Mechanism for storing and querying items"""
+
+    config.loadConfiguration('metroid_prime/config.json')
+
+    def __init__(self, dictlist=None):
+        self.parser = parsing.QueryParser(config.get('CHOICES'))
+        if dictlist is not None:
+            self.dicn = { "itemlist" : dictlist }
+
+    @property
+    def items(self):
+        return self.dicn['itemlist']
+
+    def sort(self, key=None, reverse=False):
+        self.items.sort(key=key, reverse=reverse)
+
+    def __len__(self):
+        return len(self.items)
+
+    def __str__(self):
+        return '\n'.join(str(i) for i in self.items)
+
+    def __repr__(self):
+        core = '\n'.join(str(i) for i in self.items)
+        return '{\n\"itemlist\":[\n%s\n]\n}' % core
+
+    def parse_json(self, filename):
+        """Parse items in filename into database"""
+        self.source = filename
+        with open(filename, 'r') as f:
+            dicn = json.load(f)
+        self.dicn = dicn
+
+    def query(self, string, exclude_found, update):
+        """Query database for all items satisfying constraints"""
+        func = self.parser.parse(string)
+        if exclude_found:
+            test = lambda x : func(x) and x["found"] == False
+        else:
+            test = func
+        if update:
+            for idx, e in enumerate(self.items):
+                if test(e):
+                    self.dicn['itemlist'][idx]['found'] = True
+            with open(self.source, 'w') as stream:
+                output(self, stream, json_formatter)
+        dictlist = [e for e in self.items if test(e)]
+        return Database(dictlist)
