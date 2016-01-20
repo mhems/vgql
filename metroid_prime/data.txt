@@ -29,15 +29,18 @@
 > Cargo Freight Lift to Deck Gamma
   | Deck Beta Transit Hall, Reactor Core Entrance
 > Reactor Core Entrance
+  * Auto Turrets
   | Cargo Freight Lift to Deck Gamma, Reactor Core, Save Station, Subventilation Shaft Section B
 > Save Station
   | Reactor Core Entrance
 > Subventilation Shaft Section B
   | Reactor Core Entrance, Subventilation Shaft Section A, Main Ventilation Shaft Section A
 > Subventilation Shaft Section A
+  * Creature: Parasite
   | Subventilation Shaft Section B, Biotech Research Area 1
 > Reactor Core
   * Boss: Parasite Queen
+  * Creature: Parasite Queen
   | Reactor Core Entrance, Deck Gamma Monitor Hall
 > Deck Gamma Monitor Hall
   | Reactor Core, Connection Elevator to Deck Beta
@@ -74,8 +77,10 @@
 > Waterfall Cavern
   | Landing Site, Frigate Crash Site (missile)
 > Temple Hall
+  * Creature: Seedling
   | Landing Site, Temple Security Station
 > Canyon Cavern
+  * Creature: Beetle
   | Landing Site, Tallon Canyon
 > Gully
   | Landing Site, Tallon Canyon
@@ -93,12 +98,16 @@
 > Transport to Impact Crater
   | Artifact Temple, Transport to Tallon Overworld [Impact Crater]
 > Tallon Canyon
+  * Creature: Sap Sac
+  * Creature: Zoomer
+  * Creature: Geemer
   | Canyon Cavern, Gully, Transport Tunnel A, Root Tunnel
 > Transport Tunnel A
   | Tallon Canyon, Transport to Chozo Ruins West
 > Transport to Chozo Ruins West
   | Transport Tunnel A, Transport to Tallon Overworld North [Chozo Ruins]
 > Root Tunnel
+  * Creature: Bloodflower
   | Tallon Canyon, Root Cave (missile)
 > Root Cave
   * Missile Expansion (grapple, xray)
@@ -118,6 +127,7 @@
     - up high in underwater cave
   | Waterfall Cavern, Overgrown Cavern (ice), Frigate Access Tunnel (ice)
 > Overgrown Cavern
+  * Creature: Venom Weed
   * Missile Expansion
     - in weeds
   | Frigate Crash Site (ice), Transport Tunnel C (ice)
@@ -132,8 +142,10 @@
 > Main Ventilation Shaft Section B
   | Main Ventilation Shaft Section C, Main Ventilation Shaft Section A
 > Main Ventilation Shaft Section A
+  * Creature: Tallon Crab
   | Main Ventilation Shaft Section B, Reactor Core
 > Reactor Core
+  * Creature: Aqua Pirate
   | Main Ventilation Shaft Section A, Reactor Access
 > Reactor Access
   | Reactor Core, Save Station, Cargo Freight Lift to Deck Gamma
@@ -146,6 +158,7 @@
 > Deck Beta Transit Hall
   | Cargo Freight Lift to Deck Gamma, Biohazard Containment
 > Biohazard Containment
+  * Creature: Aqua Drone
   * Missile Expansion (super)
     - scan to find cordite wall
   | Deck Beta Transit Hall, Deck Beta Security Hall
@@ -156,6 +169,7 @@
 > Deck Beta Conduit Hall
   | Biotech Research Area 1, Connection Elevator to Deck Beta
 > Connection Elevator to Deck Beta
+  * Creature: Aqua Sac
   | Deck Beta Conduit Hall, Hydro Access Tunnel
 > Hydro Access Tunnel
   * Energy Tank (bomb)
@@ -194,6 +208,7 @@
   * Chozo Lore: Fountain
   | Transport to Tallon Overworld North, Main Plaza
 > Main Plaza
+  * Creature: Hive
   * Missile Expansion (boost)
     - boost half-pipe
   * Missile Expansion (grapple)
@@ -207,6 +222,7 @@
 > Ruined Shrine Access
   | Main Plaza, Ruined Shrine
 > Ruined Shrine
+  * Creature: Plated Beetle
   * Missile Expansion (morph, bomb)
     - bomb into small tunnel
   * Missile Expansion (morph, boost)
@@ -216,6 +232,7 @@
 > Tower of Light Access
   | Ruined Shrine, Tower of Light (wave)
 > Tower of Light
+  * Creature: Plated Puffer
   * Upgrade: Wavebuster
   | Tower of Light Access (wave), Tower Chamber (wave)
 > Tower Chamber
@@ -223,10 +240,13 @@
     - head through tunnel
   | Tower of Light (wave)
 > Nursery Access
+  * Creature: Scarabs
   | Main Plaza, Eyon Tunnel
 > Eyon Tunnel
+  * Creature: Eyon
   | Nursery Access, Ruined Nursery
 > Ruined Nursery
+  * Creature: War Wasp
   * Chozo Lore: Exodus
   * Missile Expansion (ball, bomb)
     - bomb blocks
@@ -236,6 +256,8 @@
 > North Atrium
   | Ruined Nursery, Ruined Gallery
 > Ruined Gallery
+  * Creature: Blastcap
+  * Creature: Tangle Weed
   * Missile Expansion (morph)
     - roll through tunnel
   * Missile Expansion (missile)
@@ -244,6 +266,7 @@
 > Map Station
   | Ruined Gallery
 > Totem Access
+  * Creature: Plazmite
   | Ruined Gallery, Hive Totem
 > Hive Totem
   * Boss: Hive Mecha
@@ -289,14 +312,18 @@
 > Piston Tunnel
   | Training Chamber, Main Plaza
 > Arboretum Access
+  * Creature: Shriekbats
   | Ruined Fountain, Arboretum (missile)
 > Arboretum
+  * Creature: Reaper Vine
   | Arboretum Access, Sunchamber Lobby (missile), Gathering Hall Access (missile)
 > Sunchamber Lobby
   | Arboretum, Sunchamber Access
 > Sunchamber Access
   | Sunchamber Lobby, Sunchamber
 > Sunchamber
+  * Creature: Flaahgra
+  * Creature: Flaahgra Tentacle
   * Boss: Flaahgra
   * Upgrade: Varia Suit
   * Artifact: Wild
@@ -305,6 +332,7 @@
 > Sun Tower Access
   | Sunchamber, Sun Tower
 > Sun Tower
+  * Creature: Oculus
   * Chozo Lore: Contain
   | Sun Tower Access, Transport to Magmoor Caverns North
 > Gathering Hall Access
@@ -351,6 +379,7 @@
 > West Furnace Access
   | Energy Core, Furnace
 > Furnace
+  * Creature: Plated Parasite
   * Chozo Lore: Cradle
   * Energy Tank (morph)
     - tunnel through small opening next to spider ball track
@@ -371,6 +400,7 @@
 > Elder Hall Access
   | Crossway, Hall of the Elders
 > Hall of the Elders
+  * Creature: Chozo Ghost
   * Research: Missile Station
   * Chozo Lore: Hope
   * Energy Tank (ice)
@@ -387,6 +417,7 @@
 > Reflecting Pool Access
   | Hall of the Elders, Reflecting Pool
 > Reflecting Pool
+  * Creature: Stone Toad
   | Reflecting Pool Access, Antechamber (missile), Save Station 3 (missile), Transport Access South (ice)
 > Antechamber
   * Upgrade: Ice Beam
@@ -406,16 +437,21 @@
 > Transport to Chozo Ruins North
   | Transport to Magmoor Caverns North [Chozo Ruins], Burning Trail
 > Burning Trail
+  * Creature: Grizby
   | Transport to Chozo Ruins North, Save Station Magmoor A (missile), Lake Tunnel
 > Save Station Magmoor A
   | Burning Trail
 > Lake Tunnel
+  * Creature: Burrower
   | Burning Trail, Lava Lake
 > Lava Lake
+  * Creature: Magmoor
+  * Creature: Puffer
   * Artifact: Nature (super)
     - shoot pillar
   | Lake Tunnel, Pit Tunnel
 > Pit Tunnel
+  * Creature: Triclops
   | Lava Lake, Triclops Pit
 > Triclops Pit
   * Missile Expansion (boots, xray)
@@ -465,6 +501,7 @@
   * Upgrade: Plasma Beam
   | Geothermal Core (plasma)
 > South Core Tunnel
+  * Creature: Puddle Spore
   | Geothermal Core (wave), Magmoor Workstation (wave)
 > Magmoor Workstation
   * Energy Tank (thermal, wave, morph)
@@ -489,6 +526,8 @@
 > Shoreline Entrance
   | Transport to Magmoor Caverns West, Phendrana Shorelines
 > Phendrana Shorelines
+  * Creature: Flickerbat
+  * Creature: Crystallite
   * Missile Expansion (plasma)
     - encased in ice in pillar
   * Missile Expansion (super, spider)
@@ -497,30 +536,37 @@
 > Temple Entryway
   | Phendrana Shorelines, Chozo Ice Temple
 > Chozo Ice Temple
+  * Creature: Ice Parasite
   * Artifact: Sun (plasma)
     - melt ice in chozo statue and activate it
   | Temple Entryway, Chapel Tunnel
 > Chapel Tunnel
   | Chozo Ice Temple, Chapel of the Elders
 > Chapel of the Elders
+  * Creature: Sheegoth
   * Boss: Sheegoth
   * Upgrade: Wave Beam
   | Chapel Tunnel (wave)
 > Save Station B
   | Phendrana Shorelines
 > Ice Ruins Access
+  * Creature: Scatter Bombu
   | Phendrana Shorelines, Ice Ruins East
 > Ice Ruins East
+  * Creature: Baby Sheegoth
   * Missile Expansion (spider)
     - hidden track in corner
   * Missile Expansion (plasma)
     - blast ice wall to enter cave
   | Ice Ruins Access, Plaza Walkway
 > Plaza Walkway
+  * Creature: Ice Burrower
   | Ice Ruins East, Phendrana Shorelines
 > Ruins Entryway
+  * Creature: Pulse Bombu
   | Phendrana Shorelines, Ice Ruins West
 > Ice Ruins West
+  * Creature: Ice Shriekbats
   * Chozo Lore: Cipher
   * Power Bomb Expansion (plasma)
     - plasma ice on rooftop
@@ -542,6 +588,8 @@
 > Specimen Storage
   | Ruined Courtyard (wave), Research Entrance (wave)
 > Research Entrance
+  * Creature: Shadow Pirate
+  * Creature: Space Pirate
   * Research: Locked Door
   | Specimen Storage (wave), Map Station, Hydra Lab Entryway (wave)
 > Map Station
@@ -573,6 +621,7 @@
 > West Tower
   | West Tower Entrance, Control Tower (wave)
 > Control Tower
+  * Creature: Flying Pirate
   * Artifact: Elder (plasma)
     - shoot through window above East Tower then missile it
   | West Tower (wave), East Tower (wave)
@@ -581,6 +630,7 @@
 > Aether Lab Entryway
   | East Tower (wave), Research Lab Aether (wave)
 > Research Lab Aether
+  * Creature: Metroid
   * Chozo Lore: Metroid Forces
   * Chozo Lore: Metroid Morphology
   * Chozo Lore: Meta Ridley
@@ -592,6 +642,7 @@
     - roll along catwalks
   | Aether Lab Entryway (wave), Research Core Access (wave)
 > Research Core Access
+  * Creature: Sentry Drone
   | Research Lab Aether (wave), Research Core
 > Research Core
   * Upgrade: Thermal Visor
@@ -602,6 +653,7 @@
   | Quarantine Access (wave), Quarantine Cave (wave)
 > Quarantine Cave
   * Research: Spider Ball Track
+  * Creature: Thardus
   * Boss: Thardus
   * Upgrade: Spider Ball
   | North Quarantine Tunnel (wave), Quarantine Monitor, South Quarantine Tunnel (wave)
@@ -624,10 +676,12 @@
 > Hunter Cave Access
   | Frozen Pike (wave), Hunter Cave (wave)
 > Hunter Cave
+  * Creature: Glider
   | Hunter Cave Access (wave), Chamber Access (wave), Lake Tunnel (wave), Lower Edge Tunnel (wave)
 > Chamber Access
   | Hunter Cave (wave), Gravity Chamber (wave)
 > Gravity Chamber
+  * Creature: Aqua Reaper
   * Upgrade: Gravity Suit
   * Missile Expansion (grapple, plasma)
     - above surface, shoot ice stalactite to grapple to alcove
@@ -637,6 +691,7 @@
 > Lower Edge Tunnel
   | Hunter Cave (wave), Phendrana's Edge (wave)
 > Phendrana's Edge
+  * Creature: Jelzap
   | Lower Edge Tunnel (wave), Storage Cave (plasma), Security Cave, Upper Edge Tunnel (wave)
 > Storage Cave
   * Artifact: Spirit (xray, power)
@@ -655,6 +710,7 @@
 > Save Station C
   | Frost Cave (wave)
 > Frost Cave Access
+  * Creature: Ice Beetle
   | Frost Cave (wave), Frozen Pike (wave)
 
 
@@ -671,10 +727,12 @@
 > Save Station Mines A
   | Main Quarry (wave)
 > Security Access A
+  * Creature: Mega Turret
   * Missile Expansion (power)
     - bomb wall
   | Main Quarry (ice), Mine Security Station (ice)
 > Mine Security Station
+  * Creature: Wave Trooper
   | Security Access A (ice), Storage Depot A (plasma), Security Access B (wave)
 > Storage Depot A
   * Upgrade: Flamethrower
@@ -682,6 +740,8 @@
 > Security Access B
   | Mine Security Station (wave), Elite Research (ice)
 > Elite Research
+  * Creature: Power Trooper
+  * Creature: Phazon Elite
   * Boss: Phazon Elite
   * Artifact: Warrior (power)
     - defeat Phazon Elite
@@ -707,6 +767,8 @@
     - behind crate on ledge
   | Elevator A (ice), Elite Control (wave)
 > Elite Control
+  * Creature: Elite Pirate
+  * Creature: Ice Trooper
   * Chozo Lore: Metroid Prime
   * Chozo Lore: The Hunter
   * Chozo Lore: Hunter Weapons
@@ -723,6 +785,7 @@
     - bomb grate fan, activate console
   | Elite Control (ice), Omega Research (ice)
 > Omega Research
+  * Creature: Omega Pirate
   * Chozo Lore: Omega Pirate
   | Ventilation Shaft (ice), Map Station Mines (ice), Dynamo Access (ice)
 > Map Station Mines
@@ -779,6 +842,7 @@
     - head through door on catwalk
   | Elite Quarters (plasma), Phazon Processing Center (plasma)
 > Phazon Processing Center
+  * Creature: Plasma Trooper
   * Missile Expansion (xray, power)
     - bomb hidden missile behind right wall
   | Processing Center Access (plasma), Transport Access (ice), Maintenance Tunnel (ice)
@@ -797,8 +861,10 @@
 > Save Station
   | Crater Entry Point
 > Crater Tunnel A
+  * Creature: Lumigek
   | Crater Entry Point (plasma), Phazon Core (plasma)
 > Phazon Core
+  * Creature: Fission Metroid
   | Crater Tunnel A (plasma), Crater Missile Station (plasma), Crater Tunnel B (plasma)
 > Crater Missile Station
   | Phazon Core (plasma)
@@ -806,6 +872,7 @@
   | Phazon Core (plasma), Phazon Infusion Chamber
 > Phazon Infusion Chamber
   * Boss: Metroid Prime Exo
+  * Creature: Metroid Prime Exo
   | Crater Tunnel B (plasma), Subchamber One
 > Subchamber One
   | Subchamber Two
@@ -819,3 +886,4 @@
   | Metroid Prime Lair
 > Metroid Prime Lair
   * Boss: Metroid Prime Core
+  * Creature: Metroid Prime Core
