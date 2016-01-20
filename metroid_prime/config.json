@@ -4,10 +4,10 @@
     "BACKGROUND": "black",
     "DOOR_COLORS": {
         "default": "blue",
-        "missile" : "grey",
-        "wave" : "purple",
-        "ice" : "white",
-        "plasma" : "red"
+        "Missile" : "grey",
+        "Wave Beam" : "purple",
+        "Ice Beam" : "white",
+        "Plasma Beam" : "red"
     },
     "WORLD_COLORS": {
         "Pirate Frigate": "blue",
