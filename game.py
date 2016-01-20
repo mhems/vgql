@@ -147,14 +147,14 @@ class World:
         self.rooms.__iter__()
 
 class Database:
-    """Mechanism for storing and querying items"""
+    '''Mechanism for storing and querying items'''
 
     config.loadConfiguration('metroid_prime/config.json')
 
     def __init__(self, dictlist=None):
         self.parser = parsing.QueryParser(config.get('CHOICES'))
         if dictlist is not None:
-            self.dicn = { "itemlist" : dictlist }
+            self.dicn = { 'itemlist' : dictlist }
 
     @property
     def items(self):
@@ -174,17 +174,16 @@ class Database:
         return '{\n\"itemlist\":[\n%s\n]\n}' % core
 
     def parse_json(self, filename):
-        """Parse items in filename into database"""
+        '''Parse items in filename into database'''
         self.source = filename
         with open(filename, 'r') as f:
-            dicn = json.load(f)
-        self.dicn = dicn
+            self.dicn = json.load(f)
 
     def query(self, string, exclude_found, update):
-        """Query database for all items satisfying constraints"""
+        '''Query database for all items satisfying constraints'''
         func = self.parser.parse(string)
         if exclude_found:
-            test = lambda x : func(x) and x["found"] == False
+            test = lambda x : func(x) and x['found'] == False
         else:
             test = func
         if update:
@@ -195,3 +194,15 @@ class Database:
                 output(self, stream, json_formatter)
         dictlist = [e for e in self.items if test(e)]
         return Database(dictlist)
+
+class Game:
+    '''
+    Top-level representation of a game's internals such as
+    map, collectibles, and player progress
+    '''
+
+    def __init__(self, config_file):
+        config.loadConfiguration(config_file)
+        self.db = Database(config.get('DATABASE'))
+        worlds = DataParser(config.get('GAME_DATA')).parse()
+        self.graph = Graph.fromWorlds(worlds)

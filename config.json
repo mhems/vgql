@@ -1,4 +1,6 @@
 {
+    "DATABASE": "",
+    "GAME_DATA": "",
     "BACKGROUND": "black",
     "DOOR_COLORS": {
         "default": "blue"

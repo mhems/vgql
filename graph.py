@@ -1,18 +1,9 @@
 '''
 Module containing graph-related objects
 
-* GraphEdge
 * GraphNode
 * Graph
 '''
-
-class GraphEdge:
-    '''Simple class for an directed Graph Edge with at most one dependency'''
-
-    def __init__(self, a, b, dep=None):
-        self.a = a
-        self.b = b
-        self.dep = dep
 
 class GraphNode:
     '''
@@ -28,7 +19,7 @@ class GraphNode:
     @property
     def key(self):
         '''Returns the key of the node'''
-        return self.value.name
+        return (self.value.world, self.value.name)
 
     @property
     def degree(self):
@@ -40,6 +31,9 @@ class GraphNode:
         '''Returns True if self is a leaf node (only one out-edge)'''
         return self.degree == 1
 
+    def addAdjacency(self, adjacency):
+        self.adjacencies.append(adjacency)
+
 class Graph:
     '''
     Directed adjacency-list graph where an edge is traversable if
@@ -50,6 +44,24 @@ class Graph:
         '''Constructs self'''
         self.nodes = []
         self.map = {}
+
+    @staticmethod
+    def fromWorlds(worlds):
+        '''Constructs a Graph from a list of World objects'''
+        g = Graph()
+        for world in worlds:
+            for room in world.rooms:
+                g.addNode(GraphNode(room))
+        for world in worlds:
+            for room in world.rooms:
+                node = g.map[(world.name, room.name)]
+                for adj in room.adjacencies:
+                    worldname = world.name
+                    if adj[2] is not None:
+                        worldname = adj[2]
+                    to = g.map[(worldname, adj[0])]
+                    node.addAdjacency((to, adj[1]))
+        return g
 
     def addNode(self, node):
         '''Adds node to internal structure'''
