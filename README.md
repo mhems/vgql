@@ -71,8 +71,8 @@ Metroid-specific assumptions that need to be refactored out.
 
 Directory structure of a game this tool should analyze:
 * **game_name/**
-  * **config.py**
-    - customize off of the top-level config.py
+  * **config.json**
+    - customize off of the top-level config.json
   * **data.txt**
     - holds game map and collectibles with locations in this tool's DSL
 

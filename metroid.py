@@ -4,14 +4,15 @@
 
 import json, argparse, sys
 from parsing import QueryParser
+import configuration as config
 
 class Database():
     """Mechanism for storing and querying items"""
 
-    choices = {'kind', 'room', 'world', 'name', 'found'}
+    config.loadConfiguration('metroid_prime/config.json')
 
     def __init__(self, dictlist=None):
-        self.parser = QueryParser(Database.choices)
+        self.parser = QueryParser(config.get('CHOICES'))
         if dictlist is not None:
             self.dicn = { "itemlist" : dictlist }
 
@@ -126,6 +127,7 @@ if __name__ == '__main__':
                         help    = 'the format of the output: One of (n)one, (j)son, (h)tml')
     parser.add_argument('-q',
                         dest    = 'query_string',
+                        default = '',
                         metavar = 'QUERY_STRING',
                         help    = 'the SQL-like query string to execute '
                                   'of the form \'select items where\'...')

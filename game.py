@@ -8,25 +8,6 @@ Module representing in-game objects
 * World
 '''
 
-# TODO: move to configuration loader
-door_color_map = {
-    'default' : 'blue',
-    'missile' : 'grey',
-    'wave' : 'purple',
-    'ice' : 'white',
-    'plasma' : 'red'
-}
-world_color_map = {
-    'Pirate Frigate': 'blue',
-    'Tallon Overworld' : 'green',
-    'Chozo Ruins' : 'orange',
-    'Magmoor Caverns' : 'red',
-    'Phendrana Drifts' : 'white',
-    'Phazon Mines' : 'grey',
-    'Impact Crater' : 'purple',
-    'Elevator' : 'yellow'
-}
-
 class Collectible:
     '''
     Represents an in-game collectible.

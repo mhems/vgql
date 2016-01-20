@@ -1,0 +1,21 @@
+{
+    "BACKGROUND": "black",
+    "DOOR_COLORS": {
+        "default": "blue"
+    },
+    "WORLD_COLORS": {
+
+    },
+    "WORLDS": [
+
+    ],
+    "KINDS": [
+
+    ],
+    "CHOICES": [
+        "found"
+    ],
+    "MANDATORY": [
+        "Boss"
+    ]
+}

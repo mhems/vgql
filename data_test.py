@@ -5,13 +5,16 @@ from sys import argv
 
 from parsing import DataParser
 from graph import (Graph, GraphNode)
-from game import (door_color_map, world_color_map)
+import configuration as config
 
 if __name__ == '__main__':
+    config.loadConfiguration('metroid_prime/config.json')
     parser = DataParser(argv[1])
     worlds = parser.parse()
     # print('\n\n'.join(str(w) for w in worlds))
 
+    world_color_map = config.get('WORLD_COLORS')
+    door_color_map = config.get('DOOR_COLORS')
     map = {}
 
     def hash(world, room):
@@ -19,7 +22,8 @@ if __name__ == '__main__':
                 world if isinstance(world, str) else world.name)
 
     g = Graph()
-    graph = pydot.Dot(graph_type='digraph', bgcolor='black')
+    graph = pydot.Dot(graph_type='digraph',
+                      bgcolor=config.get('BACKGROUND'))
     nodes = []
     for world in worlds:
         for room in world.rooms:

@@ -3,6 +3,8 @@
 from sys import argv
 from parsing import QueryParser
 
+import configuration as config
+
 if __name__ == '__main__':
     # Some crude testing
     tests = [
@@ -51,10 +53,11 @@ if __name__ == '__main__':
             'name':'home'
         }
     ]
+    config.loadConfiguration('metroid_prime/config.json')
     for query in tests:
         print('Query:', query)
-        choices = {'kind', 'room', 'world', 'name', 'found'}
-        parser = QueryParser(choices, query)
-        func = parser.parse()
+        choices = config.get('CHOICES')
+        parser = QueryParser(choices)
+        func = parser.parse(query)
         print('\n'.join(str(e) for e in l if func(e)))
         print('='*40)

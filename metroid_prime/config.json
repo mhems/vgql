@@ -1,0 +1,52 @@
+{
+    "BACKGROUND": "black",
+    "DOOR_COLORS": {
+        "default": "blue",
+        "missile" : "grey",
+        "wave" : "purple",
+        "ice" : "white",
+        "plasma" : "red"
+    },
+    "WORLD_COLORS": {
+        "Pirate Frigate": "blue",
+        "Tallon Overworld" : "green",
+        "Chozo Ruins" : "orange",
+        "Magmoor Caverns" : "red",
+        "Phendrana Drifts" : "white",
+        "Phazon Mines" : "grey",
+        "Impact Crater" : "purple",
+        "Elevator" : "yellow"
+    },
+    "WORLDS": [
+        "Pirate Frigate",
+        "Tallon Overworld",
+        "Chozo Ruins",
+        "Magmoor Caverns",
+        "Phendrana Drifts",
+        "Phazon Mines",
+        "Impact Crater"
+    ],
+    "KINDS": [
+        "Artifact",
+        "Boss",
+        "Chozo Lore",
+        "Creature",
+        "Energy Tank",
+        "Missile Expansion",
+        "Pirate Data",
+        "Power Bomb Expansion",
+        "Research",
+        "Upgrade"
+    ],
+    "CHOICES": [
+        "kind",
+        "room",
+        "world",
+        "name",
+        "found"
+    ],
+    "MANDATORY": [
+        "Artifact",
+        "Boss"
+    ]
+}
