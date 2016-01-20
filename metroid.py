@@ -3,6 +3,7 @@
 # Functionality for collectible query database for video game Metroid Prime
 
 import argparse, sys
+import json
 
 import game
 

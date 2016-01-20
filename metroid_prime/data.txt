@@ -73,6 +73,7 @@
   | Canyon Cavern, Gully, Alcove, Waterfall Cavern, Temple Hall
 > Alcove
   * Upgrade: Space Jump Boots
+    - access alcove via Tallon Canyon
   | Landing Site
 > Waterfall Cavern
   | Landing Site, Frigate Crash Site (Missile)
@@ -228,12 +229,14 @@
   * Missile Expansion (Morph Ball, Boost Ball)
     - boost up on left ledge
   * Upgrade: Morph Ball
+    - defeat Plated Beetle
   | Ruined Shrine Access, Tower of Light Access (Wave Beam)
 > Tower of Light Access
   | Ruined Shrine, Tower of Light (Wave Beam)
 > Tower of Light
   * Creature: Plated Puffer
   * Upgrade: Wavebuster
+    - use missiles to shatter pillars
   | Tower of Light Access (Wave Beam), Tower Chamber (Wave Beam)
 > Tower Chamber
   * Artifact: Lifegiver (Gravity Suit)
@@ -271,6 +274,7 @@
 > Hive Totem
   * Boss: Hive Mecha
   * Missile Expansion
+    - defeat Hive Mecha
   | Totem Access, Transport Access North (Missile)
 > Transport Access North
   * Energy Tank
@@ -326,6 +330,7 @@
   * Creature: Flaahgra Tentacle
   * Boss: Flaahgra
   * Upgrade: Varia Suit
+    - defeat Flaahgra
   * Artifact: Wild
     - defeat ghosts
   | Sunchamber Access, Sun Tower Access
@@ -352,6 +357,7 @@
   * Missile Expansion (Gravity Suit)
     - underwater tunnel
   * Upgrade: Charge Beam
+    - find five ruins
   | Watery Hall Access, Dynamo Access (Missile)
 > Dynamo Access
   | Watery Hall, Dynamo
@@ -375,6 +381,7 @@
   * Missile Expansion (Morph Ball Bomb)
     - bomb wall
   * Upgrade: Morph Ball Bomb
+    - defeat Incinerator Drone
   | Burn Dome Access
 > West Furnace Access
   | Energy Core, Furnace
@@ -421,6 +428,7 @@
   | Reflecting Pool Access, Antechamber (Missile), Save Station 3 (Missile), Transport Access South (Ice Beam)
 > Antechamber
   * Upgrade: Ice Beam
+    - drain reflecting pool, boost ball up half-pipe
   | Reflecting Pool (Ice Beam)
 > Save Station 3
   | Reflecting Pool, Transport to Tallon Overworld East
@@ -480,6 +488,7 @@
   | Monitor Station, Fiery Shores
 > Shore Tunnel
   * Upgrade: Ice Spreader
+    - power bomb walkway, underneath
   | Monitor Station, Fiery Shores
 > Fiery Shores
   * Missile Expansion (Morph Ball, Morph Ball Bomb)
@@ -499,6 +508,7 @@
   | North Core Tunnel, Plasma Processing (Ice Beam), South Core Tunnel
 > Plasma Processing
   * Upgrade: Plasma Beam
+    - raise platforms in Geothermal Core, follow Spider Ball track
   | Geothermal Core (Plasma Beam)
 > South Core Tunnel
   * Creature: Puddle Spore
@@ -546,6 +556,7 @@
   * Creature: Sheegoth
   * Boss: Sheegoth
   * Upgrade: Wave Beam
+    - defeat Sheegoth
   | Chapel Tunnel (Wave Beam)
 > Save Station B
   | Phendrana Shorelines
@@ -576,6 +587,7 @@
 > Phendrana Canyon
   * Chozo Lore: The Turned
   * Upgrade: Boost Ball
+    - activate platforms
   | Canyon Entryway
 > Courtyard Entryway
   | Ice Ruins West, Ruined Courtyard
@@ -613,6 +625,7 @@
   * Chozo Lore: Phazon Program
   * Chozo Lore: Contact
   * Upgrade: Super Missile
+    - restore power to holographic projector
   | Observatory Access (Wave Beam), Save Station D (Missile), West Tower Entrance (Wave Beam)
 > Save Station D
   | Observatory
@@ -646,6 +659,7 @@
   | Research Lab Aether (Wave Beam), Research Core
 > Research Core
   * Upgrade: Thermal Visor
+    - cut power to containment unit
   | Research Core Access (Wave Beam), Pike Access (Ice Beam)
 > Quarantine Access
   | Ruined Courtyard, North Quarantine Tunnel (Wave Beam)
@@ -656,6 +670,7 @@
   * Creature: Thardus
   * Boss: Thardus
   * Upgrade: Spider Ball
+    - defeat Thardus
   | North Quarantine Tunnel (Wave Beam), Quarantine Monitor, South Quarantine Tunnel (Wave Beam)
 > Quarantine Monitor
   * Missile Expansion (Grapple Beam)
@@ -683,6 +698,7 @@
 > Gravity Chamber
   * Creature: Aqua Reaper
   * Upgrade: Gravity Suit
+    - located in deepest part of chamber
   * Missile Expansion (Grapple Beam, Plasma Beam)
     - above surface, shoot ice stalactite to grapple to alcove
   | Chamber Access (Wave Beam), Lake Tunnel (Wave Beam)
@@ -736,6 +752,7 @@
   | Security Access A (Ice Beam), Storage Depot A (Plasma Beam), Security Access B (Wave Beam)
 > Storage Depot A
   * Upgrade: Flamethrower
+    - power bomb bendezium wall on top floor of Mine Security Station, scan to unlock force field
   | Mine Security Station (Plasma Beam)
 > Security Access B
   | Mine Security Station (Wave Beam), Elite Research (Ice Beam)
@@ -759,6 +776,7 @@
   | Elevator Access A (Ice Beam), Elite Control Access (Ice Beam)
 > Storage Depot B
   * Upgrade: Grapple Beam
+    - follow yellow tracks from Ore Processing
   | Ore Processing (Ice Beam)
 > Waste Disposal
   | Ore Processing (Ice Beam), Main Quarry (Ice Beam)
@@ -794,6 +812,7 @@
   | Omega Research (Ice Beam), Central Dynamo (Ice Beam)
 > Central Dynamo
   * Power Bomb Expansion
+    - defeat invisible drone, complete maze
   | Dynamo Access (Ice Beam), Save Station Mines B (Ice Beam), Quarantine Access A (Ice Beam)
 > Save Station Mines B
   | Central Dynamo (Ice Beam)
@@ -836,6 +855,7 @@
 > Elite Quarters
   * Boss: Omega Pirate
   * Upgrade: Phazon Suit
+    - defeat Omega Pirate
   | Elite Quarters Access (Plasma Beam), Processing Center Access (Plasma Beam)
 > Processing Center Access
   * Energy Tank (Plasma Beam)
