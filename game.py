@@ -157,6 +157,23 @@ class Database:
         if dictlist is not None:
             self.dicn = { 'itemlist' : dictlist }
 
+    @staticmethod
+    def fromWorlds(worlds, assume_not_found=True):
+        '''Construct and return database from list of worlds'''
+        dictlist = []
+        for world in worlds:
+            for room in world.rooms:
+                for c in room.collectibles:
+                    dict_ = {'found' : not assume_not_found,
+                             'world' : world.name,
+                             'kind' : c.kind,
+                             'room' : room.name}
+                    dict_['how'] = c.info if c.info is not None else ''
+                    if isinstance(c, Item):
+                        dict_['name'] = c.name
+                    dictlist.append(dict_)
+        return Database(dictlist)
+
     @property
     def items(self):
         return self.dicn['itemlist']
@@ -203,7 +220,8 @@ class Game:
     '''
 
     def __init__(self, config_file):
+        '''Load configuration and load game data as graph'''
         config.loadConfiguration(config_file)
-        self.db = Database(config.get('DATABASE'))
         worlds = parsing.DataParser(config.get('GAME_DATA')).parse()
         self.graph = graph.Graph.fromWorlds(worlds)
+        self.database = Database.fromWorlds(worlds)

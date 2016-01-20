@@ -29,9 +29,10 @@
 > Cargo Freight Lift to Deck Gamma
   | Deck Beta Transit Hall, Reactor Core Entrance
 > Reactor Core Entrance
-  * Auto Turrets
+  * Creature: Auto Turrets
   | Cargo Freight Lift to Deck Gamma, Reactor Core, Save Station, Subventilation Shaft Section B
 > Save Station
+  * Research: Save Station
   | Reactor Core Entrance
 > Subventilation Shaft Section B
   | Reactor Core Entrance, Subventilation Shaft Section A, Main Ventilation Shaft Section A
@@ -68,6 +69,9 @@
 
 > Landing Site
   * Research: Gunship
+  * Research: Small Energy
+  * Research: Large Energy
+  * Research: Ultra Energy
   * Missile Expansion (Morph Ball)
     - under small alcove behind ship
   | Canyon Cavern, Gully, Alcove, Waterfall Cavern, Temple Hall
@@ -93,6 +97,7 @@
 > Artifact Temple
   * Artifact: Truth
   * Boss: Meta Ridley
+  * Creature: Meta Ridley
   * Chozo Lore: Statuary
   * Chozo Lore: Binding
   | Temple Lobby, Transport to Impact Crater
@@ -159,6 +164,7 @@
 > Deck Beta Transit Hall
   | Cargo Freight Lift to Deck Gamma, Biohazard Containment
 > Biohazard Containment
+  * Pirate Data: Fall of Zebes
   * Creature: Aqua Drone
   * Missile Expansion (Super Missile)
     - scan to find cordite wall
@@ -267,12 +273,16 @@
     - missile wall
   | North Atrium, Map Station (Missile), Totem Access
 > Map Station
+  * Research: Map Station
   | Ruined Gallery
 > Totem Access
   * Creature: Plazmite
   | Ruined Gallery, Hive Totem
 > Hive Totem
   * Boss: Hive Mecha
+  * Creature: Hive Mecha
+  * Creature: Ram War Wasp
+  * Research: Missile Ammo
   * Missile Expansion
     - defeat Hive Mecha
   | Totem Access, Transport Access North (Missile)
@@ -378,6 +388,8 @@
   | Energy Core, Burn Dome
 > Burn Dome
   * Boss: Incinerator Drone
+  * Creature: Incinerator Drone
+  * Creature: Barbed War Wasp
   * Missile Expansion (Morph Ball Bomb)
     - bomb wall
   * Upgrade: Morph Ball Bomb
@@ -483,7 +495,7 @@
 > Warrior Shrine
   * Artifact: Strength (Space Jump Boots)
     - jump up to spinner to raise bridge
-  * Power Bomb (Power Bomb)
+  * Power Bomb Expansion (Power Bomb)
     - bomb grate, fall through
   | Monitor Station, Fiery Shores
 > Shore Tunnel
@@ -609,11 +621,11 @@
 > Hydra Lab Entryway
   | Research Entrance (Wave Beam), Research Lab Hydra (Wave Beam)
 > Research Lab Hydra
-  * Chozo Lore: Mining Status
-  * Chozo Lore: Security Breaches
-  * Chozo Lore: Phazon Analysis
-  * Chozo Lore: Parasite Larva
-  * Chozo Lore: Glacial Wastes
+  * Pirate Data: Mining Status
+  * Pirate Data: Security Breaches
+  * Pirate Data: Phazon Analysis
+  * Pirate Data: Parasite Larva
+  * Pirate Data: Glacial Wastes
   * Missile Expansion (Super Missile)
     - super missile cylinder
   | Hydra Lab Entryway (Wave Beam), Observatory Access (Wave Beam)
@@ -622,8 +634,8 @@
 > Observatory
   * Research: Tallon IV
   * Research: Zebes
-  * Chozo Lore: Phazon Program
-  * Chozo Lore: Contact
+  * Pirate Data: Phazon Program
+  * Pirate Data: Contact
   * Upgrade: Super Missile
     - restore power to holographic projector
   | Observatory Access (Wave Beam), Save Station D (Missile), West Tower Entrance (Wave Beam)
@@ -644,11 +656,11 @@
   | East Tower (Wave Beam), Research Lab Aether (Wave Beam)
 > Research Lab Aether
   * Creature: Metroid
-  * Chozo Lore: Metroid Forces
-  * Chozo Lore: Metroid Morphology
-  * Chozo Lore: Meta Ridley
-  * Chozo Lore: Metroid Studies
-  * Chozo Lore: Phazon Infusion
+  * Pirate Data: Metroid Forces
+  * Pirate Data: Metroid Morphology
+  * Pirate Data: Meta Ridley
+  * Pirate Data: Metroid Studies
+  * Pirate Data: Phazon Infusion
   * Energy Tank (Missile)
     - missile glass on ground floor
   * Missile Expansion (Morph Ball)
@@ -697,6 +709,7 @@
   | Hunter Cave (Wave Beam), Gravity Chamber (Wave Beam)
 > Gravity Chamber
   * Creature: Aqua Reaper
+  * Research: Stalactite
   * Upgrade: Gravity Suit
     - located in deepest part of chamber
   * Missile Expansion (Grapple Beam, Plasma Beam)
@@ -714,12 +727,13 @@
     - look for door hidden behind wall, bomb it
   | Phendrana's Edge (Plasma Beam)
 > Security Cave
-  * Power Bomb (Grapple Beam)
+  * Power Bomb Expansion (Grapple Beam)
     - grapple up to top of Phendrana's Edge
   | Phendrana's Edge
 > Upper Edge Tunnel
   | Phendrana's Edge (Wave Beam), Frost Cave (Wave Beam)
 > Frost Cave
+  * Creature: Hunter Metroid
   * Missile Expansion (Grapple Beam)
     - grapple up to top, missile stalactite, go below ice
   | Upper Edge Tunnel (Wave Beam), Save Station C (Wave Beam), Frost Cave Access (Wave Beam)
@@ -762,13 +776,14 @@
   * Boss: Phazon Elite
   * Artifact: Warrior (Power Bomb)
     - defeat Phazon Elite
-  * Chozo Lore: Elite Pirates
+  * Pirate Data: Elite Pirates
   * Missile Expansion (Morph Ball)
     - laser wall
   | Security Access B (Ice Beam), Research Access (Ice Beam)
 > Research Access
   | Elite Research (Ice Beam), Ore Processing (Ice Beam)
 > Ore Processing
+  * Research: Grapple Point
   | Research Access (Ice Beam), Elevator Access A (Ice Beam), Storage Depot B (Ice Beam), Waste Disposal (Ice Beam)
 > Elevator Access A
   | Ore Processing (Ice Beam), Elevator A (Ice Beam)
@@ -787,14 +802,14 @@
 > Elite Control
   * Creature: Elite Pirate
   * Creature: Ice Trooper
-  * Chozo Lore: Metroid Prime
-  * Chozo Lore: The Hunter
-  * Chozo Lore: Hunter Weapons
-  * Chozo Lore: Chozo Studies
-  * Chozo Lore: Chozo Artifacts
-  * Chozo Lore: Prime Mutations
-  * Chozo Lore: Prime Breach
-  * Chozo Lore: Chozo Ghosts
+  * Pirate Data: Metroid Prime
+  * Pirate Data: The Hunter
+  * Pirate Data: Hunter Weapons
+  * Pirate Data: Chozo Studies
+  * Pirate Data: Chozo Artifacts
+  * Pirate Data: Prime Mutations
+  * Pirate Data: Prime Breach
+  * Pirate Data: Chozo Ghosts
   | Elite Control Access (Wave Beam), Maintenance Tunnel (Ice Beam), Ventilation Shaft (Ice Beam)
 > Maintenance Tunnel
   | Elite Control (Ice Beam), Phazon Processing Center (Ice Beam)
@@ -804,13 +819,14 @@
   | Elite Control (Ice Beam), Omega Research (Ice Beam)
 > Omega Research
   * Creature: Omega Pirate
-  * Chozo Lore: Omega Pirate
+  * Pirate Data: Omega Pirate
   | Ventilation Shaft (Ice Beam), Map Station Mines (Ice Beam), Dynamo Access (Ice Beam)
 > Map Station Mines
   | Omega Research (Ice Beam)
 > Dynamo Access
   | Omega Research (Ice Beam), Central Dynamo (Ice Beam)
 > Central Dynamo
+  * Research: Power Bomb Ammo
   * Power Bomb Expansion
     - defeat invisible drone, complete maze
   | Dynamo Access (Ice Beam), Save Station Mines B (Ice Beam), Quarantine Access A (Ice Beam)
@@ -845,6 +861,7 @@
 > Quarantine Access B
   | Fungal Hall B (Plasma Beam), Metroid Quarantine B (Plasma Beam)
 > Metroid Quarantine B
+  * Pirate Data: Special Forces
   * Missile Expansion (Super Missile)
     - blast cylinder
   | Quarantine Access B (Plasma Beam), Save Station Mines C (Plasma Beam), Elite Quarters Access (Plasma Beam)
