@@ -43,18 +43,27 @@ class GraphNode:
         return self.degree == 1
 
     def addAdjacency(self, adjacency):
+        '''Adds adjacency to node'''
         self.adjacencies.append(adjacency)
+
+    def reachable(self, upgrades):
+        '''Return reachable adjacent nodes given upgrades'''
+        return [a[0] for a in self.adjacencies
+                if a[1] is None or a[1] in upgrades]
 
 class Graph:
     '''
-    Directed adjacency-list graph where an edge is traversable if
-    there is no dependency or the single dependency has been satisfied
+    Directed adjacency-list unweighted graph where an edge is
+    traversable if there is no dependency or the single dependency has
+    been satisfied
     '''
 
     def __init__(self):
         '''Constructs self'''
         self.nodes = []
         self.map = {}
+        # dict where distm[(id(u), id(v))] holds distance from u to v
+        self.distm = None
 
     @staticmethod
     def fromWorlds(worlds):
@@ -77,6 +86,52 @@ class Graph:
                     node.addAdjacency((to, dep))
         return g
 
+    @property
+    def numNodes(self):
+        '''Return number of nodes in self'''
+        return len(self.nodes)
+
+    @property
+    def numEdges(self):
+        '''Return number of edges in self'''
+        return sum(n.degree for n in self.nodes)
+
+    @property
+    def density(self):
+        '''Return density of graph, as defined by |E|/(|V|(|V|-1))'''
+        N = self.numNodes
+        return self.numEdges/(N * (N - 1))
+
+    @property
+    def max_degree(self):
+        '''Returns degree of node with maximum degree'''
+        return max(n.degree for n in self.nodes)
+
+    @property
+    def min_degree(self):
+        '''Returns degree of node with minimum degree'''
+        return min(n.degree for n in self.nodes)
+
+    @property
+    def diameter(self):
+        '''Returns the maximum eccentricity over all nodes'''
+        return max((self.eccentricity(v) for v in self.nodes
+                   if self.eccentricity(v) > 0),
+                   default=-1)
+
+    @property
+    def radius(self):
+        '''Returns the minimum eccentricity over all nodes'''
+        return min((self.eccentricity(v) for v in self.nodes
+                    if self.eccentricity(v) > 0),
+                    default=-1)
+
+    def eccentricity(self, s):
+        '''Returns greatest distance from s over all other nodes'''
+        return max((self.distm[(id(s), id(i))] for i in self.nodes
+                    if (id(s), id(i)) in self.distm and s is not i),
+                   default=-1)
+
     def addNode(self, node):
         '''Adds node to internal structure'''
         self.nodes.append(node)
@@ -87,6 +142,44 @@ class Graph:
         self.nodes.remove(node)
         return self.map.pop[node.key]
 
+    def distance(self, u, v):
+        '''Returns distance from u to v or -1 if unreachable'''
+        if self.distm is None:
+            raise RuntimeError('must call compute_distances before distance')
+        return self.distm[(id(u), id(v))]
+
+    def compute_distances(self, upgrades):
+        '''
+        Re-compute all-pairs distances given upgrades
+
+        Uses extension of breadth-first-search as outlined here:
+        http://faculty.simpson.edu/lydia.sinapova/www/cmsc250/LN250_Weiss/L21-MinPath.htm#unweighted
+        '''
+        N = self.numNodes
+        # distm[(id(u), id(v))] holds distance from u to v,
+        #                             -1 iff unreachable,
+        #                              0 iff i == j
+        self.distm = {}
+
+        def compute_distance(s):
+            '''Compute distance from s to all nodes'''
+            # same as above
+            distm = {}
+            # holds nodes to be visited
+            queue = [s]
+            distm[(id(s), id(s))] = 0
+            while(len(queue) > 0):
+                v = queue.pop(0)
+                for w in v.reachable(upgrades):
+                    if not (id(s), id(w)) in distm:
+                        distm[(id(s), id(w))] = distm[(id(s), id(v))] + 1
+                        queue.append(w)
+            distm.pop((id(s), id(s)))
+            return distm
+
+        for node in self.nodes:
+            self.distm.update(compute_distance(node))
+
     def write_png(self, filename):
         graph = pydot.Dot(graph_type='digraph',
                           bgcolor=config.get('BACKGROUND'))
@@ -95,7 +188,7 @@ class Graph:
         for node in self.nodes:
             for adj in node.adjacencies:
                 color = config.get('DOOR_COLORS')['default']
-                if adj[1] is not None:
+                if adj[1] is not None and adj[1] in config.get('DOOR_COLORS'):
                     color = config.get('DOOR_COLORS')[adj[1]]
                 graph.add_edge(pydot.Edge(node.node, adj[0].node, color=color))
         graph.write_png(filename)

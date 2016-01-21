@@ -1,0 +1,9 @@
+{
+    "BACKGROUND": "white",
+    "DOOR_COLORS" : {
+        "default": "black"
+    },
+    "WORLD_COLORS": {
+        "default": "white"
+    }
+}

@@ -229,7 +229,6 @@ class Game:
         '''Load configuration and load game data as graph'''
         config.loadConfiguration(config_file)
         worlds = parsing.DataParser(config.get('GAME_DATA')).parse()
-
         self.graph = graph.Graph.fromWorlds(worlds)
         if not os.path.exists(config.get('DATABASE')):
             self.database = Database.fromWorlds(worlds)
