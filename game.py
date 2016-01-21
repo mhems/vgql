@@ -10,6 +10,7 @@ Module representing in-game objects
 * Game
 '''
 
+import os
 import json
 
 import configuration as config
@@ -150,9 +151,8 @@ class World:
 class Database:
     '''Mechanism for storing and querying items'''
 
-    config.loadConfiguration('metroid_prime/config.json')
-
     def __init__(self, dictlist=None):
+        '''Initializes query parser and internalizes dictlist'''
         self.parser = parsing.QueryParser(config.get('CHOICES'))
         if dictlist is not None:
             self.dicn = { 'itemlist' : dictlist }
@@ -176,26 +176,35 @@ class Database:
 
     @property
     def items(self):
+        '''Returns list of items, each a dict'''
         return self.dicn['itemlist']
 
     def sort(self, key=None, reverse=False):
+        '''Sort items by key and reverse flag'''
         self.items.sort(key=key, reverse=reverse)
 
     def __len__(self):
+        '''Return number of items in self'''
         return len(self.items)
 
     def __str__(self):
+        '''Return line-separated items in self'''
         return '\n'.join(str(i) for i in self.items)
 
     def __repr__(self):
+        ''''Return database in JSON-like notation'''
         core = '\n'.join(str(i) for i in self.items)
         return '{\n\"itemlist\":[\n%s\n]\n}' % core
 
-    def parse_json(self, filename):
+    def read(self, filename):
         '''Parse items in filename into database'''
-        self.source = filename
         with open(filename, 'r') as f:
             self.dicn = json.load(f)
+
+    def write(self, filename):
+        '''Write database to source'''
+        with open(filename, 'w') as f:
+            json.dump(self.dicn, f, indent=2)
 
     def query(self, string, exclude_found, update):
         '''Query database for all items satisfying constraints'''
@@ -208,10 +217,7 @@ class Database:
             for idx, e in enumerate(self.items):
                 if test(e):
                     self.dicn['itemlist'][idx]['found'] = True
-            with open(self.source, 'w') as stream:
-                output(self, stream, json_formatter)
-        dictlist = [e for e in self.items if test(e)]
-        return Database(dictlist)
+        return [e for e in self.items if test(e)]
 
 class Game:
     '''
@@ -223,5 +229,11 @@ class Game:
         '''Load configuration and load game data as graph'''
         config.loadConfiguration(config_file)
         worlds = parsing.DataParser(config.get('GAME_DATA')).parse()
+
         self.graph = graph.Graph.fromWorlds(worlds)
-        self.database = Database.fromWorlds(worlds)
+        if not os.path.exists(config.get('DATABASE')):
+            self.database = Database.fromWorlds(worlds)
+            self.database.write(config.get('DATABASE'))
+        else:
+            self.database = Database()
+            self.database.read(config.get('DATABASE'))
