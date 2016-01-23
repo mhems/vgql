@@ -146,8 +146,17 @@ Data and graphs for game collectibles from
   crudely tested
 * The game module should be parameterizable by game so some config
   code has been added
-* The structure of the game graph is currently being constructed. Once
-  a game to graph framework is up, graph algorithms will be added to
-  do the course planning
+* Primitive graph algorithms have been added to calculate distances,
+  accounting for edges with dependencies and upgrades
+* Dependency analysis will be required to plot a course to get the
+  determined upgrade, which can be repeated to complete the game
 * With the backend complete, a simple command-line tool and graphical
   view will be implemented
+
+# Thoughts
+
+* The 'database' is flat, it should likely be given some structure to
+  focus the queries
+* The graph, once constructed, does not change - properties and
+  calculations should be cached to avoid needless traversal of the
+  large structure

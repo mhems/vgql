@@ -1,22 +1,32 @@
 #!/usr/bin/env python3
 
+'''
+Ad-hoc test for graph module
+'''
+
 import graph
 import configuration as config
 
 class NodeStub:
+    '''Mock a Room object with an integer'''
+
     def __init__(self, value):
+        '''Internalize value'''
         self.value = value
 
     @property
     def name(self):
+        '''Return name of room'''
         return str(self.value)
 
     @property
     def world(self):
+        '''Return the default'''
         return 'default'
 
     @property
     def elevator(self):
+        '''No NodeStubs are elevators'''
         return False
 
 if __name__ == '__main__':

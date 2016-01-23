@@ -116,7 +116,7 @@ class Graph:
     def diameter(self):
         '''Returns the maximum eccentricity over all nodes'''
         return max((self.eccentricity(v) for v in self.nodes
-                   if self.eccentricity(v) > 0),
+                    if self.eccentricity(v) > 0),
                    default=-1)
 
     @property
@@ -124,7 +124,7 @@ class Graph:
         '''Returns the minimum eccentricity over all nodes'''
         return min((self.eccentricity(v) for v in self.nodes
                     if self.eccentricity(v) > 0),
-                    default=-1)
+                   default=-1)
 
     def eccentricity(self, s):
         '''Returns greatest distance from s over all other nodes'''
@@ -155,7 +155,6 @@ class Graph:
         Uses extension of breadth-first-search as outlined here:
         http://faculty.simpson.edu/lydia.sinapova/www/cmsc250/LN250_Weiss/L21-MinPath.htm#unweighted
         '''
-        N = self.numNodes
         # distm[(id(u), id(v))] holds distance from u to v,
         #                             -1 iff unreachable,
         #                              0 iff i == j
@@ -168,7 +167,7 @@ class Graph:
             # holds nodes to be visited
             queue = [s]
             distm[(id(s), id(s))] = 0
-            while(len(queue) > 0):
+            while len(queue) > 0:
                 v = queue.pop(0)
                 for w in v.reachable(upgrades):
                     if not (id(s), id(w)) in distm:
@@ -181,6 +180,7 @@ class Graph:
             self.distm.update(compute_distance(node))
 
     def write_png(self, filename):
+        '''Create a png of the graph and write it to file '''
         graph = pydot.Dot(graph_type='digraph',
                           bgcolor=config.get('BACKGROUND'))
         for node in self.nodes:

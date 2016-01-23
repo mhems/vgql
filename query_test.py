@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+'''
+Ad-hoc test for query/database implementation
+'''
+
 from sys import argv
 from parsing import QueryParser
 

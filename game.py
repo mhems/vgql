@@ -179,9 +179,23 @@ class Database:
         '''Returns list of items, each a dict'''
         return self.dicn['itemlist']
 
+    @property
+    def collected(self):
+        '''Returns list of collected items'''
+        return self.filter(lambda i: i['found'] == True)
+
+    @property
+    def percent_complete(self):
+        '''Return percent of collectibles acquired'''
+        return len(self.collected) / len(self)
+
     def sort(self, key=None, reverse=False):
-        '''Sort items by key and reverse flag'''
+        '''Sort items in-place by key and reverse flag'''
         self.items.sort(key=key, reverse=reverse)
+
+    def sorted(self, key=None, reverse=False):
+        '''Return sorted copy of items by key and reverse flag'''
+        return sorted(self.items, key=key, reverse=reverse)
 
     def __len__(self):
         '''Return number of items in self'''
@@ -217,7 +231,11 @@ class Database:
             for idx, e in enumerate(self.items):
                 if test(e):
                     self.dicn['itemlist'][idx]['found'] = True
-        return [e for e in self.items if test(e)]
+        return self.filter(test)
+
+    def filter(self, func):
+        '''Filter database for all items for which func returns True'''
+        return [e for e in self.items if func(e)]
 
 class Game:
     '''

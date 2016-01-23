@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+'''
+Ad-hoc test for game module
+'''
+
 import game
 
 if __name__ == '__main__':

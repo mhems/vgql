@@ -3,7 +3,6 @@ Module for handling configurable portions of tools
 '''
 
 from json import load
-from collections import OrderedDict
 
 default_file_loc = 'config.json'
 config = None
@@ -22,4 +21,4 @@ def get(key):
     '''Gets the configuration value for key '''
     return config[key]
 
-config = loadConfiguration(default_file_loc)
+loadConfiguration(default_file_loc)

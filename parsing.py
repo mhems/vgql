@@ -9,11 +9,8 @@ mini-languages in this project.
   |- DataParser
 '''
 
-from collections import OrderedDict
 from copy import deepcopy
-from io import TextIOBase
 from re import (finditer, match, I)
-from sys import argv
 from itertools import groupby
 
 import game
@@ -63,6 +60,7 @@ class Lexer:
 
     def _lex_lines(self, lines):
         '''Helper method to lex lines of strings into Token stream'''
+        lineno = 0
         for lineno, line in enumerate(lines):
             for match in finditer(self.regex, line.rstrip()):
                 if match is not None:
@@ -178,6 +176,7 @@ class QueryParser(Parser):
 
     def __init__(self, choices):
         '''Lexes query and prepares for parsing'''
+        super().__init__(None)
         self.copy = deepcopy(QueryParser.tokenAssocs)
         self.copy.insert(0, ('CHOICE', '|'.join(choices)))
 
@@ -235,7 +234,7 @@ class QueryParser(Parser):
         t = self.match('TEST')
         s = self.match('STRING')
         func = (lambda item:
-            match(s, str(item[c]), I) is not None)
+                match(s, str(item[c]), I) is not None)
         if t == '!=':
             return lambda x: not func(x)
         return func
@@ -281,18 +280,18 @@ class DataParser(Parser):
     '''
 
     tokenAssocs = [
-        ('WB' , '\\*\\*\\*'),
+        ('WB', '\\*\\*\\*'),
         ('BULLET', '\\*'),
-        ('BG' , '\\>'),
-        ('COMMA' , '\\,'),
-        ('PIPE' , '\\|'),
-        ('COLON' , '\\:'),
+        ('BG', '\\>'),
+        ('COMMA', '\\,'),
+        ('PIPE', '\\|'),
+        ('COLON', '\\:'),
         ('LP', '\\('),
         ('RP', '\\)'),
         ('LB', '\\['),
         ('RB', '\\]'),
-        ('INFO', '^\W*-\W*.*\W*$'),
-        ('ID' , '[a-zA-Z0-9][-a-zA-Z0-9\'_ ]*')
+        ('INFO', r'^\W*-\W*.*\W*$'),
+        ('ID', '[a-zA-Z0-9][-a-zA-Z0-9\'_ ]*')
     ]
 
     def __init__(self, filename):
@@ -321,7 +320,7 @@ class DataParser(Parser):
         pickups = []
         adj = None
         while self.lookahead.kind == 'BULLET':
-                pickups.append(self.parse_pickup())
+            pickups.append(self.parse_pickup())
         if self.lookahead.kind == 'PIPE':
             adj = self.parse_adjacency()
         return game.Room(roomname, worldname, pickups, adj)
@@ -345,7 +344,7 @@ class DataParser(Parser):
             return game.Expansion(first, how, dep)
 
     def parse_how(self):
-        return match('^\W*-\W*(.*)\W*$', self.match('INFO')).group(1)
+        return match(r'^\W*-\W*(.*)\W*$', self.match('INFO')).group(1)
 
     def parse_adjacency(self):
         self.match('PIPE')

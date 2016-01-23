@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-# Functionality for collectible query database for video game Metroid Prime
+'''
+Functionality for collectible query database for video game Metroid Prime
+'''
 
 import argparse, sys
 import json
@@ -8,13 +10,15 @@ import json
 import game
 
 def output(database, stream, formatter):
-    """Print database to stream f with formatter"""
+    '''Print database to stream f with formatter'''
     formatter(stream, database)
 
 def json_formatter(stream, database):
+    '''Output database in JSON format to stream'''
     json.dump(database.dicn, stream, indent=2)
 
 def html_formatter(stream, database):
+    '''Output database in html format to stream'''
     stream.write('<!DOCTYPE html>\n')
     stream.write('<html><body>\n')
     stream.write('<table>\n')
@@ -40,6 +44,7 @@ def html_formatter(stream, database):
     stream.write('</html></body>\n')
 
 def make_choices(choices):
+    '''Return list with lowercase choices and first character'''
     first = [s[0].lower() for s in choices]
     low   = [s.lower()    for s in choices]
     return first.extend(low)
@@ -69,7 +74,7 @@ if __name__ == '__main__':
                         default = 'found',
                         dest    = 'sort_order',
                         metavar = 'SORT_ORDER',
-                        help    = 'the column to sort the output on: One of found, name, kind, room, world'),
+                        help    = 'the column to sort the output on: One of found, name, kind, room, world')
     parser.add_argument('-f',
                         choices = make_choices(['none', 'json', 'html']),
                         default = 'n',
@@ -90,34 +95,34 @@ if __name__ == '__main__':
         print('error: database and output file cannot be the same')
         sys.exit(1)
     db = game.Database()
-    db.parse_json(args.database)
+    db.read(args.database)
     results = db.query(args.query_string, args.d, args.u)
     if args.sort_order is not None:
         results.sort(key=lambda x : x[args.sort_order])
     if args.output_file is not None:
-        stream = open(args.output_file, 'w')
+        ostream = open(args.output_file, 'w')
     else:
-        stream = sys.stdout
+        ostream = sys.stdout
     if args.c:
         count = len(results)
         if args.form[0] == 'n':
-            stream.write(str(count) + '\n')
+            ostream.write(str(count) + '\n')
         elif args.form[0] == 'j':
-            stream.write('{ count : %d }' % count)
+            ostream.write('{ count : %d }' % count)
         elif args.form[0] == 'h':
-            stream.write('<!DOCTYPE html>\n')
-            stream.write('<html><body>\n')
-            stream.write('   Query %s returned %d items\n' % (args.query_string, count))
-            stream.write('</html></body>\n')
+            ostream.write('<!DOCTYPE html>\n')
+            ostream.write('<html><body>\n')
+            ostream.write('   Query %s returned %d items\n' % (args.query_string, count))
+            ostream.write('</html></body>\n')
         else:
             print('error: unknown format', args.form)
     else:
         if args.form[0] == 'n':
-            output('\n'.join(str(e) for e in results.items), stream, lambda f, s : f.write(s))
+            ostream('\n'.join(str(e) for e in results.items), ostream, lambda f, s : f.write(s))
         elif args.form[0] == 'j':
-            output(results, stream, json_formatter)
+            ostream(results, ostream, json_formatter)
         elif args.form[0] == 'h':
-            output(results.items, stream, html_formatter)
+            ostream(results.items, ostream, html_formatter)
         else:
             print('error: unknown format', args.form)
-    stream.close()
+    ostream.close()
