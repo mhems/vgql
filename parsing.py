@@ -162,27 +162,26 @@ class QueryParser(Parser):
     LP:     '(' ;
     RP:     ')' ;
     STRING: /[a-zA-z *]+/ ;
-    CHOICE: <GIVEN BY CONFIGURATION> ;
+    CHOICE: 'found' | 'kind' | 'name' | 'room' | 'world' ;
     '''
 
     tokenAssocs = [
         ('AND', 'and|\\&'),
         ('OR', 'or|\\|'),
+        ('CHOICE', 'found|kind|name|room|world')
         ('TEST', '(\\!|\\=)\\='),
         ('LP', '\\('),
         ('RP', '\\)'),
         ('STRING', '[a-zA-z*]+')
     ]
 
-    def __init__(self, choices):
+    def __init__(self):
         '''Lexes query and prepares for parsing'''
         super().__init__(None)
-        self.copy = deepcopy(QueryParser.tokenAssocs)
-        self.copy.insert(0, ('CHOICE', '|'.join(choices)))
 
     def parse(self, query):
         '''Synthesizes filter function from parsing query string'''
-        super().__init__(Lexer(query, False, self.copy).lex())
+        super().__init__(Lexer(query, False, QueryParser.tokenAssocs).lex())
         return self.parse_START()
 
     def parse_START(self):

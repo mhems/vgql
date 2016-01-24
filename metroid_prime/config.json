@@ -40,13 +40,6 @@
         "Research",
         "Upgrade"
     ],
-    "CHOICES": [
-        "kind",
-        "room",
-        "world",
-        "name",
-        "found"
-    ],
     "MANDATORY": [
         "Artifact",
         "Boss"

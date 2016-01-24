@@ -153,7 +153,7 @@ class Database:
 
     def __init__(self, dictlist=None):
         '''Initializes query parser and internalizes dictlist'''
-        self.parser = parsing.QueryParser(config.get('CHOICES'))
+        self.parser = parsing.QueryParser()
         if dictlist is not None:
             self.dicn = { 'itemlist' : dictlist }
 

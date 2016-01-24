@@ -60,8 +60,7 @@ if __name__ == '__main__':
     config.loadConfiguration('metroid_prime/config.json')
     for query in tests:
         print('Query:', query)
-        choices = config.get('CHOICES')
-        parser = QueryParser(choices)
+        parser = QueryParser()
         func = parser.parse(query)
         print('\n'.join(str(e) for e in l if func(e)))
         print('='*40)

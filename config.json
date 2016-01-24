@@ -14,9 +14,6 @@
     "KINDS": [
 
     ],
-    "CHOICES": [
-        "found"
-    ],
     "MANDATORY": [
         "Boss"
     ]

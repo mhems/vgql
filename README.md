@@ -124,7 +124,7 @@ TEST:   '!=' | '==' ;
 LP:     '(' ;
 RP:     ')' ;
 STRING: /[a-zA-z *]+/ ;
-CHOICE: <GIVEN BY CONFIGURATION> ;
+CHOICE: 'found' | 'kind' | 'name' | 'room' | 'world' ;
 ```
 
 The punctuation characters should be trivial to modify to your
