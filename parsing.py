@@ -168,7 +168,7 @@ class QueryParser(Parser):
     tokenAssocs = [
         ('AND', 'and|\\&'),
         ('OR', 'or|\\|'),
-        ('CHOICE', 'found|kind|name|room|world')
+        ('CHOICE', 'found|kind|name|room|world'),
         ('TEST', '(\\!|\\=)\\='),
         ('LP', '\\('),
         ('RP', '\\)'),

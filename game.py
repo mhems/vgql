@@ -34,9 +34,9 @@ class Collectible:
     @property
     def _extra(self):
         '''Returns formatted string of possibly-None variables'''
+        deps = ' (%s)' % ', '.join(str(d) for d in self.deps)
         info = '\n    - %s' % self.info if self.info is not None else ''
-        deps = ' (%s)' % ', '.join(str(d) for d in self.deps) if len(self.deps) > 0 else ''
-        return '%s%s' % (deps, info)
+        return deps + info
 
 class Expansion(Collectible):
     '''
