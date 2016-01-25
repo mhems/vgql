@@ -38,6 +38,15 @@ class Collectible:
         info = '\n    - %s' % self.info if self.info is not None else ''
         return deps + info
 
+    def __eq__(self, other):
+        '''Compare self and other for equality'''
+        if isinstance(other, dict):
+            return (self.kind == other['kind'] and
+                    self.info == other['how'])
+        return (self.kind == other.kind and
+                self.info == other.info and
+                self.deps == other.deps)
+
 class Expansion(Collectible):
     '''
     Category of collectibles that appear many times,
@@ -66,6 +75,14 @@ class Item(Collectible):
     def __str__(self):
         '''Return formatted string holding contents of self'''
         return '  * %s: %s%s' % (self.kind, self.name, self._extra)
+
+    def __eq__(self, other):
+        '''Compare self and other for equality'''
+        if super().__eq__(other):
+            if isinstance(other, dict):
+                return self.name == other['name']
+            return self.name == other.name
+        return False
 
 class Room:
     '''
@@ -151,33 +168,27 @@ class World:
 class Database:
     '''Mechanism for storing and querying items'''
 
-    def __init__(self, dictlist=None):
+    def __init__(self, entries=None):
         '''Initializes query parser and internalizes dictlist'''
         self.parser = parsing.QueryParser()
-        if dictlist is not None:
-            self.dicn = { 'itemlist' : dictlist }
+        self.entries = entries if entries is not None else []
 
     @staticmethod
     def fromWorlds(worlds, assume_not_found=True):
         '''Construct and return database from list of worlds'''
-        dictlist = []
+        entries = []
         for world in worlds:
             for room in world.rooms:
                 for c in room.collectibles:
-                    dict_ = {'found' : not assume_not_found,
+                    entry = {'found' : not assume_not_found,
                              'world' : world.name,
                              'kind' : c.kind,
                              'room' : room.name}
-                    dict_['how'] = c.info if c.info is not None else ''
+                    entry['how'] = c.info if c.info is not None else ''
                     if isinstance(c, Item):
-                        dict_['name'] = c.name
-                    dictlist.append(dict_)
-        return Database(dictlist)
-
-    @property
-    def items(self):
-        '''Returns list of items, each a dict'''
-        return self.dicn['itemlist']
+                        entry['name'] = c.name
+                    entries.append(entry_)
+        return Database(entries)
 
     @property
     def collected(self):
@@ -185,40 +196,64 @@ class Database:
         return self.filter(lambda i: i['found'] == True)
 
     @property
+    def uncollected(self):
+        '''Returns list of uncollected items'''
+        return self.filter(lambda i: i['found'] == False)
+
+    @property
+    def upgrades(self):
+        '''Returns list of collected upgrades'''
+        return self.filter(lambda item: item['found'] == True and
+                           item['kind'] == 'Upgrade')
+
+    @property
     def percent_complete(self):
         '''Return percent of collectibles acquired'''
         return len(self.collected) / len(self)
 
+    def pickup(self, collectible, room, world):
+        '''Update found status of corresponding database entry to True'''
+        updated = False
+        for idx, entry in enumerate(self.uncollected):
+            if (collectible == entry and
+                room == entry['room'] and
+                world == entry['world']):
+
+                updated = True
+                self.entries[idx]['found'] = True
+                break
+        assert(updated)
+
     def sort(self, key=None, reverse=False):
         '''Sort items in-place by key and reverse flag'''
-        self.items.sort(key=key, reverse=reverse)
+        self.entries.sort(key=key, reverse=reverse)
 
     def sorted(self, key=None, reverse=False):
         '''Return sorted copy of items by key and reverse flag'''
-        return sorted(self.items, key=key, reverse=reverse)
+        return sorted(self.entries, key=key, reverse=reverse)
 
     def __len__(self):
         '''Return number of items in self'''
-        return len(self.items)
+        return len(self.entries)
 
     def __str__(self):
         '''Return line-separated items in self'''
-        return '\n'.join(str(i) for i in self.items)
+        return '\n'.join(str(i) for i in self.entries)
 
     def __repr__(self):
         ''''Return database in JSON-like notation'''
-        core = '\n'.join(str(i) for i in self.items)
+        core = '\n'.join(str(i) for i in self.entries)
         return '{\n\"itemlist\":[\n%s\n]\n}' % core
 
     def read(self, filename):
         '''Parse items in filename into database'''
         with open(filename, 'r') as f:
-            self.dicn = json.load(f)
+            self.entries = json.load(f)['itemlist']
 
     def write(self, filename):
         '''Write database to source'''
         with open(filename, 'w') as f:
-            json.dump(self.dicn, f, indent=2)
+            json.dump({'itemlist' : self.entries}, f, indent=2)
 
     def query(self, string, exclude_found, update):
         '''Query database for all items satisfying constraints'''
@@ -228,14 +263,14 @@ class Database:
         else:
             test = func
         if update:
-            for idx, e in enumerate(self.items):
+            for idx, e in enumerate(self.entries):
                 if test(e):
-                    self.dicn['itemlist'][idx]['found'] = True
+                    self.entries[idx]['found'] = True
         return self.filter(test)
 
     def filter(self, func):
         '''Filter database for all items for which func returns True'''
-        return [e for e in self.items if func(e)]
+        return [e for e in self.entries if func(e)]
 
 class Game:
     '''

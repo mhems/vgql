@@ -179,6 +179,25 @@ class Graph:
         for node in self.nodes:
             self.distm.update(compute_distance(node))
 
+    def depth_first_search(self, start, database):
+        '''Conduct a depth first search of graph, starting at start node'''
+        for node in self.nodes:
+            node.color = 'white'
+            node.pred = None
+        yield from self._dfs_visit(start, database)
+
+    def _dfs_visit(self, start, database):
+        '''Visits start and recursively visits adjacencies in dfs manner'''
+        start.color= 'grey'
+        yield start
+        for c in start.value.collectibles:
+            database.pickup(c, start.value.room, start.value.world)
+        for node in start.reachable(database.upgrades):
+            if node.color == 'white':
+                node.pred = start
+                yield from self._dfs_visit(node, database.upgrades)
+        start.color = 'black'
+
     def write_png(self, filename):
         '''Create a png of the graph and write it to file '''
         graph = pydot.Dot(graph_type='digraph',

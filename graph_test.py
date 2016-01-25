@@ -36,10 +36,17 @@ if __name__ == '__main__':
     deps = [None, None, 'Power', 'Turbo']
     for i, j in zip(range(4), deps):
         nodes[i].addAdjacency((nodes[i+1], j))
+    # create cycle
+    nodes[2].addAdjacency((nodes[1], None))
     for n in nodes:
         g.addNode(n)
+
     g.write_png('test.png')
+
     # print('\n'.join('%d: %d' % (i, id(k)) for i, k in enumerate(nodes)))
-    g.compute_distances([])
+    # g.compute_distances([])
     # print('\n'.join('%s: %s' % (k, v) for k, v in g.distm.items()))
-    print(g.max_degree, g.min_degree, g.diameter, g.radius)
+    # print(g.max_degree, g.min_degree, g.diameter, g.radius)
+
+    for n in g.depth_first_search(nodes[0], []):
+        print(n.key)

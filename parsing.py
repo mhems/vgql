@@ -232,11 +232,20 @@ class QueryParser(Parser):
         c = self.match('CHOICE')
         t = self.match('TEST')
         s = self.match('STRING')
-        func = (lambda item:
-                match(s, str(item[c]), I) is not None)
-        if t == '!=':
-            return lambda x: not func(x)
-        return func
+
+        def inner_eq(db_entry):
+            '''Filter function for FACTOR when TEST is "=="'''
+            if c in db_entry:
+                return match(s, str(db_entry[c]), I) is not None
+            return False
+
+        def inner_ne(db_entry):
+            '''Filter function for FACTOR when TEST is "!="'''
+            if c in db_entry:
+                return match(s, str(db_entry[c]), I) is None
+            return True
+
+        return inner_eq if t == '==' else inner_ne
 
     @staticmethod
     def _merge(f1, op, f2):
