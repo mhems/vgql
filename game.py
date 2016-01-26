@@ -26,26 +26,34 @@ class Collectible:
     it and a list of dependencies
     '''
 
-    def __init__(self, kind, info=None, deps=None):
+    def __init__(self, kind, room, world, info=None, deps=None):
         '''Internalizes parameters'''
         self.kind = kind
         self.info = info
+        self.room = room
+        self.world = world
         self.deps = [] if deps is None else deps
 
     @property
     def _extra(self):
         '''Returns formatted string of possibly-None variables'''
         deps = ' (%s)' % ', '.join(str(d) for d in self.deps)
+        loc = ' in (%s, %s)' % (self.room, self.world)
         info = '\n    - %s' % self.info if self.info is not None else ''
-        return deps + info
+        return deps + loc + info
 
     def __eq__(self, other):
         '''Compare self and other for equality'''
         if isinstance(other, dict):
             return (self.kind == other['kind'] and
-                    self.info == other['how'])
+                    (self.info == other['how'] or
+                     self.info is None and other['how'] == '') and
+                    self.room == other['room'] and
+                    self.world == other['world'])
         return (self.kind == other.kind and
                 self.info == other.info and
+                self.room == other.room and
+                self.world == other.world and
                 self.deps == other.deps)
 
 class Expansion(Collectible):
@@ -54,9 +62,9 @@ class Expansion(Collectible):
     each without a specific name
     '''
 
-    def __init__(self, kind, info=None, deps=None):
+    def __init__(self, kind, room, world, info=None, deps=None):
         '''Internalizes parameters'''
-        super().__init__(kind, info, deps)
+        super().__init__(kind, room, world, info, deps)
 
     def __str__(self):
         '''Return formatted string holding contents of self'''
@@ -68,9 +76,9 @@ class Item(Collectible):
     each with a specific name
     '''
 
-    def __init__(self, name, kind, info=None, deps=None):
+    def __init__(self, name, kind, room, world, info=None, deps=None):
         '''Internalizes parameters'''
-        super().__init__(kind, info)
+        super().__init__(kind, room, world, info, deps)
         self.name = name
 
     def __str__(self):
@@ -182,9 +190,9 @@ class Database:
             for room in world.rooms:
                 for c in room.collectibles:
                     entry = {'found' : not assume_not_found,
-                             'world' : world.name,
+                             'world' : c.world,
                              'kind' : c.kind,
-                             'room' : room.name}
+                             'room' : c.room}
                     entry['how'] = c.info if c.info is not None else ''
                     if isinstance(c, Item):
                         entry['name'] = c.name
@@ -224,16 +232,15 @@ class Database:
         '''
         return all(d in self for d in collectible.deps)
 
-    def pickup(self, collectible, room, world):
+    def pickup(self, collectible):
         '''Update found status of corresponding database entry to True'''
         updated = False
-        for idx, entry in enumerate(self.uncollected):
-            if (collectible == entry and
-                room == entry['room'] and
-                world == entry['world']):
-
+        for idx, entry in enumerate(self.entries):
+            if entry['found']:
+                continue
+            if collectible.__eq__(entry):
                 updated = True
-                self.entries[idx]['found'] = True
+                entry['found'] = True
                 break
         assert(updated)
 
@@ -306,3 +313,9 @@ class Game:
         else:
             self.database = Database()
             self.database.read(config.get('DATABASE'))
+
+    @property
+    def start(self):
+        '''Return GraphNode representing room player starts in'''
+        return self.graph.map[(config.get('START_WORLD'),
+                               config.get('START_ROOM'))]

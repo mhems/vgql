@@ -328,12 +328,12 @@ class DataParser(Parser):
         pickups = []
         adj = None
         while self.lookahead.kind == 'BULLET':
-            pickups.append(self.parse_pickup())
+            pickups.append(self.parse_pickup(roomname, worldname))
         if self.lookahead.kind == 'PIPE':
             adj = self.parse_adjacency()
         return game.Room(roomname, worldname, pickups, adj)
 
-    def parse_pickup(self):
+    def parse_pickup(self, roomname, worldname):
         self.match('BULLET')
         first = self.match('ID')
         second = None
@@ -347,9 +347,9 @@ class DataParser(Parser):
         if self.lookahead.kind == 'INFO':
             how = self.parse_how()
         if second is not None:
-            return game.Item(second, first, how, dep)
+            return game.Item(second, first, roomname, worldname, how, dep)
         else:
-            return game.Expansion(first, how, dep)
+            return game.Expansion(first, roomname, worldname, how, dep)
 
     def parse_how(self):
         return match(r'^\W*-\W*(.*)\W*$', self.match('INFO')).group(1)

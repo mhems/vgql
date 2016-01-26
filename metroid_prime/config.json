@@ -1,6 +1,8 @@
 {
     "DATABASE": "metroid_prime/all.json",
     "GAME_DATA": "metroid_prime/data.txt",
+    "START_WORLD": "Pirate Frigate",
+    "START_ROOM": "Exterior Docking Hangar",
     "BACKGROUND": "black",
     "DOOR_COLORS": {
         "default": "blue",

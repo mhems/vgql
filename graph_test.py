@@ -20,6 +20,11 @@ class NodeStub:
         return str(self.value)
 
     @property
+    def collectibles(self):
+        '''Return collectibles within node'''
+        return []
+
+    @property
     def world(self):
         '''Return the default'''
         return 'default'

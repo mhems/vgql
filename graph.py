@@ -61,6 +61,7 @@ class Graph:
     def __init__(self):
         '''Constructs self'''
         self.nodes = []
+        # map[(worldname, roomname)] holds node representing that room
         self.map = {}
         # dict where distm[(id(u), id(v))] holds distance from u to v
         self.distm = None
@@ -193,14 +194,14 @@ class Graph:
         found = []
         for c in start.value.collectibles:
             if database.canPickup(c):
-                database.pickup(c, start.value.room, start.value.world)
+                database.pickup(c)
                 found.append(c)
         if len(found) > 0:
-            print(', '.join(str(f) for f in found))
+            print('\n'.join(str(f) for f in found))
         for node in start.reachable(database.upgrades):
             if node.color == 'white':
                 node.pred = start
-                yield from self._dfs_visit(node, database.upgrades)
+                yield from self._dfs_visit(node, database)
         start.color = 'black'
 
     def write_png(self, filename):

@@ -1,6 +1,8 @@
 {
     "DATABASE": "",
     "GAME_DATA": "",
+    "START_WORLD": "",
+    "START_ROOM": "",
     "BACKGROUND": "black",
     "DOOR_COLORS": {
         "default": "blue"
