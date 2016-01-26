@@ -134,7 +134,7 @@
   | Waterfall Cavern, Overgrown Cavern (Ice Beam), Frigate Access Tunnel (Ice Beam)
 > Overgrown Cavern
   * Creature: Venom Weed
-  * Missile Expansion
+  * Missile Expansion (Morph Ball)
     - in weeds
   | Frigate Crash Site (Ice Beam), Transport Tunnel C (Ice Beam)
 > Transport Tunnel C
@@ -241,7 +241,7 @@
   | Ruined Shrine, Tower of Light (Wave Beam)
 > Tower of Light
   * Creature: Plated Puffer
-  * Upgrade: Wavebuster
+  * Upgrade: Wavebuster (Missile)
     - use missiles to shatter pillars
   | Tower of Light Access (Wave Beam), Tower Chamber (Wave Beam)
 > Tower Chamber
@@ -372,7 +372,7 @@
 > Dynamo Access
   | Watery Hall, Dynamo
 > Dynamo
-  * Missile Expansion
+  * Missile Expansion (Missile)
     - blast grate
   * Missile Expansion (Spider Ball)
     - spider ball up alcove
@@ -422,7 +422,7 @@
   * Creature: Chozo Ghost
   * Research: Missile Station
   * Chozo Lore: Hope
-  * Energy Tank (Ice Beam)
+  * Energy Tank (Morph Ball, Ice Beam)
     - shoot second slot and let chozo propel you
   | Elder Hall Access, Missile Station, Crossway Access South (Ice Beam), East Furnace Access (Ice Beam), Elder Chamber (Ice Beam), Reflecting Pool Access
 > Missile Station
@@ -439,7 +439,7 @@
   * Creature: Stone Toad
   | Reflecting Pool Access, Antechamber (Missile), Save Station 3 (Missile), Transport Access South (Ice Beam)
 > Antechamber
-  * Upgrade: Ice Beam
+  * Upgrade: Ice Beam (Morph Ball, Boost Ball)
     - drain reflecting pool, boost ball up half-pipe
   | Reflecting Pool (Ice Beam)
 > Save Station 3
@@ -474,7 +474,7 @@
   * Creature: Triclops
   | Lava Lake, Triclops Pit
 > Triclops Pit
-  * Missile Expansion (Space Jump Boots, X-Ray Visor)
+  * Missile Expansion (Space Jump Boots, X-Ray Visor, Missile)
     - jump up invisible platforms, blast pillar
   | Pit Tunnel, Storage Cavern, Monitor Tunnel
 > Storage Cavern
@@ -519,7 +519,7 @@
 > Geothermal Core
   | North Core Tunnel, Plasma Processing (Ice Beam), South Core Tunnel
 > Plasma Processing
-  * Upgrade: Plasma Beam
+  * Upgrade: Plasma Beam (Morph Ball, Spider Ball, Grapple Beam)
     - raise platforms in Geothermal Core, follow Spider Ball track
   | Geothermal Core (Plasma Beam)
 > South Core Tunnel
@@ -647,7 +647,7 @@
   | West Tower Entrance, Control Tower (Wave Beam)
 > Control Tower
   * Creature: Flying Pirate
-  * Artifact: Elder (Plasma Beam)
+  * Artifact: Elder (Plasma Beam, Missile, Morph Ball)
     - shoot through window above East Tower then missile it
   | West Tower (Wave Beam), East Tower (Wave Beam)
 > East Tower
@@ -734,7 +734,7 @@
   | Phendrana's Edge (Wave Beam), Frost Cave (Wave Beam)
 > Frost Cave
   * Creature: Hunter Metroid
-  * Missile Expansion (Grapple Beam)
+  * Missile Expansion (Grapple Beam, Missile)
     - grapple up to top, missile stalactite, go below ice
   | Upper Edge Tunnel (Wave Beam), Save Station C (Wave Beam), Frost Cave Access (Wave Beam)
 > Save Station C
@@ -765,7 +765,7 @@
   * Creature: Wave Trooper
   | Security Access A (Ice Beam), Storage Depot A (Plasma Beam), Security Access B (Wave Beam)
 > Storage Depot A
-  * Upgrade: Flamethrower
+  * Upgrade: Flamethrower (Power Bomb)
     - power bomb bendezium wall on top floor of Mine Security Station, scan to unlock force field
   | Mine Security Station (Plasma Beam)
 > Security Access B
@@ -790,7 +790,7 @@
 > Elevator A
   | Elevator Access A (Ice Beam), Elite Control Access (Ice Beam)
 > Storage Depot B
-  * Upgrade: Grapple Beam
+  * Upgrade: Grapple Beam (Morph Ball, Morph Ball Bomb, Power Bomb)
     - follow yellow tracks from Ore Processing
   | Ore Processing (Ice Beam)
 > Waste Disposal
@@ -827,7 +827,7 @@
   | Omega Research (Ice Beam), Central Dynamo (Ice Beam)
 > Central Dynamo
   * Research: Power Bomb Ammo
-  * Power Bomb Expansion
+  * Power Bomb Expansion (Morph Ball, Morph Ball Bomb)
     - defeat invisible drone, complete maze
   | Dynamo Access (Ice Beam), Save Station Mines B (Ice Beam), Quarantine Access A (Ice Beam)
 > Save Station Mines B
@@ -835,7 +835,7 @@
 > Quarantine Access A
   | Central Dynamo (Ice Beam), Metroid Quarantine A (Wave Beam)
 > Metroid Quarantine A
-  * Missile Expansion (Power Bomb, Spider Ball, X-Ray Visor)
+  * Missile Expansion (Power Bomb, Morph Ball, Spider Ball, X-Ray Visor)
     - bomb wall, track across, ride invisible elevator
   | Quarantine Access A (Wave Beam), Elevator Access B (Ice Beam)
 > Elevator Access B
@@ -908,7 +908,7 @@
 > Crater Tunnel B
   | Phazon Core (Plasma Beam), Phazon Infusion Chamber
 > Phazon Infusion Chamber
-  * Boss: Metroid Prime Exo
+  * Boss: Metroid Prime Exo (Wave Beam, Ice Beam, Plasma Beam)
   * Creature: Metroid Prime Exo
   | Crater Tunnel B (Plasma Beam), Subchamber One
 > Subchamber One
@@ -922,5 +922,5 @@
 > Subchamber Five
   | Metroid Prime Lair
 > Metroid Prime Lair
-  * Boss: Metroid Prime Core (Phazon Suit)
+  * Boss: Metroid Prime Core (Phazon Suit, Wave Beam, Ice Beam, Plasma Beam)
   * Creature: Metroid Prime Core
