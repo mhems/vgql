@@ -261,23 +261,24 @@ class DataParser(Parser):
     '''
     Simple parser of custom data format language
 
-    Parses the following grammar synthesizes a list of World objects
+    Parses the following grammar and synthesizes a list of World objects
 
     start:      world + ;
     world:      WB ID WB room + ;
     room:       BG ID dep ? pickup * adj ? ;
-    pickup:     BULLET ID (COLON ID) ? dep ? how ? ;
+    pickup:     BULLET pot_pair dep ? how ? ;
     how:        INFO ;
     adj:        PIPE connection ( COMMA connection ) * ;
     connection: ID dep ? loc ? ;
-    dep:        LP ID ( COMMA ID ) * RP ;
+    dep:        LP pot_pair ( COMMA pot_pair ) * RP ;
+    pot_pair:   ID (COLON ID) ? ;
     loc:        LB ID RB ;
 
     INFO:   /^\W*-\W*.*\W*$/ ;
     ID:     /[a-zA-Z0-9][-a-zA-Z0-9\_ ]*/ ;
     BULLET: '*' ;
     BG:     '>' ;
-    WB:     '***' ;
+    WB:     '#' ;
     COMMA:  ',' ;
     PIPE:   '|' ;
     COLON:  ':' ;
@@ -288,7 +289,7 @@ class DataParser(Parser):
     '''
 
     tokenAssocs = [
-        ('WB', '\\*\\*\\*'),
+        ('WB', '\\#'),
         ('BULLET', '\\*'),
         ('BG', '\\>'),
         ('COMMA', '\\,'),
@@ -316,7 +317,6 @@ class DataParser(Parser):
     def parse_world(self):
         self.match('WB')
         worldname = self.match('ID')
-        self.match('WB')
         world = game.World(worldname)
         while self.lookahead.kind == 'BG':
             world.addRoom(self.parse_room(worldname))
@@ -338,21 +338,17 @@ class DataParser(Parser):
 
     def parse_pickup(self, roomname, worldname):
         self.match('BULLET')
-        first = self.match('ID')
-        second = None
         dep = None
         how = None
-        if self.lookahead.kind == 'COLON':
-            self.match('COLON')
-            second = self.match('ID')
+        result = self.parse_pot_pair()
         if self.lookahead.kind == 'LP':
             dep = self.parse_dependency()
         if self.lookahead.kind == 'INFO':
             how = self.parse_how()
-        if second is not None:
-            return game.Item(second, first, roomname, worldname, how, dep)
+        if isinstance(result, tuple):
+            return game.Item(result[1], result[0], roomname, worldname, how, dep)
         else:
-            return game.Expansion(first, roomname, worldname, how, dep)
+            return game.Expansion(result[0], roomname, worldname, how, dep)
 
     def parse_how(self):
         return match(r'^\W*-\W*(.*)\W*$', self.match('INFO')).group(1)
@@ -378,12 +374,20 @@ class DataParser(Parser):
 
     def parse_dependency(self):
         self.match('LP')
-        deps = [self.match('ID')]
+        deps = [self.parse_pot_pair()]
         while self.lookahead.kind == 'COMMA':
             self.match('COMMA')
-            deps.append(self.match('ID'))
+            deps.append(self.parse_pot_pair())
         self.match('RP')
         return deps
+
+    def parse_pot_pair(self):
+        first = self.match('ID')
+        second = None
+        if self.lookahead.kind == 'COLON':
+            self.match('COLON')
+            second = self.match('ID')
+        return first if second is None else (first, second)
 
     def parse_loc(self):
         self.match('LB')

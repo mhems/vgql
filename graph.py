@@ -81,7 +81,11 @@ class Graph:
                     if adj[2] is not None:
                         worldname = adj[2]
                     to = g.map[(worldname, adj[0])]
-                    node.addAdjacency((to, adj[1]))
+                    if adj[1] is not None:
+                        assert(len(adj[1]) == 1)
+                        node.addAdjacency((to, adj[1][0]))
+                    else:
+                        node.addAdjacency((to, None))
         return g
 
     @property
