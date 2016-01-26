@@ -12,6 +12,7 @@ Module representing in-game objects
 
 import os
 import json
+from copy import deepcopy
 
 import configuration as config
 import parsing
@@ -211,6 +212,18 @@ class Database:
         '''Return percent of collectibles acquired'''
         return len(self.collected) / len(self)
 
+    @property
+    def deepcopy(self):
+        '''Return deep copy of database'''
+        return Database(deepcopy(self.entries))
+
+    def canPickup(self, collectible):
+        '''
+        Return True iff collectible can be picked up, that is, all its
+        dependencies are satisfied
+        '''
+        return all(d in self for d in collectible.deps)
+
     def pickup(self, collectible, room, world):
         '''Update found status of corresponding database entry to True'''
         updated = False
@@ -231,6 +244,10 @@ class Database:
     def sorted(self, key=None, reverse=False):
         '''Return sorted copy of items by key and reverse flag'''
         return sorted(self.entries, key=key, reverse=reverse)
+
+    def __contains__(self, collectible):
+        '''Return True iff collectible in database'''
+        pass
 
     def __len__(self):
         '''Return number of items in self'''

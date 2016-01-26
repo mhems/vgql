@@ -190,8 +190,13 @@ class Graph:
         '''Visits start and recursively visits adjacencies in dfs manner'''
         start.color= 'grey'
         yield start
+        found = []
         for c in start.value.collectibles:
-            database.pickup(c, start.value.room, start.value.world)
+            if database.canPickup(c):
+                database.pickup(c, start.value.room, start.value.world)
+                found.append(c)
+        if len(found) > 0:
+            print(', '.join(str(f) for f in found))
         for node in start.reachable(database.upgrades):
             if node.color == 'white':
                 node.pred = start
