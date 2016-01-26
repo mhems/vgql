@@ -96,12 +96,12 @@
   | Temple Security Station, Artifact Temple
 > Artifact Temple
   * Artifact: Truth
-  * Boss: Meta Ridley
+  * Boss: Meta Ridley (Truth, Chozo, Lifegiver, Wild, World, Nature, Strength, Sun, Elder, Spirit, Warrior, Newborn)
   * Creature: Meta Ridley
   * Chozo Lore: Statuary
   * Chozo Lore: Binding
   | Temple Lobby, Transport to Impact Crater
-> Transport to Impact Crater
+> Transport to Impact Crater (Meta Ridley)
   | Artifact Temple, Transport to Tallon Overworld [Impact Crater]
 > Tallon Canyon
   * Creature: Sap Sac
@@ -301,7 +301,7 @@
   | Vault Access, Plaza Access
 > Plaza Access
   | Vault, Main Plaza
-> Ruined Fountain Access
+> Ruined Fountain Access (Morph Ball)
   | Main Plaza, Ruined Fountain
 > Ruined Fountain
   * Missile Expansion (Morph Ball, Spider Ball)
@@ -310,7 +310,7 @@
   | Ruined Fountain Access, Arboretum Access, Meditation Fountain
 > Meditation Fountain
   | Ruined Fountain, Magma Pool
-> Magma Pool
+> Magma Pool (Varia Suit)
   * Chozo Lore: Newborn
   * Power Bomb Expansion (Grapple Beam, Power Bomb)
     - grapple across lava, bomb wall
@@ -341,7 +341,7 @@
   * Boss: Flaahgra
   * Upgrade: Varia Suit
     - defeat Flaahgra
-  * Artifact: Wild
+  * Artifact: Wild (Flaahgra)
     - defeat ghosts
   | Sunchamber Access, Sun Tower Access
 > Sun Tower Access
@@ -456,7 +456,7 @@
 
 > Transport to Chozo Ruins North
   | Transport to Magmoor Caverns North [Chozo Ruins], Burning Trail
-> Burning Trail
+> Burning Trail (Varia Suit)
   * Creature: Grizby
   | Transport to Chozo Ruins North, Save Station Magmoor A (Missile), Lake Tunnel
 > Save Station Magmoor A
@@ -499,7 +499,7 @@
     - bomb grate, fall through
   | Monitor Station, Fiery Shores
 > Shore Tunnel
-  * Upgrade: Ice Spreader
+  * Upgrade: Ice Spreader (Power Bomb)
     - power bomb walkway, underneath
   | Monitor Station, Fiery Shores
 > Fiery Shores
@@ -636,7 +636,7 @@
   * Research: Zebes
   * Pirate Data: Phazon Program
   * Pirate Data: Contact
-  * Upgrade: Super Missile
+  * Upgrade: Super Missile (Charge Beam)
     - restore power to holographic projector
   | Observatory Access (Wave Beam), Save Station D (Missile), West Tower Entrance (Wave Beam)
 > Save Station D
