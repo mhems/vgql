@@ -84,7 +84,7 @@ the following grammar, in EBNF notation, with Perl-style regexes:
 ```
 start:      world + ;
 world:      WB ID WB room + ;
-room:       BG ID pickup * adj ? ;
+room:       BG ID dep ? pickup * adj ? ;
 pickup:     BULLET ID (COLON ID) ? dep ? how ? ;
 how:        INFO ;
 adj:        PIPE connection ( COMMA connection ) * ;

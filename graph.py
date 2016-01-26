@@ -46,10 +46,10 @@ class GraphNode:
         '''Adds adjacency to node'''
         self.adjacencies.append(adjacency)
 
-    def reachable(self, upgrades):
-        '''Return reachable adjacent nodes given upgrades'''
+    def reachable(self, database):
+        '''Return reachable adjacent nodes given database'''
         return [a[0] for a in self.adjacencies
-                if a[1] is None or a[1] in upgrades]
+                if a[1] is None or all(dep in database for dep in a[1])]
 
 class Graph:
     '''
@@ -81,10 +81,7 @@ class Graph:
                     if adj[2] is not None:
                         worldname = adj[2]
                     to = g.map[(worldname, adj[0])]
-                    dep = None
-                    if adj[1] is not None:
-                        dep = adj[1][0]
-                    node.addAdjacency((to, dep))
+                    node.addAdjacency((to, adj[1]))
         return g
 
     @property
@@ -149,7 +146,7 @@ class Graph:
             raise RuntimeError('must call compute_distances before distance')
         return self.distm[(id(u), id(v))]
 
-    def compute_distances(self, upgrades):
+    def compute_distances(self, database):
         '''
         Re-compute all-pairs distances given upgrades
 
@@ -170,7 +167,7 @@ class Graph:
             distm[(id(s), id(s))] = 0
             while len(queue) > 0:
                 v = queue.pop(0)
-                for w in v.reachable(upgrades):
+                for w in v.reachable(database):
                     if not (id(s), id(w)) in distm:
                         distm[(id(s), id(w))] = distm[(id(s), id(v))] + 1
                         queue.append(w)

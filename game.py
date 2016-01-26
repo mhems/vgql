@@ -98,12 +98,18 @@ class Room:
     Represents an in-game Room that holds collectibles and has adjacencies
     '''
 
-    def __init__(self, name, world=None, collectibles=None, adjacencies=None):
+    def __init__(self,
+                 name,
+                 world=None,
+                 collectibles=None,
+                 adjacencies=None,
+                 dependencies=None):
         '''Internalizes parameters'''
         self.name = name
         self.world = world
         self.collectibles = collectibles if collectibles is not None else []
         self.adjacencies  = adjacencies  if adjacencies  is not None else []
+        self.dependencies = dependencies if dependencies is not None else []
 
     @property
     def numCollectibles(self):
@@ -254,7 +260,7 @@ class Database:
 
     def __contains__(self, collectible):
         '''Return True iff collectible in database'''
-        pass
+        raise NotImplementedError('TODO')
 
     def __len__(self):
         '''Return number of items in self'''

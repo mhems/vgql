@@ -265,7 +265,7 @@ class DataParser(Parser):
 
     start:      world + ;
     world:      WB ID WB room + ;
-    room:       BG ID pickup * adj ? ;
+    room:       BG ID dep ? pickup * adj ? ;
     pickup:     BULLET ID (COLON ID) ? dep ? how ? ;
     how:        INFO ;
     adj:        PIPE connection ( COMMA connection ) * ;
@@ -327,11 +327,14 @@ class DataParser(Parser):
         roomname = self.match('ID')
         pickups = []
         adj = None
+        deps = None
+        if self.lookahead.kind == 'LP':
+            deps = self.parse_dependency()
         while self.lookahead.kind == 'BULLET':
             pickups.append(self.parse_pickup(roomname, worldname))
         if self.lookahead.kind == 'PIPE':
             adj = self.parse_adjacency()
-        return game.Room(roomname, worldname, pickups, adj)
+        return game.Room(roomname, worldname, pickups, adj, deps)
 
     def parse_pickup(self, roomname, worldname):
         self.match('BULLET')
