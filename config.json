@@ -14,9 +14,12 @@
 
     ],
     "KINDS": [
-
+        "Boss"
     ],
     "MANDATORY": [
         "Boss"
-    ]
+    ],
+    "WEIGHT_MAP" : {
+        "Boss" : 10
+    }
 }

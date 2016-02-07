@@ -45,5 +45,19 @@
     "MANDATORY": [
         "Artifact",
         "Boss"
-    ]
+    ],
+    "WEIGHT_MAP": {
+        "Upgrade" : 10,
+        "Boss" : 10,
+
+        "Energy Tank" : 5,
+        "Missile Expansion" : 5,
+        "Power Bomb Expansion" : 3,
+
+        "Artifact" : 2,
+        "Chozo Lore" : 1,
+        "Creature" : 1,
+        "Pirate Data" : 1,
+        "Research" : 1
+    }
 }
