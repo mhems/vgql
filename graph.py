@@ -191,7 +191,6 @@ class Graph:
     def _dfs_visit(self, start, database):
         '''Visits start and recursively visits adjacencies in dfs manner'''
         start.color= 'grey'
-        print(start.key)
         yield start
         found = []
         for c in start.value.collectibles:
@@ -199,8 +198,7 @@ class Graph:
                 database.pickup(c)
                 found.append(c)
         if len(found) > 0:
-            pass
-            # print('\n'.join(str(f) for f in found))
+            print('\n'.join(str(f) for f in found))
         for node in start.reachable(database.upgrades):
             if node.color == 'white':
                 node.pred = start
