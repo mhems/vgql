@@ -72,7 +72,7 @@
     * Missile Expansion (Morph Ball)
       - under small alcove behind ship
     | Canyon Cavern, Gully, Alcove, Waterfall Cavern, Temple Hall
-  > Alcove
+  > Alcove (Gully)
     * Upgrade: Space Jump Boots
       - access alcove via Tallon Canyon
     | Landing Site
@@ -217,10 +217,10 @@
       - grapple from Training Chamber Room
     * Missile Expansion (Super Missile)
       - super missile tree knot
-    * Energy Tank
+    * Energy Tank (Plaza Access)
       - accessible coming from vault
     * Research: Missile Door Lock
-    | Ruins Entrance, Ruined Shrine Access (Missile), Nursery Access, Plaza Access, Ruined Fountain Access, Piston Tunnel
+    | Ruins Entrance, Ruined Shrine Access (Missile), Nursery Access, Plaza Access, Ruined Fountain Access
   > Ruined Shrine Access
     | Main Plaza, Ruined Shrine
   > Ruined Shrine
@@ -236,7 +236,7 @@
     | Ruined Shrine, Tower of Light (Wave Beam)
   > Tower of Light
     * Creature: Plated Puffer
-    * Upgrade: Wavebuster (Missile)
+    * Upgrade: Wavebuster (Missile) [5]
       - use missiles to shatter pillars
     | Tower of Light Access (Wave Beam), Tower Chamber (Wave Beam)
   > Tower Chamber
@@ -344,7 +344,7 @@
   > Sun Tower
     * Creature: Oculus
     * Chozo Lore: Contain
-    | Sun Tower Access, Transport to Magmoor Caverns North
+    | Sun Tower Access (Super Missile, Spider Ball), Transport to Magmoor Caverns North
   > Gathering Hall Access
     | Arboretum, Gathering Hall
   > Gathering Hall
@@ -492,7 +492,7 @@
       - bomb grate, fall through
     | Monitor Station, Fiery Shores
   > Shore Tunnel
-    * Upgrade: Ice Spreader (Power Bomb)
+    * Upgrade: Ice Spreader (Power Bomb) [5]
       - power bomb walkway, underneath
     | Monitor Station, Fiery Shores
   > Fiery Shores
@@ -546,7 +546,7 @@
     * Missile Expansion (Super Missile, Spider Ball)
       - blow pillar to reveal track
     | Shoreline Entrance, Temple Entryway, Save Station B, Ruins Entryway, Plaza Walkway, Ice Ruins Access
-  > Temple Entryway
+  > Temple Entryway (Space Jump Boots)
     | Phendrana Shorelines, Chozo Ice Temple
   > Chozo Ice Temple
     * Creature: Ice Parasite
@@ -576,7 +576,7 @@
   > Plaza Walkway
     * Creature: Ice Burrower
     | Ice Ruins East, Phendrana Shorelines
-  > Ruins Entryway
+  > Ruins Entryway (Plaza Walkway)
     * Creature: Pulse Bombu
     | Phendrana Shorelines, Ice Ruins West
   > Ice Ruins West
@@ -754,7 +754,7 @@
     * Creature: Wave Trooper
     | Security Access A (Ice Beam), Storage Depot A (Plasma Beam), Security Access B (Wave Beam)
   > Storage Depot A
-    * Upgrade: Flamethrower (Power Bomb)
+    * Upgrade: Flamethrower (Power Bomb) [5]
       - power bomb bendezium wall on top floor of Mine Security Station, scan to unlock force field
     | Mine Security Station (Plasma Beam)
   > Security Access B
