@@ -46,7 +46,7 @@ if __name__ == '__main__':
     for n in nodes:
         g.addNode(n)
 
-    g.write_png('test.png')
+    # g.write_png('test.png')
 
     # print('\n'.join('%d: %d' % (i, id(k)) for i, k in enumerate(nodes)))
     # g.compute_distances([])

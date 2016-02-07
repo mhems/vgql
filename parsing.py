@@ -266,12 +266,13 @@ class DataParser(Parser):
     start:      world + ;
     world:      WB ID WB room + ;
     room:       BG ID dep ? pickup * adj ? ;
-    pickup:     BULLET pot_pair dep ? how ? ;
+    pickup:     BULLET pot_pair dep ? weight ? how ? ;
     how:        INFO ;
     adj:        PIPE connection ( COMMA connection ) * ;
     connection: ID dep ? loc ? ;
     dep:        LP pot_pair ( COMMA pot_pair ) * RP ;
     pot_pair:   ID (COLON ID) ? ;
+    weight:     LB ID RB ;
     loc:        LB ID RB ;
 
     INFO:   /^\W*-\W*.*\W*$/ ;
@@ -300,7 +301,7 @@ class DataParser(Parser):
         ('LB', '\\['),
         ('RB', '\\]'),
         ('INFO', r'^\W*-\W*.*\W*$'),
-        ('ID', '[a-zA-Z0-9][-a-zA-Z0-9\'_ ]*')
+        ('ID', r'-?[a-zA-Z0-9][-a-zA-Z0-9\'_ ]*')
     ]
 
     def __init__(self, filename):
@@ -340,15 +341,20 @@ class DataParser(Parser):
         self.match('BULLET')
         dep = None
         how = None
+        weight = None
         result = self.parse_pot_pair()
         if self.lookahead.kind == 'LP':
             dep = self.parse_dependency()
+        if self.lookahead.kind == 'LB':
+            weight = self.parse_weight()
         if self.lookahead.kind == 'INFO':
             how = self.parse_how()
         if isinstance(result, tuple):
-            return game.Item(result[1], result[0], roomname, worldname, how, dep)
+            return game.Item(result[1], result[0], roomname, worldname,
+                             info=how, weight=weight, deps=dep)
         else:
-            return game.Expansion(result[0], roomname, worldname, how, dep)
+            return game.Expansion(result[0], roomname, worldname,
+                                  info=how, weight=weight, deps=dep)
 
     def parse_how(self):
         return match(r'^\W*-\W*(.*)\W*$', self.match('INFO')).group(1)
@@ -387,7 +393,17 @@ class DataParser(Parser):
         if self.lookahead.kind == 'COLON':
             self.match('COLON')
             second = self.match('ID')
-        return first if second is None else (first, second)
+        return (first, second)
+
+    def parse_weight(self):
+        self.match('LB')
+        weight = None
+        try:
+            weight = float(self.match('ID'))
+        except ValueError:
+            self.lookahead.error('Weights must be floats')
+        self.match('RB')
+        return weight
 
     def parse_loc(self):
         self.match('LB')

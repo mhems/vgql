@@ -26,21 +26,27 @@ class Collectible:
     it and a list of dependencies
     '''
 
-    def __init__(self, kind, room, world, info=None, deps=None):
+    def __init__(self, kind, room, world,
+                 info=None, weight=None, deps=None):
         '''Internalizes parameters'''
         self.kind = kind
         self.info = info
         self.room = room
         self.world = world
+        if weight is not None:
+            self.weight = weight
+        else:
+            self.weight = config.get("WEIGHT_MAP")[self.kind]
         self.deps = [] if deps is None else deps
 
     @property
     def _extra(self):
         '''Returns formatted string of possibly-None variables'''
+        weight = ' [%d] ' % self.weight
         deps = ' (%s)' % ', '.join(str(d) for d in self.deps)
         loc = ' in (%s, %s)' % (self.room, self.world)
         info = '\n    - %s' % self.info if self.info is not None else ''
-        return deps + loc + info
+        return weight + deps + loc + info
 
     def __eq__(self, other):
         '''Compare self and other for equality'''
@@ -49,11 +55,13 @@ class Collectible:
                     (self.info == other['how'] or
                      self.info is None and other['how'] == '') and
                     self.room == other['room'] and
-                    self.world == other['world'])
+                    self.world == other['world'] and
+                    self.weight == other['weight'])
         return (self.kind == other.kind and
                 self.info == other.info and
                 self.room == other.room and
                 self.world == other.world and
+                self.weight == other.weight and
                 self.deps == other.deps)
 
 class Expansion(Collectible):
@@ -62,9 +70,10 @@ class Expansion(Collectible):
     each without a specific name
     '''
 
-    def __init__(self, kind, room, world, info=None, deps=None):
+    def __init__(self, kind, room, world,
+                 info=None, weight=None, deps=None):
         '''Internalizes parameters'''
-        super().__init__(kind, room, world, info, deps)
+        super().__init__(kind, room, world, info, weight, deps)
 
     def __str__(self):
         '''Return formatted string holding contents of self'''
@@ -76,9 +85,10 @@ class Item(Collectible):
     each with a specific name
     '''
 
-    def __init__(self, name, kind, room, world, info=None, deps=None):
+    def __init__(self, name, kind, room, world,
+                 info=None, weight=None, deps=None):
         '''Internalizes parameters'''
-        super().__init__(kind, room, world, info, deps)
+        super().__init__(kind, room, world, info, weight, deps)
         self.name = name
 
     def __str__(self):

@@ -85,12 +85,13 @@ the following grammar, in EBNF notation, with Perl-style regexes:
 start:      world + ;
 world:      WB ID WB room + ;
 room:       BG ID dep ? pickup * adj ? ;
-pickup:     BULLET pot_pair dep ? how ? ;
+pickup:     BULLET pot_pair dep ? weight ? how ? ;
 how:        INFO ;
 adj:        PIPE connection ( COMMA connection ) * ;
 connection: ID dep ? loc ? ;
 dep:        LP pot_pair ( COMMA pot_pair ) * RP ;
 pot_pair:   ID (COLON ID) ? ;
+weight:     LB ID RB ;
 loc:        LB ID RB ;
 
 INFO:   /^\W*-\W*.*\W*$/ ;
