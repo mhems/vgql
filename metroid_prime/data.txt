@@ -333,7 +333,7 @@
   > Sunchamber
     * Creature: Flaahgra
     * Creature: Flaahgra Tentacle
-    * Boss: Flaahgra
+    * Boss: Flaahgra (Morph Ball, Morph Ball Bomb)
     * Upgrade: Varia Suit
       - defeat Flaahgra
     * Artifact: Wild (Flaahgra)
