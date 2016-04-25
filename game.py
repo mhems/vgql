@@ -212,7 +212,7 @@ class Database:
                     entry['how'] = c.info if c.info is not None else ''
                     if isinstance(c, Item):
                         entry['name'] = c.name
-                    entries.append(entry_)
+                    entries.append(entry)
         return Database(entries)
 
     @property
