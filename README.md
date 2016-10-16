@@ -35,7 +35,7 @@ bottom section for the current state of implementation.
 # Requirements
 * python3
 * pydotplus (pydot port for python3)
-  [[PyPi]](https://pypi.python.org/pypi/pydotplus)
+  [PyPi](https://pypi.python.org/pypi/pydotplus)
 
 # Usage
 
