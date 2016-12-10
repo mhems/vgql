@@ -1,0 +1,77 @@
+{
+    "DATABASE": "metroid_prime2/all.json",
+    "GAME_DATA": "metroid_prime2/data.txt",
+    "START_WORLD": "Temple Grounds",
+    "START_ROOM": "Landing Site",
+    "BACKGROUND": "black",
+    "DOOR_COLORS": {
+        "default": "blue",
+        "Missile" : "red",
+        "Super Missile" : "green",
+        "Seeker Missile" : "purple",
+        "Light Beam" : "white",
+        "Dark Beam" : "black",
+        "Annihilator Beam" : "grey",
+        "Power Bomb" : "yellow"
+    },
+    "WORLD_COLORS": {
+        "Temple Grounds": "white",
+        "Great Temple": "white",
+        "Sky Temple Grounds": "purple",
+        "Sky Temple": "purple",
+        "Agon Wastes": "orange",
+        "Dark Agon Wastes": "purple",
+        "Torvus Bog": "green",
+        "Dark Torvus Bog": "purple",
+        "Sanctuary Fortress": "blue",
+        "Ing Hive" : "purple",
+        "Elevator" : "yellow"
+    },
+    "WORLDS": [
+        "Temple Grounds",
+        "Great Temple",
+        "Sky Temple Grounds",
+        "Sky Temple",
+        "Agon Wastes",
+        "Dark Agon Wastes",
+        "Torvus Bog",
+        "Dark Torvus Bog",
+        "Sanctuary Fortress",
+        "Ing Hive"
+    ],
+    "KINDS": [
+        "Dark Temple Key",
+        "Sky Temple Key",
+        "Boss",
+        "Lore",
+        "Creature",
+        "Energy Tank",
+        "Missile Expansion",
+        "Power Bomb Expansion",
+        "Beam Ammo Expansion",
+        "Research",
+        "Upgrade"
+    ],
+    "MANDATORY": [
+        "Dark Temple Key",
+        "Sky Temple Key",
+        "Boss"
+    ],
+    "WEIGHT_MAP": {
+        "Upgrade" : 10,
+        "Boss" : 10,
+
+        "Energy Tank" : 5,
+        "Missile Expansion" : 5,
+
+        "Power Bomb Expansion" : 3,
+        "Beam Ammo Expansion" : 3,
+
+        "Dark Temple Key" : 2,
+        "Sky Temple Key" : 2,
+
+        "Lore" : 1,
+        "Creature" : 1,
+        "Research" : 1
+    }
+}

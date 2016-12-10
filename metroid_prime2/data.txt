@@ -1,0 +1,755 @@
+# Temple Grounds
+  > Landing Site
+    * Lore: M-Dhe's Testament
+    | Service Access, Hive Access Tunnel
+  > Hive Access Tunnel
+    | Landing Site, Hive Transport Area (Translator Gate)
+  > Hive Chamber A
+    * Missile Expansion
+    | Hive Access Tunnel, Hive Tunnel
+  > Hive Tunnel
+    | Hive Chamber A, Command Chamber
+  > Command Chamber
+    * Lore: GSGT C. Benet
+    * Lore: SPC B. Reevs
+    | Hive Tunnel, Hive Storage
+  > Hive Storage
+    | Command Chamber, Hive Chamber B
+  > Hive Chamber B
+    * Missile Expansion
+    | Hive Storage, Hive Chamber C
+  > Hive Chamber C
+    | Hive Chamber B, Hive Transport Area, Hive Save Station
+  > Hive Save Station
+    | Hive Chamber C
+  > Hive Transport Area
+    | Hive Access Tunnel, Hive Chamber C, Industrial Site
+  > Industrial Site
+    * Lore: J-Fme's Testament
+    | Hive Transport Area, Agon Transport Access (Translator Gate), Collapsed Tunnel
+  > Agon Transport Access
+    | Industrial Site, Transport to Agon Wastes
+  > Transport to Agon Wastes
+    * Lore: Our Heritage
+    * Missile Expansion
+    | Agon Transport Access, Transport to Temple Grounds [Agon Wastes]
+  > Collapsed Tunnel
+    * Lore: PFC M. Veroni
+    | Industrial Site, Temple Assembly Site
+  > Temple Assembly Site
+    * Missile Expansion
+    | Industrial Site, Storage Cavern B (Missile), Temple Transport B (Translator Gate), Dynamo Chamber
+  > Storage Cavern B
+    * Energy Tank
+    | Temple Assembly Site
+  > Temple Transport B
+    | Temple Assembly Site, Temple Transport B [Great Temple]
+  > Dynamo Chamber
+    * Power Bomb Expansion
+    | Temple Assembly Site, Communications Area
+  > Communications Area
+    * Lore: PFC L. Brouda
+    * Missile Expansion
+    | Dynamo Chamber, Storage Cavern A, Trooper Security Station
+  > Storage Cavern A
+    * Lore: D-Isl's Testament
+    | Communications Area
+  > Trooper Security Station
+     * Lore: SPC M. Angseth
+    | Communications Area, GFMC Compound
+  > GFMC Compound
+    * Lore: CAPT A. Exeter
+    * Lore: LCPL J. Brode
+    * Lore: PFC G. Haley
+    * Lore: PFC I. Crany
+    * Lore: PFC S. Milligan
+    * Lore: PFC F. Triplette
+    * Missile Expansion
+    * Upgrade: Missile Launcher
+    | Trooper Security Station, Sacred Bridge (Missile), Windchamber Tunnel (Power Bomb), Fortress Transport Access (Translator Gate)
+  > Fortress Transport Access
+    * Lore: The Sky Temple
+    * Energy Tank
+    | GFMC Compound, Transport to Sanctuary Fortress
+  > Transport to Sanctuary Fortress
+    | Fortress Transport Access, Transport to Temple Grounds [Sanctuary Fortress]
+  > Sacred Bridge
+    * Lore: PFC E. Denys
+    | GFMC Compound, Sacred Path
+  > Sacred Path
+    | Sacred Bridge, Temple Transport A, Hall of Honored Dead
+  > Temple Transport A
+    | Sacred Path, Temple Transport A [Great Temple]
+  > Windchamber Tunnel
+    | GFMC Compound (Power Bomb), Grand Windchamber
+  > Grand Windchamber
+    * Upgrade: Sunburst
+    | Windchamber Tunnel, Windchamber Gateway (Power Bomb)
+  > Windchamber Gateway
+    * Energy Tank
+    | Grand Windchamber (Power Bomb), Path of Eyes (Super Missile)
+  > Path of Eyes
+    * Lore: The World Warped
+    | Windchamber Gateway (Super Missile), Hall of Eyes (Super Missile), Torvus Transport Access
+  > Torvus Transport Access
+    | Path of Eyes, Transport to Torvus Bog (Missile)
+  > Transport to Torvus Bog
+    | Torvus Transport Access, Transport to Temple Grounds [Torvus Bog]
+  > Hall of Eyes
+    | Path of Eyes (Super Missile), Meeting Grounds
+  > Meeting Grounds
+    * Lore: Age of Anxiety
+    | Hall of Eyes, Temple Transport C (Translator Gate), Service Access (Super Missile)
+  > Temple Transport C
+    | Meeting Grounds, Temple Transport C [Great Temple]
+  > Service Access
+    | Meeting Grounds (Super Missile), Landing Site, Path of Honor
+  > Path of Honor
+    | Service Access, Hall of Honored Dead (Seeker Missile)
+  > Hall of Honored Dead
+    * Upgrade: Seeker Launcher
+    | Sacred Path, Path of Honor (Seeker Missile)
+
+# Great Temple
+  > Temple Transport A
+    | Temple Transport A [Temple Grounds], Transport A Access
+  > Transport A Access
+    * Missile Expansion
+    | Temple Transport A, Temple Sanctuary
+  > Temple Transport B
+    | Temple Transport B [Temple Grounds], Transport B Access
+  > Transport B Access
+    * Missile Expansion
+    | Temple Transport B, Temple Sanctuary
+  > Temple Transport C
+    | Temple Transport C [Temple Grounds], Transport C Access
+  > Transport C Access
+    | Temple Transport C, Temple Sanctuary
+  > Temple Sanctuary
+    * Boss: Dark Alpha Splinter
+    | Transport A Access, Transport B Access, Transport C Access, Controller Access
+  > Controller Access
+    | Temple Sanctuary, Main Energy Controller
+  > Main Energy Controller
+    * Lore: Origins
+    * Upgrade: Light Suit
+    | Controller Access
+
+# Agon Wastes
+  > Transport to Temple Grounds
+    | Transport to Agon Wastes [Temple Grounds], Plaza Access
+  > Plaza Access
+    | Transport to Temple Grounds, Mining Plaza
+  > Mining Plaza
+    * Lore: Paradise
+    * Energy Tank
+    | Plaza Access, Agon Map Station (Translator Gate), Transit Station, Mining Station Access, Save Station A (Missile)
+  > Agon Map Station
+    | Mining Plaza
+  > Save Station A
+    | Mining Plaza (Missile), Transport Center
+  > Transport Center
+    * Missile Expansion
+    | Save Station A, Transport to Torvus Bog (Seeker Missile), Portal Terminal
+  > Transport to Torvus Bog
+    | Transport Center (Seeker Missile), Transport to Agon Wastes (Torvus Bog)
+  > Portal Terminal
+    * Lore: Light of Aether
+    | Transport Center, Portal Access
+  > Portal Access
+    * Missile Expansion
+    | Portal Terminal, Mining Station A
+  > Mining Station A
+    * Lore: Cataclysm
+    * Missile Expansion
+    | Portal Access, Sand Cache (Translator Gate), Mining Station Access, Temple Access (Missile), Central Station Access
+  > Sand Cache
+    * Missile Expansion
+    | Mining Station A
+  > Mining Station Access
+    * Energy Tank
+    | Mining Plaza, Mining Station A
+  > Transit Station
+    | Mining Plaza, Mining Station B
+  > Mining Station B
+    * Lore: The Stellar Object
+    * Upgrade: Darkburst
+    | Transit Station, Storage A (Light Beam), Mine Shaft
+  > Storage A
+    * Missile Expansion
+    | Mining Station B
+  > Mine Shaft
+    * Energy Tank
+    | Mining Station B (Seeker Missile), Agon Temple (Dark Beam)
+  > Agon Temple
+    * Boss: Bomb Guardian
+    * Upgrade: Morph Ball Bomb
+    | Mine Shaft (Dark Beam), Controller Access, Temple Access, Sandcanyon (Light Beam)
+  > Controller Access
+    | Agon Temple, Agon Energy Controller
+  > Agon Energy Controller
+    * Lore: Saving Aether
+    | Controller Access
+  > Temple Access
+    | Agon Temple, Mining Station A
+  > Central Station Access
+    * Beam Ammo Expansion
+    | Mining Station A, Central Mining Station (Missile)
+  > Central Mining Station
+    * Lore: J-Stl's Testament
+    * Lore: Two Hunters
+    | Central Station Access, Command Center Access, Command Center Access (Light Beam)
+  > Command Center Access
+    | Central Mining Station, Central Mining Station (Light Beam), Command Center (Light Beam), Command Center (Dark Beam)
+  > Command Center
+    * Lore: Phazon Operations
+    * Lore: Local Conflict
+    * Lore: Great Discoveries
+    * Lore: Rift Portal
+    * Lore: Phazon Raids
+    * Missile Expansion
+    | Command Center Access (Dark Beam), Command Center Access (Light Beam), Biostorage Access, Security Station B, Security Station B (Missile)
+  > Biostorage Access
+    | Command Center, Biostorage Station (Missile)
+  > Biostorage Station
+    * Lore: The Hunter
+    | Biostorage Access, Storage B (Dark Beam), Security Station A
+  > Storage B
+    * Missile Expansion
+    | Biostorage Station (Dark Beam)
+  > Security Station A
+    | Biostorage Station, Bioenergy Production
+  > Bioenergy Production
+    * Energy Tank
+    | Security Station A, Storage C (Super Missile), Ventilation Area B
+  > Storage C
+    * Missile Expansion
+    | Bioenergy Production
+  > Ventilation Area B
+    | Bioenergy Production, Save Station B (Missile)
+  > Save Station B
+    * Lore: Security Breach
+    | Ventilation Area B, Sand Processing
+  > Sand Processing
+    * Missile Expansion
+    | Save Station B, Main Reactor
+  > Main Reactor
+    * Lore: B-Stl's Testament
+    * Boss: Dark Samus 1
+    * Missile Expansion
+    | Sand Processing, Security Station B (Dark Beam), Storage D, Ventilation Area A (Light Beam)
+  > Security Station B
+    * Lore: Federation Attack
+    | Main Reactor (Dark Beam), Command Center, Command Center (Missile)
+  > Storage D
+    * Lore: Shadow War
+    * Upgrade: Dark Beam
+    | Main Reactor (Dark Beam)
+  > Ventilation Area A
+    * Missile Expansion
+    | Main Reactor (Light Beam), Transport to Sanctuary Fortress, Sandcanyon
+  > Transport to Sanctuary Fortress
+    | Ventilation Area A, Transport to Agon Wastes [Sanctuary Fortress]
+  > Sandcanyon
+    * Power Bomb Expansion
+    | Ventilation Area A, Agon Temple (Light Beam)
+
+# Dark Agon Wastes
+  > Ing Cache 4
+    * Missile Expansion
+    | Dueling Range (Dark Beam)
+  > Dueling Range
+    | Ing Cache 4 (Dark Beam), Dark Transit Station, Junction Site, Save Station 2
+  > Dark Transit Station
+    | Dueling Range, Trial Grounds
+  > Trial Grounds
+    | Dark Transit Station
+  > Save Station 2
+    | Dueling Range, Crossroads
+  > Crossroads
+    * Missile Expansion
+    | Save Station 2, Portal Site
+  > Portal Site
+    | Crossroads, Portal Access
+  > Portal Access
+    | Portal Site, Judgment Pit
+  > Judgment Pit
+    * Boss: Jump Guardian
+    * Upgrade: Space Jump Boots
+    | Portal Access, Junction Site, Dark Agon Temple Access (Missile), Warrior's Walk (Super Missile), Save Station 1 (Dark Beam)
+  > Junction Site
+    * Missile Expansion
+    | Dueling Range, Judgment Pit
+  > Save Station 1
+    | Judgment Pit (Dark Beam)
+  > Dark Agon Temple Access
+    | Judgment Pit, Dark Agon Temple
+  > Dark Agon Temple
+    * Boss: Amorbis
+    * Upgrade: Dark Suit
+    | Dark Agon Temple Access, Trial Tunnel, Dark Controller Access
+  > Trial Tunnel
+    * Dark Key: 1
+    | Dark Agon Temple
+  > Dark Controller Access
+    | Dark Agon Temple, Dark Agon Energy Controller
+  > Dark Agon Energy Controller
+    | Dark Controller Access
+  > Warrior's Walk
+    * Missile Expansion
+    | Judgment Pit (Super Missile), Battleground (Super Missile)
+  > Battleground
+    * Dark Key: 3
+    * Sky Temple Key: 1
+    | Warrior's Walk (Super Missile), Double Path (Light Beam), Double Path (Light Beam)
+  > Double Path
+    | Battleground (Light Beam), Battleground (Light Beam), Doomed Entry (Light Beam), Doomed Entry (Dark Beam)
+  > Doomed Entry
+    * Dark Key: 2
+    | Double Path (Light Beam), Double Path (Dark Beam), Feeding Pit Access (Light Beam), Oasis Access (Dark Beam)
+  > Feeding Pit Access
+    | Doomed Entry (Light Beam), Feeding Pit (Light Beam)
+  > Feeding Pit
+    * Power Bomb Expansion
+    | Feeding Pit Access (Light Beam), Ing Cache 1 (Dark Beam), Watering Hole
+  > Ing Cache 1
+    * Upgrade: Light Beam
+    | Feeding Pit (Light Beam)
+  > Watering Hole
+    | Feeding Pit (Missile), Phazon Site
+  > Phazon Site
+    | Watering Hole, Ing Cache 2 (Annihilator Beam), Bitter Well
+  > Ing Cache 2
+    * Upgrade: Sonic Boom
+    | Phazon Site (Annihilator Beam)
+  > Bitter Well
+    | Phazon Site, Save Station 3
+  > Save Station 3
+    | Bitter Well, Hall of Stairs
+  > Hall of Stairs
+    | Save Station 3 (Missile), Dark Oasis
+  > Dark Oasis
+    * Sky Temple Key: 2
+    | Hall of Stairs, Ing Cache 3 (Light Beam), Oasis Access
+  > Ing Cache 3
+    | Dark Oasis (Light Beam)
+  > Oasis Access
+    | Dark Oasis, Doomed Entry (Dark Beam)
+
+# Torvus Bog
+  > Transport to Temple Grounds
+    | Transport to Torvus Bog [Temple Grounds], Temple Transport Access
+  > Temple Transport Access
+    | Transport to Temple Grounds, Torvus Lagoon
+  > Torvus Lagoon
+    * Lore: S-Dly's Testament
+    * Missile Expansion
+    | Temple Transport Access, Save Station A (Missile), Path of Roots (Dark Beam), Portal Chamber, Ruined Alcove (Light Beam)
+  > Save Station A
+    | Torvus Lagoon
+  > Ruined Alcove
+    | Torvus Lagoon (Light Beam), Forgotten Bridge (Light Beam)
+  > Forgotten Bridge
+    * Missile Expansion
+    | Ruined Alcove (Light Beam), Plaza Access (Missile), Grove Access (Dark Beam), Abandoned Worksite
+  > Plaza Access
+    * Missile Expansion
+    | Forgotten Bridge, Torvus Plaza
+  > Torvus Plaza
+    * Energy Tank
+    | Plaza Access
+  > Abandoned Worksite
+    * Missile Expansion
+    | Forgotten Bridge, Great Bridge (Light Beam)
+  > Great Bridge
+    * Power Bomb Expansion
+    | Abandoned Worksite (Light Beam), Portal Chamber (Missile), Path of Roots, Torvus Map Station, Temple Access, Temple Access (Dark Beam)
+  > Portal Chamber
+    * Missile Expansion
+    | Torvus Lagoon, Great Bridge
+  > Path of Roots
+    * Lore: The Ing Attack
+    * Missile Expansion
+    | Torvus Lagoon (Dark Beam), Great Bridge
+  > Torvus Map Station
+    | Great Bridge
+  > Temple Access
+    * Energy Tank
+    | Greate Bridge, Great Bridge (Dark Beam), Torvus Temple (Dark Beam), Torvus Temple (Super Missile)
+  > Torvus Temple
+    * Upgrade: Super Missile
+    | Temple Access (Super Missile), Temple Access (Dark Beam), Underground Tunnel (Super Missile, Translator Gate), Transport to Agon Wastes (Seeker Missile), Underground Transport, Controller Access (Super Missile)
+  > Transport to Agon Wastes
+    | Torvus Temple (Seeker Missile), Transport to Torvus Bog [Agon Wastes]
+  > Controller Access
+    | Torvus Temple, Torvus Energy Controller
+  > Torvus Energy Controller
+    * Lore: Dark Aether
+    | Controller Access
+  > Underground Transport
+    | Torvus Temple, Hydrodynamo Station
+  > Underground Tunnel
+    * Lore: Our War Begins
+    * Missile Expansion
+    | Torvus Temple, Torvus Grove (Light Beam)
+  > Torvus Grove
+    * Missile Expansion
+    | Underground Tunnel (Light Beam), Grove Access (Dark Beam), Meditation Vista
+  > Grove Access
+    | Torvus Grove (Dark Beam), Forgotten Bridge (Dark Beam)
+  > Meditation Vista
+    * Energy Tank
+    | Torvus Grove
+  > Hydrodynamo Station
+    * Missile Expansion
+    | Underground Transport, Hydrodynamo Shaft, Gathering Access (Light Beam), Catacombs Access (Dark Beam), Save Station B (Missile), Training Access (Seeker Missile)
+  > Save Station B
+    | Hydrodynamo Station
+  > Gathering Access
+    | Hydrodynamo Station (Light Beam), Gathering Hall (Light Beam)
+  > Gathering Hall
+    * Lore: New Weapons
+    * Missile Expansion
+    | Gathering Access (Light Beam), Transit Tunnel South (Annihilator Beam), Transit Tunnel West
+  > Transit Tunnel South
+    * Missile Expansion
+    | Gathering Hall (Annihilator Beam), Catacombs (Annihilator Beam)
+  > Catacombs
+    * Lore: The New Terror
+    * Lore: G-Sch's Testament
+    | Transit Tunnel South (Annihilator Beam), Catacombs Access (Dark Beam), Transit Tunnel East
+  > Catacombs Access
+    | Catacombs (Dark Beam), Hydrodynamo Station (Dark Beam)
+  > Transit Tunnel East
+    * Energy Tank
+    | Catacombs, Training Chamber (Dark Beam)
+  > Training Chamber
+    * Lore: Recovering Energy
+    * Missile Expansion
+    | Transit Tunnel East (Dark Beam), Training Access, Fortress Transport Access (Power Bomb), Transit Tunnel West (Light Beam)
+  > Training Access
+    | Training Chamber, Hydrodynamo Station
+  > Fortress Transport Access
+    | Training Chamber (Power Bomb), Transport to Sanctuary Fortress
+  > Transport to Sanctuary Fortress
+    | Fortress Transport Access, Transport to Torvus Bog [Sanctuary Fortress]
+  > Transit Tunnel West
+    | Training Chamber (Light Beam), Gathering Hall
+  > Hydrodynamo Shaft
+    | Hydrodynamo Station, Main Hydrochamber
+  > Main Hydrochamber
+    * Boss: Alpha Blogg
+    | Hydrodynamo Shaft, Hydrochamber Storage
+  > Hydrochamber Storage
+    * Upgrade: Gravity Boost
+    | Main Hydrochamber
+
+# Dark Torvus Bog
+  > Poisoned Bog
+    * Sky Temple Key: 3
+    | Cache A (Seeker Missile), Portal Chamber, Putrid Alcove (Power Bomb)
+  > Cache A
+    * Beam Ammo Expansion
+    | Poisoned Bog
+  > Portal Chamber
+    | Poisoned Bog, Venomous Pond (Dark Beam)
+  > Venomous Pond
+    * Dark Key: 3
+    | Portal Chamber (Dark Beam), Save Station 1 (Missile), Dark Torvus Temple Access (Light Beam), Brooding Ground
+  > Save Station 1
+    | Venomous Pond
+  > Dark Torvus Temple Access
+    | Venomous Pond (Light Beam), Dark Torvus Temple (Light Beam)
+  > Dark Torvus Temple
+    * Boss: Chykka
+    * Upgrade: Dark Visor
+    | Dark Torvus Temple Access (Light Beam), Ammo Station, Cache B (Super Missile), Dark Controller Access
+  > Ammo Station
+    | Dark Torvus Temple
+  > Cache B
+    * Energy Tank
+    | Dark Torvus Temple
+  > Dark Controller Access
+    | Dark Torvus Temple, Dark Torvus Energy Controller
+  > Dark Torvus Energy Controller
+    | Dark Controller Access
+  > Brooding Ground
+    | Venomous Pond, Dark Forgotten Bridge
+  > Dark Forgotten Bridge
+    | Brooding Ground (Super Missile), Putrid Alcove (Power Bomb), Dark Falls, Dark Arena Tunnel (Light Beam)
+  > Putrid Alcove
+    * Power Bomb Expansion
+    | Dark Forgotten Bridge (Power Bomb), Poisoned Bog (Power Bomb)
+  > Dark Falls
+    | Dark Forgotten Bridge, Polluted Mire (Dark Beam)
+  > Polluted Mire
+    | Dark Falls (Dark Beam), Gloom Vista
+  > Gloom Vista
+    | Polluted Mire
+  > Dark Arena Tunnel
+    | Dark Forgotten Bridge (Light Beam), Dark Torvus Arena
+  > Dark Torvus Arena
+    * Dark Key: 1
+    * Boss: Boost Guardian
+    * Upgrade: Boost Ball
+    | Dark Arena Tunnel
+  > Undertemple Shaft
+    | Save Station 2, Crypt Tunnel (Light Beam), Sacrificial Chamber Tunnel, Undertemple Access
+  > Save Station 2
+    | Undertemple Shaft
+  > Crypt Tunnel
+    | Undertemple Shaft (Light Beam), Crypt (Light Beam)
+  > Crypt
+    | Crypt Tunnel (Light Beam), Undertransit One
+  > Undertransit One
+    * Missile Expansion
+    | Crypt, Sacrificial Chamber (Light Beam)
+  > Sacrificial Chamber
+    * Boss: Grapple Guardian
+    * Upgrade: Grapple Beam
+    | Undertransit One (Light Beam), Sacrificial Chamber Tunnel, Undertransit Two (Dark Beam)
+  > Sacrificial Chamber Tunnel
+    | Sacrificial Chamber, Undertemple Shaft
+  > Undertransit Two
+    | Sacrificial Chamber (Dark Beam), Dungeon
+  > Dungeon
+    * Sky Temple Key: 4
+    | Undertransit Two
+  > Undertemple Access
+    * Dark Key: 2
+    | Undertemple Shaft, Undertemple (Power Bomb)
+  > Undertemple
+    * Missile Expansion
+    * Boss: Power Bomb Guardian
+    * Upgrade: Power Bomb
+    | Undertemple Access (Power Bomb)
+
+# Sanctuary Fortress
+  > Transport to Temple Grounds
+    | Temple Transport Access, Transport to Sanctuary Fortress [Temple Grounds]
+  > Temple Transport Access
+    | Transport to Temple Grounds, Sanctuary Entrance
+  > Sanctuary Entrance
+    * Lore: Twilight
+    * Lore: S-Jsr's Testament
+    * Power Bomb Expansion
+    | Temple Transport Access, Power Junction (Light Beam)
+  > Power Junction
+    | Sanctuary Entrance (Light Beam), Reactor Access
+  > Reactor Access
+    | Power Junction, Reactor Core
+  > Reactor Core
+    * Energy Tank
+    | Reactor Access, Save Station A (Missile), Sanctuary Map Station (Translator Gate), Minigyro Chamber, Transit Station (Power Bomb)
+  > Save Station A
+    | Reactor Core
+  > Sanctuary Map Station
+    * Missile Expansion
+    | Reactor Core
+  > Minigyro Chamber
+    | Reactor Core, Hall of Combat Mastery
+  > Hall of Combat Mastery
+    * Lore: The Final Crusade
+    * Missile Expansion
+    | Minigyro Chamber, Central Area Transport East, Agon Transport Access
+  > Agon Transport Access
+    | Hall of Combat Mastery, Transport to Agon Wastes
+  > Transport to Agon Wastes
+    | Agon Transport Access, Transport to Sanctuary Fortress [Agon Wastes]
+  > Central Area Transport East
+    | Hall of Combat Mastery, Dynamo Works
+  > Transit Station
+    * Power Bomb Expansion
+    | Reactor Core (Power Bomb), Main Research
+  > Main Research
+    * Lore: Shattered Hope
+    * Missile Expansion
+    | Transit Station, Central Area Transport West, Torvus Transport Access (Power Bomb)
+  > Central Area Transport West
+    * Missile Expansion
+    | Main Research, Watch Station
+  > Torvus Transport Access
+    | Main Research (Power Bomb), Transport to Torvus Bog
+  > Transport to Torvus Bog
+    | Torvus Transport Access, Transport to Sanctuary Fortress [Torvus Bog]
+  > Dynamo Works
+    * Lore: C-Rch's Testament
+    * Missile Expansion
+    * Upgrade: Spider Ball
+    * Boss: Spider Guardian
+    | Central Area Transport East, Dynamo Access (Dark Beam), Dynamo Storage (Power Bomb), Workers Path
+  > Dynamo Storage
+    | Dynamo Works
+  > Workers Path
+    | Dynamo Works, Sanctuary Temple
+  > Sanctuary Temple
+    | Workers Path (Translator Gate), Controller Access, Sentinel's Path (Annihilator Beam), Temple Access
+  > Controller Access
+    | Sanctuary Temple, Sanctuary Energy Controller
+  > Sanctuary Energy Controller
+    * Lore: Agon Falls
+    | Controller Access
+  > Sentinel's Path
+    * Missile Expansion
+    | Sanctuary Temple (Annihilator Beam), Watch Station
+  > Watch Station
+    * Lore: Sanctuary Falls
+    * Beam Ammo Expansion
+    | Sentinel's Path, Central Area Transport West, Grand Abyss, Watch Station Access (Light Beam)
+  > Grand Abyss
+    | Watch Station, Vault
+  > Vault
+    * Upgrade: Screw Attack
+    | Grand Abyss
+  > Watch Station Access
+    * Energy Tank
+    | Watch Station (Light Beam), Main Gyro Chamber (Light Beam)
+  > Main Gyro Chamber
+    * Lore: Torvus Falls
+    * Power Bomb Expansion
+    | Watch Station Access (Light Beam), Temple Access, Dynamo Access (Dark Beam), Save Station B (Missile), Checkpoint Station (Power Bomb)
+  > Temple Access
+    * Missile Expansion
+    | Main Gyro Chamber, Sanctuary Temple
+  > Dynamo Access
+    | Main Gyro Chamber (Dark Beam), Dynamo Works (Dark Beam)
+  > Save Station B
+    | Main Gyro Chamber
+  > Checkpoint Station
+    | Main Gyro Chamber, Aerie Transport Station
+  > Aerie Transport Station
+    * Boss: Dark Samus 2
+    | Checkpoint Station, Aerie
+  > Aerie
+    * Boss: Dark Samus 2
+    * Upgrade: Echo Visor
+    | Aerie Transport Station
+
+# Ing Hive
+  > Hive Entrance
+    * Sky Temple Key: 5
+    | Entrance Defense Hall
+  > Entrance Defense Hall
+    | Hive Entrance, Hive Reactor Access
+  > Hive Reactor Access
+    | Entrance Defense Hall, Hive Reactor
+  > Hive Reactor
+    | Hive Reactor Access (Power Bomb), Hive Save Station 1, Hive Cache 1, Unseen Way
+  > Hive Cache 1
+    | Hive Reactor
+  > Hive Save Station 1
+    | Hive Reactor
+  > Unseen Way
+    | Hive Reactor, Culling Chamber
+  > Culling Chamber
+    * Dark Key: 1
+    | Unseen Way, Central Hive East Transport (Dark Beam), Hazing Cliff
+  > Hazing Cliff
+    * Missile Expansion
+    | Culling Chamber
+  > Central Hive East Transport
+    | Culling Chamber (Dark Beam), Hive Dynamo Works (Dark Beam)
+  > Hive Portal Chamber
+  > Staging Area
+    | Central Hive West Transport
+  > Central Hive West Transport
+    | Staging Area, Aerial Training Site
+  > Aerial Training Site
+    * Missile Expansion
+    * Dark Key: 3
+    | Central Hive West Transport, Judgment Drop, Temple Security Access (Annihilator Beam)
+  > Judgment Drop
+    | Aerial Training Site
+  > Vault Attack Portal
+  > Temple Security Access
+    | Aerial Training Site (Annihilator Beam), Hive Temple (Annihilator Beam)
+  > Hive Temple
+    * Boss: Quadraxis
+    * Upgrade: Annihilator Beam
+    | Temple Security Access (Annihilator Beam), Hive Controller Access, Hive Temple Access
+  > Hive Controller Access
+    | Hive Temple, Hive Energy Controller
+  > Hive Energy Controller
+    | Hive Controller Access
+  > Hive Temple Access
+    | Hive Temple, Hive Gyro Chamber
+  > Hive Gyro Chamber
+    * Dark Key: 2
+    | Hive Temple Access, Hive Dynamo Access (Light Beam), Hive Save Station 2 (Missile), Hive Gyro Access
+  > Hive Save Station 2
+    | Hive Gyro Chamber
+  > Hive Dynamo Access
+    | Hive Gyro Chamber (Light Beam), Hive Dynamo Works (Light Beam)
+  > Hive Dynamo Works
+    * Sky Temple Key: 6
+    | Hive Dynamo Access (Light Beam), Hive Cache 2, Central Hive East Transport (Dark Beam)
+  > Hive Cache 2
+    | Hive Dynamo Works
+  > Hive Gyro Access
+    | Hive Gyro Chamber, Hive Ammo Station
+  > Hive Ammo Station
+    | Hive Gyro Access
+  > Hive Summit
+
+# Sky Temple Grounds
+  > Sky Temple Gateway
+    * Lore: B-Stl's Key
+    * Lore: G-Sch's Key
+    * Lore: J-Stl's Key
+    * Lore: S-Dly's Key
+    * Lore: C-Rch's Key
+    * Lore: D-Isl's Key
+    * Lore: J-Fme's Key
+    * Lore: M-Dhe's Key
+    * Lore: S-Jsr's Key
+    * Lore: A-Kul's Testament
+    * Boss: Samus 3
+    * Boss: Samus 4
+    | Sky Temple Energy Controller [Sky Temple], Gateway Access
+  > Gateway Access
+    | Sky Temple Gateway, Shrine Access
+  > Shrine Access
+    | Gateway Access (Seeker Missile), Defiled Shrine (Super Missile), War Ritual Grounds
+  > Defiled Access
+    * Sky Temple Key: 8
+    | Shrine Access
+  > War Ritual Grounds
+    * Missile Expansion
+    | Shrine Access, Base Access
+  > Base Access
+    | War Ritual Grounds (Super Missile), Abandoned Base
+  > Abandoned Base
+    | Base Access
+  > Plain of Dark Worship
+    * Missile Expansion
+    | Lake Access (Seeker Missile)
+  > Lake Access
+    | Plain of Dark Worship, Accursed Lake
+  > Accursed Lake
+    * Sky Temple Key: 9
+    | Lake Access
+  > Ing Windchamber
+  > Profane Path
+    * Beam Ammo Expansion
+    | Phazon Pit
+  > Phazon Pit
+    | Profane Path, Phazon Grounds
+  > Phazon Grounds
+    * Missile Expansion
+    | Phazon Pit, Reliquary Access (Seeker Missile)
+  > Reliquary Access
+    | Phazon Grounds, Reliquary Grounds (Light Beam)
+  > Reliquary Grounds
+    | Reliquary Access (Light Beam), Ing Reliquary
+  > Ing Reliquary
+    * Sky Temple Key: 7
+    | Reliquary Grounds
+
+# Sky Temple
+  > Sky Temple Energy Controller
+    | Sky Temple Gateway [Sky Temple Grounds], Sanctum Access
+  > Sanctum Access
+    | Sky Temple Energy Controller, Sanctum
+  > Sanctum
+    * Boss: Emperor Ing
+    | Sanctum Access
