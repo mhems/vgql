@@ -51,7 +51,7 @@
   > Temple Assembly Site
     * Missile Expansion [Space Jump Boots]
       - jump to western cliff to roll into tunnel
-    | Industrial Site, Storage Cavern B (Missile), Temple Transport B (Translator Gate), Dynamo Chamber
+    | Industrial Site, Storage Cavern B (Missile), Temple Transport B (Translator Gate), Dynamo Chamber, Plain of Dark Worship [Sky Temple Grounds]
   > Storage Cavern B
     * Energy Tank [Missile]
     | Temple Assembly Site
@@ -99,9 +99,9 @@
     | Fortress Transport Access, Transport to Temple Grounds [Sanctuary Fortress]
   > Sacred Bridge
     * Lore: PFC E. Denys
-    | GFMC Compound, Sacred Path
+    | GFMC Compound
   > Sacred Path
-    | Sacred Bridge, Temple Transport A, Hall of Honored Dead
+    | Sacred Bridge, Temple Transport A, Hall of Honored Dead, Profane Path [Sky Temple Grounds]
   > Temple Transport A
     | Sacred Path, Temple Transport A [Great Temple]
   > Windchamber Tunnel
@@ -109,7 +109,7 @@
   > Grand Windchamber
     * Upgrade: Sunburst [Boost Ball, Power Bomb, Seeker Launcher, Grapple Beam]
     * Creature: Pirate Aerotrooper
-    | Windchamber Tunnel, Windchamber Gateway (Power Bomb)
+    | Windchamber Tunnel, Windchamber Gateway (Power Bomb), Ing Windchamber [Sky Temple Grounds]
   > Windchamber Gateway
     * Energy Tank [Grapple Beam]
       - have orb cannon shoot you to other side and grapple over to tank
@@ -117,13 +117,13 @@
   > Path of Eyes
     * Creature: Dark Pirate Trooper
     * Lore: The World Warped
-    | Windchamber Gateway (Super Missile), Hall of Eyes (Super Missile), Torvus Transport Access
+    | Windchamber Gateway (Super Missile), Hall of Eyes (Super Missile), Torvus Transport Access, Abandoned Base [Sky Temple Grounds]
   > Torvus Transport Access
     | Path of Eyes, Transport to Torvus Bog (Missile)
   > Transport to Torvus Bog
     | Torvus Transport Access, Transport to Temple Grounds [Torvus Bog]
   > Hall of Eyes
-    | Path of Eyes (Super Missile), Meeting Grounds
+    | Path of Eyes (Super Missile), Meeting Grounds, Base Access [Sky Temple Grounds]
   > Meeting Grounds
     * Lore: Age of Anxiety
     | Hall of Eyes, Temple Transport C (Translator Gate), Service Access (Super Missile)
@@ -137,7 +137,7 @@
   > Hall of Honored Dead
     * Research: Spinner
     * Upgrade: Seeker Launcher
-    | Sacred Path, Path of Honor (Seeker Missile)
+    | Sacred Path, Path of Honor (Seeker Missile), Sky Temple Gateway [Sky Temple Grounds]
 
 # Great Temple
   > Temple Transport A
@@ -167,7 +167,7 @@
     * Lore: Origins
     * Research: U-Mos
     * Upgrade: Light Suit
-    | Controller Access
+    | Controller Access, Agon Energy Controller (Light Suit) [Agon Wastes], Torvus Energy Controller (Light Suit) [Torvus Bog], Sanctuary Energy Controller (Light Suit) [Sanctuary Fortress]
 
 # Agon Wastes
   > Transport to Temple Grounds
@@ -190,14 +190,14 @@
     * Research: Bomb Slot
     * Missile Expansion
       - bomb the bomb slot to raise gate
-    | Save Station A, Transport to Torvus Bog (Seeker Missile), Portal Terminal
+    | Save Station A, Transport to Torvus Bog (Seeker Missile), Portal Terminal, Crossroads [Dark Agon Wastes]
   > Transport to Torvus Bog
     | Transport Center (Seeker Missile), Transport to Agon Wastes (Torvus Bog)
   > Portal Terminal
     * Lore: Light of Aether
     * Creature: Pillbug
     * Research: Dark Portal
-    | Transport Center, Portal Access
+    | Transport Center, Portal Access, Portal Site [Dark Agon Wastes]
   > Portal Access
     * Missile Expansion
     | Portal Terminal, Mining Station A
@@ -222,7 +222,7 @@
     * Creature: Kralee
     * Lore: The Stellar Object
     * Upgrade: Darkburst [Boost Ball, Seeker Launcher]
-    | Transit Station, Storage A (Light Beam), Mine Shaft
+    | Transit Station, Storage A (Light Beam), Mine Shaft, Trial Grounds [Dark Agon Wastes]
   > Storage A
     * Missile Expansion [Power Bomb]
       - power bomb wall to reveal door
@@ -244,7 +244,7 @@
   > Agon Energy Controller
     * Lore: Saving Aether
     * Research: Energy Controller
-    | Controller Access
+    | Controller Access, Main Energy Controller (Light Suit) [Great Temple], Torvus Energy Controller (Light Suit) [Torvus Bog], Sanctuary Energy Controller (Light Suit) [Sanctuary Fortress]
   > Temple Access
     | Agon Temple, Mining Station A
   > Central Station Access
@@ -269,7 +269,7 @@
     * Creature: Pirate Grenadier
     * Missile Expansion
       - follow tunnels on right
-    | Command Center Access (Dark Beam), Command Center Access (Light Beam), Biostorage Access, Security Station B, Security Station B (Missile)
+    | Command Center Access (Dark Beam), Command Center Access (Light Beam), Biostorage Access, Security Station B, Security Station B (Missile), Doomed Entry [Dark Agon Wastes]
   > Biostorage Access
     | Command Center, Biostorage Station (Missile)
   > Biostorage Station
@@ -331,21 +331,21 @@
   > Ing Cache 4
     * Missile Expansion
       - in alcove under door
-    | Dueling Range (Dark Beam)
-  > Dueling Range
+    | Duelling Range (Dark Beam)
+  > Duelling Range
     * Creature: Lightbringer
-    | Ing Cache 4 (Dark Beam), Dark Transit Station, Junction Site, Save Station 2
+    | Ing Cache 4 (Dark Beam), Dark Transit Station, Junction Site, Save Station 2, Mining Plaza [Agon Wastes]
   > Dark Transit Station
-    | Dueling Range, Trial Grounds
+    | Duelling Range, Trial Grounds
   > Trial Grounds
     * Creature: Nightbarb
     * Creature: Hunter Ing
-    | Dark Transit Station
+    | Dark Transit Station, Mining Station B [Agon Wastes]
   > Save Station 2
-    | Dueling Range, Crossroads
+    | Duelling Range, Crossroads
   > Crossroads
     * Creature: Inglet
-    * Missile Expansion [Boost Ball]
+    * Missile Expansion [Boosqt Ball]
       - boost ball up to dark portal
     | Save Station 2, Portal Site
   > Portal Site
@@ -356,7 +356,7 @@
     * Research: Nullified Crystal
     * Research: Super Crystal
     * Creature: Warrior Ing
-    | Crossroads, Portal Access
+    | Crossroads, Portal Access, Portal Terminal [Agon Wastes]
   > Portal Access
     * Missile Expansion
       - roll behind warrior
@@ -369,7 +369,7 @@
   > Junction Site
     * Missile Expansion [Spider Ball, Morph Ball Bomb]
       - spider ball up track and energize bomb slot
-    | Dueling Range, Judgment Pit
+    | Duelling Range, Judgment Pit
   > Save Station 1
     | Judgment Pit (Dark Beam)
   > Dark Agon Temple Access
@@ -439,7 +439,7 @@
     * Creature: Ingstorm
     * Sky Temple Key: 2 [Power Bomb, Light Suit]
       - power bomb rock wall and dive underwater
-    | Hall of Stairs, Ing Cache 3 (Light Beam), Oasis Access
+    | Hall of Stairs, Ing Cache 3 (Light Beam), Oasis Access, Main Reactor [Agon Wastes]
   > Ing Cache 3
     | Dark Oasis (Light Beam)
   > Oasis Access
@@ -467,7 +467,7 @@
     * Research: Bloatsac
     * Missile Expansion [Morph Ball Bomb]
       - rotate bridge by energize slot in dark aether
-    | Ruined Alcove (Light Beam), Plaza Access (Missile), Grove Access (Dark Beam), Abandoned Worksite
+    | Ruined Alcove (Light Beam), Plaza Access (Missile), Grove Access (Dark Beam), Abandoned Worksite, Dark Forgotten Bridge [Dark Torvus Bog]
   > Plaza Access
     * Missile Expansion [Boost Ball, Morph Ball Bomb]
       - energize both bomb slots to rotate devices to reveal tunnel and boost up
@@ -492,7 +492,7 @@
   > Portal Chamber
     * Missile Expansion
       - in dark torvus, jump up to ledge and roll through, return to Aether
-    | Torvus Lagoon, Great Bridge
+    | Torvus Lagoon, Great Bridge, Portal Chamber [Dark Torvus Bog]
   > Path of Roots
     * Lore: The Ing Attack
     * Creature: Shriekbat
@@ -516,7 +516,7 @@
     | Torvus Temple, Torvus Energy Controller
   > Torvus Energy Controller
     * Lore: Dark Aether
-    | Controller Access
+    | Controller Access, Main Energy Controller (Light Suit) [Great Temple], Agon Energy Controller (Light Suit) [Agon Wastes], Sanctuary Energy Controller (Light Suit) [Sanctuary Fortress]
   > Underground Transport
     | Torvus Temple, Hydrodynamo Station
   > Underground Tunnel
@@ -535,7 +535,7 @@
   > Meditation Vista
     * Energy Tank [Screw Attack]
       - screw attack to hovering platform
-    | Torvus Grove
+    | Torvus Grove, Gloom Vista [Dark Torvus Bog]
   > Hydrodynamo Station
     * Creature: Preed
     * Creature: Bloggling
@@ -551,7 +551,7 @@
     * Lore: New Weapons
     * Missile Expansion [Spider Ball, Power Bomb, Boost Ball]
       - power bomb underwater glass to reveal half-pipe to boost up to spider track. Energize both slots and jump to ledge
-    | Gathering Access (Light Beam), Transit Tunnel South (Annihilator Beam), Transit Tunnel West
+    | Gathering Access (Light Beam), Transit Tunnel South (Annihilator Beam), Transit Tunnel West, Crypt [Dark Torvus Bog]
   > Transit Tunnel South
     * Missile Expansion [Morph Ball Bomb]
       - energize bomb slots and bomb jump around tunnels
@@ -559,7 +559,7 @@
   > Catacombs
     * Lore: The New Terror
     * Lore: G-Sch's Testament
-    | Transit Tunnel South (Annihilator Beam), Catacombs Access (Dark Beam), Transit Tunnel East
+    | Transit Tunnel South (Annihilator Beam), Catacombs Access (Dark Beam), Transit Tunnel East, Dungeon [Dark Torvus Bog]
   > Catacombs Access
     | Catacombs (Dark Beam), Hydrodynamo Station (Dark Beam)
   > Transit Tunnel East
@@ -582,11 +582,11 @@
     | Training Chamber (Light Beam), Gathering Hall
   > Hydrodynamo Shaft
     * Creature: Hydling
-    | Hydrodynamo Station, Main Hydrochamber
+    | Hydrodynamo Station, Main Hydrochamber, Undertemple Access [Dark Torvus Bog]
   > Main Hydrochamber
     * Boss: Alpha Blogg
     * Creature: Alpha Blogg
-    | Hydrodynamo Shaft, Hydrochamber Storage
+    | Hydrodynamo Shaft, Hydrochamber Storage, Undertemple [Dark Torvus Bog]
   > Hydrochamber Storage
     * Upgrade: Gravity Boost
     | Main Hydrochamber
@@ -600,7 +600,7 @@
     * Beam Ammo Expansion
     | Poisoned Bog
   > Portal Chamber
-    | Poisoned Bog, Venomous Pond (Dark Beam)
+    | Poisoned Bog, Venomous Pond (Dark Beam), Portal Chamber [Torvus Bog]
   > Venomous Pond
     * Dark Key: 3 [Grapple Beam]
       - grapple across to ledge
@@ -633,7 +633,7 @@
   > Dark Forgotten Bridge
     * Creature: Dark Pirate Commando
     * Research: Dark Sentinel Crystal
-    | Brooding Ground (Super Missile), Putrid Alcove (Power Bomb), Dark Falls, Dark Arena Tunnel (Light Beam)
+    | Brooding Ground (Super Missile), Putrid Alcove (Power Bomb), Dark Falls, Dark Arena Tunnel (Light Beam), Forgotten Bridge [Torvus Bog]
   > Putrid Alcove
     * Creature: Dark Phlogus
     * Power Bomb Expansion [Power Bomb]
@@ -645,7 +645,7 @@
     * Research: Ingsphere Cache
     | Dark Falls (Dark Beam), Gloom Vista
   > Gloom Vista
-    | Polluted Mire
+    | Polluted Mire, Meditation Vista [Torvus Bog]
   > Dark Arena Tunnel
     | Dark Forgotten Bridge (Light Beam), Dark Torvus Arena
   > Dark Torvus Arena
@@ -666,7 +666,7 @@
   > Crypt Tunnel
     | Undertemple Shaft (Light Beam), Crypt (Light Beam)
   > Crypt
-    | Crypt Tunnel (Light Beam), Undertransit One
+    | Crypt Tunnel (Light Beam), Undertransit One, Gathering Hall [Torvus Bog]
   > Undertransit One
     * Missile Expansion [Morph Ball Bomb]
       - bomb jump on left edge of safe zone
@@ -684,17 +684,17 @@
     * Creature: Watchdrone
     * Creature: Dark Grenchler
     * Sky Temple Key: 4
-    | Undertransit Two
+    | Undertransit Two, Catacombs [Torvus Bog]
   > Undertemple Access
     * Dark Key: 2 [Gravity Boost]
-    | Undertemple Shaft, Undertemple (Power Bomb)
+    | Undertemple Shaft, Undertemple (Power Bomb), Hydrodynamo Shaft [Torvus Bog]
   > Undertemple
     * Missile Expansion [Screw Attack]
       - wall jump between screw attack surfaces
     * Boss: Power Bomb Guardian
     * Creature: Power Bomb Guardian
     * Upgrade: Power Bomb
-    | Undertemple Access (Power Bomb)
+    | Undertemple Access (Power Bomb), Main Hydrochamber [Dark Torvus Bog]
 
 # Sanctuary Fortress
   > Transport to Temple Grounds
@@ -734,7 +734,7 @@
     * Research: Spider Ball Track
     * Missile Expansion [Spider Ball, Morph Ball Bomb]
       - follow track inside walls
-    | Minigyro Chamber, Central Area Transport East, Agon Transport Access
+    | Minigyro Chamber, Central Area Transport East, Agon Transport Access, Culling Chamber [Ing Hive]
   > Agon Transport Access
     | Hall of Combat Mastery, Transport to Agon Wastes
   > Transport to Agon Wastes
@@ -745,13 +745,13 @@
     * Luminoth Turret
     * Power Bomb Expansion [Power Bomb]
       - portal hop after power bombing glass shield
-    | Reactor Core (Power Bomb), Main Research
+    | Reactor Core (Power Bomb), Main Research, Hive Portal Chamber [Ing Hive], Hive Portal Chamber [Ing Hive]
   > Main Research
     * Lore: Shattered Hope
     * Missile Expansion [Spider Ball]
       - follow tracks up, avoiding obstacles
     * Creature: Caretaker Class Drone
-    | Transit Station, Central Area Transport West, Torvus Transport Access (Power Bomb)
+    | Transit Station, Central Area Transport West, Torvus Transport Access (Power Bomb), Staging Area [Ing Hive]
   > Central Area Transport West
     * Missile Expansion
       - travel down left, then right, then right, then left
@@ -769,9 +769,9 @@
     * Upgrade: Spider Ball
     * Boss: Spider Guardian
     * Creature: Spider Guardian
-    | Central Area Transport East, Dynamo Access (Dark Beam), Dynamo Storage (Power Bomb), Workers Path
+    | Central Area Transport East, Dynamo Access (Dark Beam), Dynamo Storage (Power Bomb), Workers Path, Hive Dynamo Works [Ing Hive]
   > Dynamo Storage
-    | Dynamo Works
+    | Dynamo Works, Hive Cache 2 [Ing Hive]
   > Workers Path
     | Dynamo Works, Sanctuary Temple
   > Sanctuary Temple
@@ -783,7 +783,7 @@
     | Sanctuary Temple, Sanctuary Energy Controller
   > Sanctuary Energy Controller
     * Lore: Agon Falls
-    | Controller Access
+    | Controller Access, Main Energy Controller (Light Suit) [Great Temple], Agon Energy Controller (Light Suit) [Agon Wastes], Torvus Energy Controller (Light Suit) [Torvus Bog]
   > Sentinel's Path
     * Missile Expansion [Echo Visor, Annihilator Beam]
       - unlock sonic gate
@@ -792,12 +792,12 @@
     * Lore: Sanctuary Falls
     * Beam Ammo Expansion [Spider Ball]
       - spider up to cannon to launch you to track, follow along bottom left up to go up then towards the wall
-    | Sentinel's Path, Central Area Transport West, Grand Abyss, Watch Station Access (Light Beam)
+    | Sentinel's Path, Central Area Transport West, Grand Abyss, Watch Station Access (Light Beam), Aerial Training Site [Watch Station]
   > Grand Abyss
     | Watch Station, Vault
   > Vault
     * Upgrade: Screw Attack
-    | Grand Abyss
+    | Grand Abyss, Vault Attack Portal [Ing Hive], Vault Attack Portal [Ing Hive]
   > Watch Station Access
     * Energy Tank
     | Watch Station (Light Beam), Main Gyro Chamber (Light Beam)
@@ -824,7 +824,7 @@
   > Aerie
     * Boss: Dark Samus 2
     * Upgrade: Echo Visor
-    | Aerie Transport Station
+    | Aerie Transport Station, Hive Summit [Ing Hive]
 
 # Ing Hive
   > Hive Entrance
@@ -849,7 +849,7 @@
     * Research: Ingworm Cache
     * Dark Key: 1 [Spider Ball]
       - follow spider track maze
-    | Unseen Way, Central Hive East Transport (Dark Beam), Hazing Cliff
+    | Unseen Way, Central Hive East Transport (Dark Beam), Hazing Cliff, Hall of Combat Mastery [Sanctuary Fortress]
   > Hazing Cliff
     * Creature: Dark Diligence Drone
     * Missile Expansion
@@ -858,8 +858,9 @@
   > Central Hive East Transport
     | Culling Chamber (Dark Beam), Hive Dynamo Works (Dark Beam)
   > Hive Portal Chamber
+    | Transit Station [Sanctuary Fortress], Transit Station [Sanctuary Fortress]
   > Staging Area
-    | Central Hive West Transport
+    | Central Hive West Transport, Main Research [Sanctuary Fortress], Main Research [Sanctuary Fortress]
   > Central Hive West Transport
     | Staging Area, Aerial Training Site
   > Aerial Training Site
@@ -868,10 +869,11 @@
       - wall jump between screw attack surfaces
     * Dark Key: 3 [Screw Attack]
       - jump up wall jump surfaces
-    | Central Hive West Transport, Judgment Drop, Temple Security Access (Annihilator Beam)
+    | Central Hive West Transport, Judgment Drop, Temple Security Access (Annihilator Beam), Watch Station [Sanctuary Fortress]
   > Judgment Drop
-    | Aerial Training Site
+    | Aerial Training Site, Grand Abyss [Sanctuary Fortress]
   > Vault Attack Portal
+    | Vault [Sanctuary Fortress], Vault [Sanctuary Fortress]
   > Temple Security Access
     | Aerial Training Site (Annihilator Beam), Hive Temple (Annihilator Beam)
   > Hive Temple
@@ -899,14 +901,15 @@
     | Hive Gyro Chamber (Light Beam), Hive Dynamo Works (Light Beam)
   > Hive Dynamo Works
     * Sky Temple Key: 6
-    | Hive Dynamo Access (Light Beam), Hive Cache 2, Central Hive East Transport (Dark Beam)
+    | Hive Dynamo Access (Light Beam), Hive Cache 2, Central Hive East Transport (Dark Beam), Dynamo Works [Sanctuary Fortress]
   > Hive Cache 2
-    | Hive Dynamo Works
+    | Hive Dynamo Works, Dynamo Storage [Sanctuary Fortress]
   > Hive Gyro Access
     | Hive Gyro Chamber, Hive Ammo Station
   > Hive Ammo Station
     | Hive Gyro Access
   > Hive Summit
+    | Aerie [Sanctuary Fortress]
 
 # Sky Temple Grounds
   > Sky Temple Gateway
@@ -924,7 +927,7 @@
     * Boss: Dark Samus 4
     * Creature: Dark Samus 3
     * Creature: Dark Samus 4
-    | Sky Temple Energy Controller [Sky Temple], Gateway Access
+    | Sky Temple Energy Controller [Sky Temple], Gateway Access, Hall of Honored Dead [Temple Grounds]
   > Gateway Access
     | Sky Temple Gateway, Shrine Access
   > Shrine Access
@@ -937,14 +940,14 @@
       - switch on dark visor to shoot all 5 red circles
     | Shrine Access, Base Access
   > Base Access
-    | War Ritual Grounds (Super Missile), Abandoned Base
+    | War Ritual Grounds (Super Missile), Abandoned Base, Hall of Eyes [Sky Temple Grounds]
   > Abandoned Base
     * Creature: Corrupted Sentreye
-    | Base Access
+    | Base Access, Path of Eyes [Temple Grounds]
   > Plain of Dark Worship
     * Missile Expansion
       - within Ingworm tower on western side
-    | Lake Access (Seeker Missile)
+    | Lake Access (Seeker Missile), Temple Assembly Site [Temple Grounds]
   > Lake Access
     | Plain of Dark Worship, Accursed Lake
   > Accursed Lake
@@ -952,10 +955,11 @@
       - on far side of lake
     | Lake Access
   > Ing Windchamber
+    | Grand Windchamber [Temple Grounds]
   > Profane Path
     * Beam Ammo Expansion [Echo Visor, Annihilator Beam]
       - unlock sonic gate
-    | Phazon Pit
+    | Phazon Pit, Sacred Path [Temple Grounds]
   > Phazon Pit
     | Profane Path, Phazon Grounds
   > Phazon Grounds
