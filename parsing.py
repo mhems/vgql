@@ -265,7 +265,8 @@ class DataParser(Parser):
 
     start:      world + ;
     world:      WB ID WB room + ;
-    room:       BG ID dep ? pickup * adj ? ;
+    room:       BG ID rdep ? dep ? pickup * adj ? ;
+    rdep:       LC ID RC ;
     pickup:     BULLET pot_pair dep ? weight ? how ? ;
     how:        INFO ;
     adj:        PIPE connection ( COMMA connection ) * ;
@@ -300,6 +301,8 @@ class DataParser(Parser):
         ('RP', '\\)'),
         ('LB', '\\['),
         ('RB', '\\]'),
+        ('LC', '\\{'),
+        ('RC', '\\}'),
         ('INFO', r'^\W*-\W*.*\W*$'),
         ('ID', r'-?[a-zA-Z0-9][-a-zA-Z0-9\'_ ]*')
     ]
