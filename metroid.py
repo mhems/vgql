@@ -118,13 +118,13 @@ if __name__ == '__main__':
             print('error: unknown format', args.form)
     else:
         if args.form[0] == 'n':
-            ostream('\n'.join(str(e) for e in results.entries),
+            output('\n'.join(str(e) for e in results),
                     ostream,
                     lambda f, s : f.write(s))
         elif args.form[0] == 'j':
-            ostream(results, ostream, json_formatter)
+            output(results, ostream, json_formatter)
         elif args.form[0] == 'h':
-            ostream(results.entries, ostream, html_formatter)
+            output(results, ostream, html_formatter)
         else:
             print('error: unknown format', args.form)
     ostream.close()
