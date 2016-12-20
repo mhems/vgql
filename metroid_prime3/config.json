@@ -1,0 +1,63 @@
+{
+    "DATABASE": "metroid_prime3/all.json",
+    "GAME_DATA": "metroid_prime3/data.txt",
+    "START_WORLD": "GFS Olympus",
+    "START_ROOM": "Docking Bay 5",
+    "BACKGROUND": "black",
+    "DOOR_COLORS": {
+        "default": "blue",
+        "Missile" : "red",
+        "Ice Missile" : "white",
+        "Seeker Missile" : "yellow",
+        "Nova Beam" : "green",
+        "Plasma Beam" : "orange",
+        "Grapple Lasso" : "grey",
+        "Grapple Voltage" : "purple"
+    },
+    "WORLD_COLORS": {
+        "GFS Olympus" : "white",
+        "Bryyo" : "orange",
+        "Norion" : "green",
+        "Skytown" : "yellow",
+        "Valhalla" : "grey",
+        "Pirate Homeworld" : "red",
+        "Phaaze" : "blue"
+    },
+    "WORLDS": [
+        "GFS Olympus",
+        "Bryyo",
+        "Norion",
+        "Skytown",
+        "Valhalla",
+        "Pirate Homeworld",
+        "Phaaze"
+    ],
+    "KINDS": [
+        "Research",
+        "Lore",
+        "Boss",
+        "Creature",
+        "Upgrade",
+        "Energy Tank",
+        "Energy Cell",
+        "Missile Expansion",
+        "Ship Missile Expansion"
+    ],
+    "MANDATORY": [
+        "Energy Cell",
+        "Boss"
+    ],
+    "WEIGHT_MAP": {
+        "Upgrade" : 10,
+        "Boss" : 10,
+
+        "Energy Tank" : 5,
+        "Missile Expansion" : 5,
+        "Energy Cell" : 4,
+        "Ship Missile Expansion" : 3,
+
+        "Lore" : 1,
+        "Creature" : 1,
+        "Research" : 1
+    }
+}

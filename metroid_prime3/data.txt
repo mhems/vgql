@@ -1,0 +1,671 @@
+# GFS Olympus
+  > Docking Bay 5
+    * Creature: Berserker Lord
+    * Boss: Berserker Lord
+    | Repair Bay Shaft, Docking Bay Access
+  > Repair Bay Shaft
+    | Docking Bay 5, Save Station B
+  > Save Station B
+    | Repair Bay Shaft
+  > Docking Bay Access
+    | Docking Bay 5, Docking Bay 4
+  > Docking Bay 4
+    | Docking Bay Access, Security Station
+  > Security Station
+    | Docking Bay 4, Security Access
+  > Security Access
+    | Security Station, Command Lift A
+  > Command Lift A
+    | Security Access, Flag Bridge Access
+  > Flag Bridge Access
+    | Flag Bridge, Post Observation Deck
+  > Flag Bridge
+    | Meeting Access, Lift Access, Aurora Access
+  > Meeting Access
+    | Flag Bridge, Ready Room
+  > Ready Room
+    | Meeting Access
+  > Lift Access
+    | Flag Bridge, Save Station
+  > Save Station
+    | Lift Access
+  > Command Lift B
+    | Lift Access, Gunnery Station
+  > Gunnery Station
+    | Command Lift B, MedLab Delta
+  > MedLab Delta
+    * Upgrade: PED Suit
+    | Gunnery Station
+  > Aurora Access
+    | Flag Bridge, Aurora Chamber
+  > Aurora Chamber
+    * Creature: Aurora Unit 242
+    | Aurora Access
+  > Post Observation Deck
+    | Flag Bridge Access, Xenoresearch Lab
+  > Xenoresearch Lab
+    | Post Observation Deck, Lab Access, Ventilation Shaft
+  > Lab Access
+    | Xenoresearch Lab
+  > Ventilation Shaft
+    * Energy Tank
+    | Xenoresearch Lab, Disposal Chamber
+  > Disposal Chamber
+    | Ventilation Shaft, Repair Bay A
+  > Repair Bay A
+    | Disposal Chamber, Munitions Storage
+  > Munitions Storage
+    * Upgrade: Missile Launcher
+    | Repair Bay A
+
+# Bryyo
+  > Cliffside Airdock
+    | Gateway Hall
+  > Gateway Hall
+    | Cliffside Airdock, Gateway
+  > Gateway
+    * Missile Expansion
+    | Gateway Hall, Crash Site, Reliquary II, Grand Court Path (Missile)
+  > Reliquary II
+    * Energy Tank
+    | Gateway
+  > Grand Court Path
+    * Missile Expansion
+    | Gateway, Grand Court
+  > Grand Court
+    | Grand Court Path, Reliquary III (Ice Missile), Hillside Vista
+  > Reliquary III
+    * Missile Expansion
+    | Grand Court
+  > Hillside Vista
+    * Missile Expansion
+    | Grand Court, Reliquary I
+  > Reliquary I
+    * Upgrade: Grapple Swing
+    | Hillside Vista
+  > Crash Site
+    * Missile Expansion
+    | Gateway, GFS Theseus
+  > GFS Theseus
+    | Crash Site, Falls of Fire
+  > Falls of Fire
+    * Missile Expansion
+    | GFS Theseus, Hidden Court (Ice Missile)
+  > Hidden Court
+    * Energy Cell: 4
+    * Missile Expansion
+    | Falls of Fire, Burrow, Ruined Shrine, Hidden Court Hall (Plasma Beam)
+  > Hidden Court Hall
+    | Hidden Court (Plasma Beam), Fuel Gel Pool
+  > Fuel Gel Pool
+    * Missile Expansion
+    * Missile Expansion
+    | Hidden Court Hall
+  > Ruined Shrine
+    * Energy Tank
+    | Hidden Court, Hangar Bay
+  > Hangar Bay
+    * Upgrade: Ship Missile
+    * Energy Cell: 2
+    | Ruined Shrine, Hangar Bay Hall (Plasma Beam)
+  > Hangar Bay Hall
+    | Hangar Bay (Plasma Beam), Hall of the Golems
+  > Hall of the Golems
+    * Missile Expansion
+    | Hangar Bay Hall, Burrow, Colussus Vista (Plasma Beam)
+  > Burrow
+    * Missile Expansion
+    | Hall of the Golems, Hidden Court
+  > Colussus Vista
+    * Ship Missile Expansion
+    | Hall of the Golems (Plasma Beam), Machineworks Bridge
+  > Machineworks Bridge
+    * Energy Tank
+    | Colussus Vista, North Jungle Court
+  > North Jungle Court
+    | Machineworks Bridge, North Jungle Hall, Generator Hall North
+  > North Jungle Hall
+    | North Jungle Court, Auxiliary Dynamo
+  > Auxiliary Dynamo
+    * Ship Missile Expansion
+    | North Jungle Hall, South Jungle Hall
+  > South Jungle Hall
+    | Auxiliary Dynamo, South Jungle Court
+  > South Jungle Court
+    | South Jungle Hall, Generator Hall South
+  > Generator Hall South
+    | South Jungle Court, Jungle Generator
+  > Jungle Generator
+    * Missile Expansion
+    | Generator Hall South, Generator Hall North, Field Access
+  > Generator Hall North
+    * Missile Expansion
+    | North Jungle Court, Jungle Generator
+  > Field Access
+    | Jungle Generator, Save Station B (Ice Missile), Jousting Field
+  > Save Station B
+    | Field Access
+  > Jousting Field
+    * Boss: Korakk Beast
+    * Creature: Korakk Beast
+    | Field Access, Enlightened Walkway
+  > Enlightened Walkway
+    | Jousting Field, Ancient Courtyard
+  > Ancient Courtyard
+    * Missile Expansion
+    | Enlightened Walkway, Overgrown Ruins
+  > Overgrown Ruins
+    | Ancient Courtyard, Vault (Missile), Thorn Jungle Airdock
+  > Vault
+    * Energy Tank
+    | Overgrown Ruins
+  > Thorn Jungle Airdock
+    | Overgrown Ruins
+  > Fiery Airdock
+    | Imperial Hall
+  > Imperial Hall
+    * Missile Expansion
+    | Fiery Airdock, Refinery Access (Plasma Access), Gel Refinery Site
+  > Refinery Access
+    | Imperial Hall (Plasma Beam), Gel Refinery Site (Plasma Beam)
+  > Gel Refinery Site
+    * Missile Expansion
+    | Refinery Access (Plasma Beam), Imperial Hall, Main Lift, Gel Purification Site (Ice Missile)
+  > Main Lift
+    * Missile Expansion
+    | Gel Refinery Site, Corrupted Pool (Missile), Warp Site Alpha (Plasma Beam)
+  > Warp Site Alpha
+    | Main Lift (Plasma Beam), Warp Site Bravo
+  > Warp Site Bravo
+    | Warp Site Alpha, Imperial Caverns
+  > Imperial Caverns
+    | Warp Site Bravo, Imperial Crypt
+  > Imperial Crypt
+    | Imperial Caverns, Hall of Remembrance
+  > Hall of Remembrance
+    * Upgrade: Screw Attack
+    * Ship Missile Expansion
+    | Imperial Crypt, Tower
+  > Tower
+    * Energy Tank
+    | Hall of Remembrance
+  > Corrupted Pool
+    | Main Lift, Gel Processing Site
+  > Gel Processing Site
+    | Corrupted Pool, Gel Hall
+  > Gel Hall
+    * Missile Expansion
+    * Missile Expansion
+    | Gel Processing Site, Gel Purification Site (Ice Missile), Save Station A
+  > Gel Purification Site
+    | Gel Refinery Site, Gel Hall
+  > Save Station A
+    | Gel Hall, Cavern Entry
+  > Cavern Entry
+    | Save Station A, Gel Cavern
+  > Gel Cavern
+    | Cavern Entry, Imperial Hall, Temple Access
+  > Temple Access
+    | Gel Cavern, Temple of Bryyo
+  > Temple of Bryyo
+    * Missile Expansion
+    * Boss: Rundas
+    * Creature: Rundas
+    * Upgrade: Ice Missile
+    | Temple Access, Temple Reservoir
+  > Temple Reservoir
+    | Temple of Bryyo, Temple Hall
+  > Temple Hall
+    | Temple Reservoir, Temple Generator
+  > Temple Generator
+    | Temple Hall
+  > Landing Site Delta
+    | Core Access
+  > Core Access
+    | Landing Site Delta, Bryyo Leviathan Core
+  > Bryyo Leviathan Core
+    * Boss: Mogenar
+    * Creature: Mogenar
+    * Upgrade: Hyper Ball
+    | Core Access
+
+# Norion
+  > Docking Hub Alpha
+    * Missile Expansion
+    * Upgrade: Grapple Lasso
+    | Hub Access
+  > Hub Access
+    | Docking Hub Alpha, Cargo Hub (Grapple Lasso)
+  > Cargo Hub
+    * Missile Expansion
+    | Hub Access, Substation West, Maintenance Station (Grapple Lasso), Substation East, Tower Elevator
+  > Tower Elevator
+    | Cargo Hub, Control Tower
+  > Control Tower
+    | Tower Elevator
+  > Substation West
+    * Missile Expansion
+    | Cargo Hub, Conduit B
+  > Conduit B
+    | Substation West, Data Storage B (Ice Missile), Cargo Dock B
+  > Data Storage B
+    | Conduit B
+  > Cargo Dock B
+    | Conduit B, Generator B Access (Seeker Missile)
+  > Generator B Access
+    | Cargo Dock B, Generator B
+  > Generator B
+    * Boss: Metroid Hatcher
+    * Creature: Metroid Hatcher
+    * Energy Tank: 3
+    | Generator B Access
+  > Maintenance Station
+    | Cargo Hub, Conduit C, X (Ice Missile)
+  > X
+    * Missile Expansion
+    | Maintenance Station
+  > Conduit C
+    | Maintenance Station, Cargo Dock C
+  > Cargo Dock C
+    | Conduit C, Generator C Access
+  > Generator C Access
+    | Cargo Dock C, Save Station, Generator C (Grapple Lasso)
+  > Save Station
+    | Generator C Access
+  > Generator C
+    | Generator C Access, Generator Shaft
+  > Generator Shaft
+    * Boss: Meta Ridley
+    * Creature: Meta Ridley
+    | Generator C
+  > Substation East
+    * Energy Tank
+    | Cargo Hub, Conduit A
+  > Conduit A
+    | Substation East, Data Storage A (Missile), Cargo Dock A (Missile)
+  > Data Storage A
+    | Conduit A
+  > Cargo Dock A
+    * Missile Expansion
+    | Conduit A, Generator A Access
+  > Generator A Access
+    | Cargo Dock A, Generator A (Grapple Lasso)
+  > Generator A
+    | Generator A Access
+
+# Skytown
+  > Main Docking Bay
+    * Boss: Ghor
+    * Creature: Ghor
+    * Upgrade: Plasma Beam
+    * Missile Expansion
+    | Main Docking Access
+  > Main Docking Access
+    | Main Docking Bay, Zipline Station Alpha
+  > Zipline Station Alpha
+    | Main Docking Access, Arrival Station
+  > Arrival Station
+    * Energy Tank
+    | Zipline Station Alpha, Hub Access
+  > Hub Access
+    | Arrival Station, Transit Hub
+  > Transit Hub
+    * Missile Expansion
+    | Hub Access, Zipline Station Bravo (Plasma Beam), Barracks Access
+  > Barracks Access
+    * Missile Expansion
+    | Transit Hub, Steambot Barracks
+  > Steambot Barracks
+    * Boss: Steamlord
+    * Creature: Steamlord
+    * Missile Expansion
+    * Energy Tank
+    | Barracks Access, Barracks Lift
+  > Barracks Lift
+    | Steambot Barracks, Zipline Station Bravo, Hoverplat Docking Site
+  > Zipline Station Bravo
+    | Barracks Lift, Transit Hub (Seeker Missile), Aurora Lift
+  > Aurora Lift
+    | Zipline Station Bravo, Save Station A (Ice Missile), Aurora Chamber
+  > Save Station A
+    | Aurora Lift
+  > Aurora Chamber
+    * Creature: Aurora Unit 217
+    | Aurora Lift, Maintenance Shaft AU
+  > Maintenance Shaft AU
+    | Aurora Chamber, Spire Dock
+  > Spire Dock
+    | Podworks, Junction, Security Station
+  > Podworks
+    | Spire Dock
+  > Junction
+    | Spire Dock, Hoverplat Docking Site, Skybridge Hera (Ice Missile), Zipline Station Charlie
+  > Hoverplat Docking Site
+    * Ship Missile Expansion
+    | Barracks Lift, Junction
+  > Zipline Station Charlie (Grapple Voltage)
+    * Energy Tank
+    | Junction, Powerworks Access
+  > Powerworks Access (Grapple Voltage)
+    | Zipline Station Charlie, Powerworks
+  > Powerworks (Seeker Missile)
+    * Missile Expansion
+    * Upgrade: Spider Ball
+    | Powerworks Access
+  > Skybridge Hera
+    * Missile Expansion
+    * Boss: Steamlord
+    | Junction, Maintenance Shaft GP
+  > Maintenance Shaft GP
+    | Skybridge Hera, Construction Bay
+  > Construction Bay (Grapple Voltage)
+    * Missile Expansion
+    | Maintenance Shaft GP, Ballista Lift
+  > Ballista Lift
+    | Construction Bay, Ballista Storage
+  > Ballista Storage
+    * Boss: Defense Drone
+    * Creature: Defense Drone
+    * Boss: Steamlord
+    * Upgrade: Boost Ball
+    * Energy Cell: 4
+    | Ballista Lift
+  > Security Station
+    * Ship Missile Expansion
+    | Spire Dock, Landing Site A, Y (Plasma Beam), Escape Pod Bay Access
+  > Landing Site A
+    | Security Station
+  > Y
+    | Security Station (Plasma Beam), Security Tube
+  > Escape Pod Bay Access
+    | Security Station, Escape Pod Bay
+  > Escape Pod Bay
+    | Escape Pod Bay Access
+  > Security Tube
+    | Y, Skytram West
+  > Skytram West
+    | Security Tube, Skytram East
+  > Skytram East
+    | Skytram West, Maintenance Shaft CC
+  > Maintenance Shaft CC
+    | Skytram East, Concourse (Plasma Beam)
+  > Concourse Access A
+    | Maintenance Shaft CC, Concourse Access B, Concourse
+  > Concourse Access B
+    | Concourse Access A, Zipline Station Delta
+  > Zipline Station Delta
+    | Concourse Access B, Transit Tube B
+  > Transit Tube B
+    | Zipline Station Delta, Research Pod Lift (Seeker Missile)
+  > Research Pod Lift
+    | Transit Tube B, Xenoresearch A Lift, Transit Tube A
+  > Xenoresearch A Lift
+    * Energy Tank
+    | Research Pod Lift, Xenoresearch A
+  > Xenoresearch A (Seeker Missile)
+    | Xenoresearch A Lift, Xenoresearch B Lift
+  > Xenoresearch B Lift
+    | Xenoresearch A, Xenoresearch B
+  > Xenoresearch B (Seeker Missile)
+    * Energy Cell: 5
+    * Upgrade: Seeker Missile
+    | Xenoresearch B Lift
+  > Transit Tube A
+    | Research Pod Lift, Save Station C (Plasma Beam)
+  > Save Station C
+    | Transit Tube A (Plasma Beam)
+  > Concourse (Seeker Missile)
+    * Missile Expansion
+    | Maintenance Shaft CC (Plasma Beam), Concourse Access A, Concourse Access B, Piston Hall, Concourse Ventilation
+  > Concourse Ventilation
+    * Missile Expansion
+    | Concourse, Maintenance Shaft 08
+  > Maintenance Shaft 08
+    | Concourse Ventilation, Chozo Observatory
+  > Chozo Observatory
+    | Maintenance Shaft 08, Botanica (Plasma Beam)
+  > Observatory Lift
+    | Chozo Observatory, Gearworks
+  > Botanica
+    * Missile Expansion
+    | Chozo Observatory (Plasma Beam), Save Station B, Broken Lift
+  > Save Station B
+    | Botanica
+  > Piston Hall
+    | Concourse Access B, Broken Lift (Ice Missile)
+  > Gearworks
+    * Missile Expansion
+    | Observatory Lift, Broken Lift
+  > Broken Lift
+    | Gearworks, Piston Hall, Botanica, Turbine Chamber
+  > Turbine Chamber
+    | Broken Lift, Turbine Access, Broken Lift
+  > Turbine Access
+    | Turbine Chamber, Broken Lift
+  > Maintenance Shaft TR
+    | Turbine Chamber, Skybridge Athena
+  > Skybridge Athena
+    | Maintenance Shaft TR, Landing Access
+  > Landing Access
+    | Skybridge Athena, Skytown Federation Landing Site
+  > Skytown Federation Landing Site
+    * Upgrade: Ship Grapple
+    | Landing Access
+  > Landing Site C
+    | Core Access
+  > Core Access (Seeker Missile)
+    | Landing Site C, Elysian Leviathan Core
+  > Elysian Leviathan Core
+    * Boss: Helios
+    * Creature: Helios
+    * Upgrade: Hyper Missile
+    | Core Access
+
+# Pirate Homeworld
+  > Landing Site Alpha
+    | Scrapvault Lift, Transit Station 1-A (Grapple Voltage)
+  > Transit Station 1-A
+    | Landing Site Alpha, Transit Station 1-B
+  > Transit Station 1-B
+    | Transit Station 1-A, Proving Grounds (Grapple Voltage)
+  > Proving Grounds
+    * Boss: Gandrayda
+    * Creature: Gandrayda
+    * Upgrade: Grapple Voltage
+    | Transit Station 1-B (Grapple Voltage), Proving Grounds Lift
+  > Scrapvault Lift
+    | Landing Site Alpha, Scrapvault
+  > Scrapvault
+    * Missile Expansion
+    | Scrapvault Lift, Processing Access (Plasma Beam), Scrapworks
+  > Scrapworks
+    * Energy Tank
+    * Ship Missile Expansion
+    | Scrapvault
+  > Processing Access
+    * Ship Missile Expansion
+    | Scrapvault (Plasma Beam), Metroid Processing
+  > Metroid Processing
+    * Energy Cell: 7
+    * Missile Expansion
+    | Processing Access, Airshaft (Plasma Beam), Creche Transit (Ice Missile)
+  > Airshaft (Seeker Missile)
+    | Metroid Processing (Plasma Beam), Craneyard
+  > Craneyard
+    * Upgrade: Hazard Shield
+    * Missile Expansion
+    | Airshaft, Proving Grounds Lift
+  > Proving Grounds Lift
+    | Craneyard, Proving Grounds
+  > Creche Transit
+    * Missile Expansion
+    | Metroid Processing, Metroid Creche
+  > Metroid Creche
+    * Boss: Metroid Hatcher
+    * Energy Tank
+    | Creche Transit, Transit Station 3-A
+  > Transit Station 3-A
+    | Save Station, Transit Station 3-B
+  > Save Station
+    | Transit Station 3-A
+  > Transit Station 3-B
+    | Transit Station 3-A, Lift Hub
+  > Lift Hub
+    * Missile Expansion (Grapple Voltage)
+    | Transit Station 3-B, Lift Hub Access, Command Courtyard (Plasma Beam), Security Air Lock
+  > Security Air Lock
+    * Missile Expansion
+    | Lift Hub, Defense Access
+  > Defense Access
+    | Security Air Lock, Command Station, Command Station (Nova Beam), Skyway Access (Grapple Voltage), Command Vault, Transit Station 4-A (Grapple Voltage)
+  > Command Station
+    * Missile Expansion (Grapple Voltage)
+    | Defense Access, Defense Access (Nova Beam), Command Vault, Transit Station 2-A, Flux Control
+  > Command Vault
+    * Upgrade: X-Ray Visor (Seeker Missile)
+    | Command Station, Defense Access
+  > Transit Station 2-A
+    | Command Station, Transit Station 2-B
+  > Transit Station 2-B
+    | Transit Station 2-A, Leviathan Access Portal
+  > Leviathan Access Portal (Grapple Voltage)
+    | Transit Station 2-B
+  > Transit Station 4-A
+    | Defense Access, Transit Station 4-B
+  > Transit Station 4-B
+    | Transit Station 4-A, Save Station, Phazon Quarry
+  > Save Station
+    | Transit Station 4-B
+  > Phazon Quarry
+    * Missile Expansion
+    * Energy Cell: 9
+    | Transit Station 4-B, Main Lift, Drill Shaft 2 (Nova Beam)
+  > Main Lift
+    | Phazon Quarry, Phazon Harvesting
+  > Phazon Harvesting
+    | Main Lift, Drill Shaft 1
+  > Drill Shaft 1
+    | Phazon Harvesting, Main Cavern
+  > Main Cavern
+    * Upgrade: Nova Beam
+    | Drill Shaft 1, Drill Shaft 2, Phazon Mines Entry (Nova Beam)
+  > Drill Shaft 2
+    | Main Cavern, Phazon Quarry (Nova Beam)
+  > Phazon Mines Entry
+    * Missile Expansion
+    | Main Cavern (Nova Beam), Landing Site Charlie
+  > Landing Site Charlie
+    | Phazon Mines Entry
+  > Command Courtyard
+    * Missile Expansion
+    * Energy Cell: 6
+    | Lift Hub (Plasma Beam), Courtyard Passage (Grapple Voltage), Flux Control
+  > Flux Control
+    * Missile Expansion
+    | Command Courtyard, Command Station
+  > Lift Hub Access
+    | Lift Hub, Landing Site Bravo
+  > Landing Site Bravo
+    | Lift Hub Access
+  > Courtyard Passage
+    | Command Courtyard, Skyway Access
+  > Skyway Access
+    | Courtyard Passage, Defense Access, Transit Station 1104 (Grapple Voltage)
+  > Transit Station 1104
+    | Skyway Access, Transit Tunnel P68
+  > Transit Tunnel P68
+    | Transit Station 1104, Transit Station 0203, Transit Station 0204
+  > Transit Station 0203
+    | Transit Tunnel P68
+  > Transit Station 0204
+    | Transit Tunnel P68, Transit Tunnel P69
+  > Transit Tunnel P69
+    | Transit Station 0204, Transit Station 0205
+  > Transit Station 0205
+    | Transit Tunnel P69, Transit Tunnel P70
+  > Transit Tunnel P70
+    | Transit Station 0205, Transit Station Leviathan
+  > Transit Station Leviathan
+    | Transit Tunnel P70, Landing Site Delta
+  > Landing Site Delta
+    | Transit Station Leviathan, Core Access
+  > Core Access
+    | Landing Site Delta, Pirate Homeworld Leviathan Core
+  > Pirate Homeworld Leviathan Core
+    * Boss: Omega Ridley
+    * Creature: Omega Ridley
+    * Upgrade: Hyper Grapple
+    | Core Access
+
+# Valhalla
+  > Docking Bay 5
+    * Energy Cell: 1
+    | Hangar A Access (Grapple Lasso)
+  > Hangar A Access
+    | Docking Bay 5, Repair Bay
+  > Repair Bay
+    | Hangar A Access, Stairwell, Security Station
+  > Stairwell
+    | Repair Bay, Weapons Cache (Grapple Lasso)
+  > Weapons Cache
+    * Missile Expansion
+    | Stairwell
+  > Security Station
+    | Repair Bay, Security Access
+  > Security Access
+    | Security Station, Auxiliary Lift, MedLab Alpha
+  > MedLab Alpha
+    * Missile Expansion
+    * Ship Missile Expansion
+    | Security Access
+  > Auxiliary Lift
+    * Missile Expansion
+    | Security Access, Port Observation Deck (Grapple Lasso)
+  > Port Observation Deck
+    | Auxiliary Lift, Xenoresearch Lab (Seeker Missile), Junction A (Grapple Lasso)
+  > Xenoresearch Lab
+    | Port Observation Deck, Ventilation Shaft (Grapple Lasso)
+  > Ventilation Shaft
+    | Xenoresearch Lab
+  > Junction A
+    | Port Observation Deck, Munitions Locker, Aurora Access (Nova Beam)
+  > Munitions Locker
+    * Energy Tank
+    | Junction A
+  > Aurora Access
+    | Junction A (Nova Beam), Aurora Chamber
+  > Aurora Chamber
+    * Boss: Metroid Hatcher
+    * Creature: Metroid Hatcher
+    | Aurora Access, Control Room Access (Grapple Lasso)
+  > Control Room Access
+    | Aurora Chamber, Control Room
+  > Control Room
+    | Control Room Access
+
+# Phaaze
+  > Landing Site
+    | Entry Canyon
+  > Entry Canyon
+    | Landing Site, Cavern Alpha
+  > Cavern Alpha
+    | Entry Canyon, Cavern Beta Access
+  > Cavern Beta Access
+    | Cavern Alpha, Cavern Beta
+  > Cavern Beta
+    | Cavern Beta Access, Drop Shaft
+  > Drop Shaft
+    | Cavern Beta, Metroid Cavern
+  > Metroid Cavern
+    | Drop Shaft, Hatcher Shaft
+  > Hatcher Shaft
+    | Metroid Cavern, Hatcher Tunnel
+  > Hatcher Tunnel
+    | Hatcher Shaft, Genesis Chamber
+  > Genesis Chamber
+    | Hatcher Tunnel, Sanctum
+  > Sanctum
+    * Boss: Dark Samus
+    * Creature: Dark Samus
+    * Boss: Aurora Unit 313
+    * Creature: Aurora Unit 313
