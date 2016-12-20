@@ -2,7 +2,7 @@
   > Docking Bay 5
     * Creature: Berserker Lord
     * Boss: Berserker Lord
-    | Repair Bay Shaft, Docking Bay Access
+    | Repair Bay Shaft, Docking Bay Access, Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Repair Bay Shaft
     | Docking Bay 5, Save Station B
   > Save Station B
@@ -60,7 +60,7 @@
 
 # Bryyo
   > Cliffside Airdock
-    | Gateway Hall
+    | Gateway Hall, Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Gateway Hall
     | Cliffside Airdock, Gateway
   > Gateway
@@ -107,7 +107,7 @@
   > Hangar Bay
     * Upgrade: Ship Missile
     * Energy Cell: 2
-    | Ruined Shrine, Hangar Bay Hall (Plasma Beam)
+    | Ruined Shrine, Hangar Bay Hall (Plasma Beam), Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Hangar Bay Hall
     | Hangar Bay (Plasma Beam), Hall of the Golems
   > Hall of the Golems
@@ -160,9 +160,9 @@
     * Energy Tank
     | Overgrown Ruins
   > Thorn Jungle Airdock
-    | Overgrown Ruins
+    | Overgrown Ruins, Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Fiery Airdock
-    | Imperial Hall
+    | Imperial Hall, Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Imperial Hall
     * Missile Expansion
     | Fiery Airdock, Refinery Access (Plasma Access), Gel Refinery Site
@@ -220,7 +220,7 @@
   > Temple Generator
     | Temple Hall
   > Landing Site Delta
-    | Core Access
+    | Core Access, Fiery Airdock [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Core Access
     | Landing Site Delta, Bryyo Leviathan Core
   > Bryyo Leviathan Core
@@ -233,7 +233,7 @@
   > Docking Hub Alpha
     * Missile Expansion
     * Upgrade: Grapple Lasso
-    | Hub Access
+    | Hub Access, Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Hub Access
     | Docking Hub Alpha, Cargo Hub (Grapple Lasso)
   > Cargo Hub
@@ -251,7 +251,7 @@
   > Data Storage B
     | Conduit B
   > Cargo Dock B
-    | Conduit B, Generator B Access (Seeker Missile)
+    | Conduit B, Generator B Access (Seeker Missile), Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Generator B Access
     | Cargo Dock B, Generator B
   > Generator B
@@ -287,19 +287,19 @@
     | Conduit A
   > Cargo Dock A
     * Missile Expansion
-    | Conduit A, Generator A Access
+    | Conduit A, Generator A Access, Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Generator A Access
     | Cargo Dock A, Generator A (Grapple Lasso)
   > Generator A
     | Generator A Access
 
-# Skytown
+# SkyTown
   > Main Docking Bay
     * Boss: Ghor
     * Creature: Ghor
     * Upgrade: Plasma Beam
     * Missile Expansion
-    | Main Docking Access
+    | Main Docking Access, Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Main Docking Access
     | Main Docking Bay, Zipline Station Alpha
   > Zipline Station Alpha
@@ -374,7 +374,7 @@
     * Ship Missile Expansion
     | Spire Dock, Landing Site A, Y (Plasma Beam), Escape Pod Bay Access
   > Landing Site A
-    | Security Station
+    | Security Station, Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Y
     | Security Station (Plasma Beam), Security Tube
   > Escape Pod Bay Access
@@ -447,12 +447,12 @@
   > Skybridge Athena
     | Maintenance Shaft TR, Landing Access
   > Landing Access
-    | Skybridge Athena, Skytown Federation Landing Site
-  > Skytown Federation Landing Site
+    | Skybridge Athena, SkyTown Federation Landing Site
+  > SkyTown Federation Landing Site
     * Upgrade: Ship Grapple
-    | Landing Access
+    | Landing Access, Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Landing Site C
-    | Core Access
+    | Core Access, Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Core Access (Seeker Missile)
     | Landing Site C, Elysian Leviathan Core
   > Elysian Leviathan Core
@@ -463,7 +463,7 @@
 
 # Pirate Homeworld
   > Landing Site Alpha
-    | Scrapvault Lift, Transit Station 1-A (Grapple Voltage)
+    | Scrapvault Lift, Transit Station 1-A (Grapple Voltage), Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Transit Station 1-A
     | Landing Site Alpha, Transit Station 1-B
   > Transit Station 1-B
@@ -555,7 +555,7 @@
     * Missile Expansion
     | Main Cavern (Nova Beam), Landing Site Charlie
   > Landing Site Charlie
-    | Phazon Mines Entry
+    | Phazon Mines Entry, Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Command Courtyard
     * Missile Expansion
     * Energy Cell: 6
@@ -566,7 +566,7 @@
   > Lift Hub Access
     | Lift Hub, Landing Site Bravo
   > Landing Site Bravo
-    | Lift Hub Access
+    | Lift Hub Access, Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Courtyard Passage
     | Command Courtyard, Skyway Access
   > Skyway Access
@@ -586,9 +586,9 @@
   > Transit Tunnel P70
     | Transit Station 0205, Transit Station Leviathan
   > Transit Station Leviathan
-    | Transit Tunnel P70, Landing Site Delta
+    | Transit Tunnel P70, Landing Site Delta, Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Landing Site Delta
-    | Transit Station Leviathan, Core Access
+    | Transit Station Leviathan, Core Access, Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Core Access
     | Landing Site Delta, Pirate Homeworld Leviathan Core
   > Pirate Homeworld Leviathan Core
@@ -597,10 +597,10 @@
     * Upgrade: Hyper Grapple
     | Core Access
 
-# Valhalla
+# GFS Valhalla
   > Docking Bay 5
     * Energy Cell: 1
-    | Hangar A Access (Grapple Lasso)
+    | Hangar A Access (Grapple Lasso), Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site [Phaaze], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown]
   > Hangar A Access
     | Docking Bay 5, Repair Bay
   > Repair Bay
@@ -645,7 +645,7 @@
 
 # Phaaze
   > Landing Site
-    | Entry Canyon
+    | Entry Canyon, Fiery Airdock [Bryyo], Landing Site Delta [Bryyo], Thorn Jungle Airdock [Bryyo], Hangar Bay [Bryyo], Cliffside Airdock [Bryyo], Docking Hub Alpha [Norion], Cargo Dock A [Norion], Cargo Dock B [Norion], Docking Bay 5 [GFS Olympus], Landing Site Alpha [Pirate Homeworld], Landing Site Bravo [Pirate Homeworld], Landing Site Charlie [Pirate Homeworld], Landing Site Delta [Pirate Homeworld], Transit Station Leviathan [Pirate Homeworld], Main Docking Bay [SkyTown], Landing Site A [SkyTown], Landing Site C [SkyTown], SkyTown Federation Landing Site [SkyTown], Docking Bay 5 [GFS Valhalla]
   > Entry Canyon
     | Landing Site, Cavern Alpha
   > Cavern Alpha
